@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   target: {fileID: 0}
   moveForce: 20
-  maxSpeed: 5
+  maxSpeed: 3
   minDistance: 2
   dragAmount: 10
 --- !u!58 &-4752899413632543095

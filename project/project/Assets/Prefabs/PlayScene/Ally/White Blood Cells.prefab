@@ -135,8 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   target: {fileID: 0}
   moveForce: 20
-  maxSpeed: 5
-  minDistance: 2
+  maxSpeed: 3
+  minDistance: 1
   dragAmount: 10
 --- !u!58 &5718505276637883963
 CircleCollider2D:
