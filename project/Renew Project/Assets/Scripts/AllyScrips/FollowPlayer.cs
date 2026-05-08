@@ -22,7 +22,7 @@ public class FollowPlayer : MonoBehaviour
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
         // 動きをキビキビさせるために少し抵抗をつける
-        rb.drag = 2f;
+        rb.linearDamping = 2f;
     }
 
     void FixedUpdate()
@@ -35,10 +35,10 @@ public class FollowPlayer : MonoBehaviour
         if (distance > minDistance)
         {
             // 1. 停止用の抵抗を通常に戻す
-            rb.drag = 2f;
+            rb.linearDamping = 2f;
 
             // 2. 速度が制限を超えていない場合のみ、力を加える
-            if (rb.velocity.magnitude < maxSpeed)
+            if (rb.linearVelocity.magnitude < maxSpeed)
             {
                 rb.AddForce(direction.normalized * moveForce);
             }
@@ -47,7 +47,7 @@ public class FollowPlayer : MonoBehaviour
         {
             // 3. 停止距離内に入ったら、急ブレーキをかける（Dragを上げる）
             // これにより、物理的に自然かつピタッと止まる
-            rb.drag = dragAmount;
+            rb.linearDamping = dragAmount;
         }
     }
 }
