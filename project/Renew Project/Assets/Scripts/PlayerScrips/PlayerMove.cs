@@ -15,20 +15,28 @@ public class PlayerMove : MonoBehaviour
     #region State
     //目標座標
     private Vector3 targetPos;
+    //目標があるかどうか
+    private bool hasTarget = false;
     #endregion
 
-    #region Unity Lifecycle
 
+    // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
+    #region Unity Lifecycle
     void Start()
     {
-       
+
     }
     void Update()
     {
-        // 毎フレーム、マウス位置をターゲットにする
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        mousePos.z = 10f; // カメラからの距離
-        targetPos = Camera.main.ScreenToWorldPoint(mousePos);
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector3 mousePos = Mouse.current.position.ReadValue();
+            mousePos.z = 10f;//カメラからの距離を設定
+
+            targetPos = Camera.main.ScreenToWorldPoint(mousePos);
+            hasTarget = true;
+        }
+
 
         //毎フレーム、壁に衝突しているかどうかを判定
         PlayerHitWall hitWall = GetComponent<PlayerHitWall>();
@@ -41,12 +49,17 @@ public class PlayerMove : MonoBehaviour
             speed = 3f;
         }
 
-        // プレイヤーをマウス位置へ移動
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            targetPos,
-            speed * Time.deltaTime
-        );
+        //目標がある場合、プレイヤーを目標に向かって移動させる
+        if (hasTarget)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+
+            //プレイヤーが目標に到着
+            if (Vector3.Distance(transform.position, targetPos) < 0.1f)
+            {
+                hasTarget = false; //目標をリセット
+            }
+        }
     }
     #endregion
 }
