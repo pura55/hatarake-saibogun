@@ -2676,6 +2676,7 @@ GameObject:
   - component: {fileID: 2026259933}
   - component: {fileID: 2026259932}
   - component: {fileID: 2026259931}
+  - component: {fileID: 2026259934}
   m_Layer: 5
   m_Name: 'TimerText '
   m_TagString: Untagged
@@ -2802,6 +2803,19 @@ RectTransform:
   m_AnchoredPosition: {x: 403.99, y: -174.75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2026259934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026259930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3addb7858d518468300b92880a5068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timeup
+  timer: {fileID: 1225479776}
 --- !u!1001 &4328779721510222739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2998,6 +3012,14 @@ PrefabInstance:
     - target: {fileID: 8173868795876353648, guid: 99c570f0a793c1e4b91ed869afc386d4, type: 3}
       propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173868795876353648, guid: 99c570f0a793c1e4b91ed869afc386d4, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1225479776}
+    - target: {fileID: 8173868795876353648, guid: 99c570f0a793c1e4b91ed869afc386d4, type: 3}
+      propertyPath: IsFreez
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8173868795876353648, guid: 99c570f0a793c1e4b91ed869afc386d4, type: 3}
       propertyPath: wallLayer.m_Bits

@@ -17,8 +17,10 @@ public class PlayerMove : MonoBehaviour
     private Vector3 targetPos;
     //目標があるかどうか
     private bool hasTarget = false;
+    public bool IsFreez = true;
     #endregion
 
+    public Timer timer;
 
     // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
     #region Unity Lifecycle
@@ -28,6 +30,13 @@ public class PlayerMove : MonoBehaviour
     }
     void Update()
     {
+        if (IsFreez)
+        {
+            if (timer.timeRemaining < 1)
+            {
+                return;
+            }
+        }
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector3 mousePos = Mouse.current.position.ReadValue();
