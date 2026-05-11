@@ -3,13 +3,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class FollowPlayer : MonoBehaviour
 {
-    public Transform target;
+
+    #region Config 
     public float moveForce = 20f;   // 加える力の強さ
     public float maxSpeed = 5f;    // 最大速度
     public float minDistance = 2f; // 停止距離
-    public float dragAmount = 10f; // 停止時の空気抵抗
+    public float dragAmount = 10f; // 停止時の抵抗
+    #endregion
 
+    #region State
+    public Transform target;
     private Rigidbody2D rb;
+    #endregion
 
     void Start()
     {

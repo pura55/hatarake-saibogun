@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4126064321899371043}
   - component: {fileID: 2208866938811609290}
   - component: {fileID: 1438598546278776168}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: blood vessels
   m_TagString: Wall
   m_Icon: {fileID: 0}

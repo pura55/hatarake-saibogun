@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Enemy
+  - RBC
+  - Oxygen
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Player
   - Ally
-  - 
-  - 
+  - Oxygen
+  - Wall
   - 
   - 
   - 
