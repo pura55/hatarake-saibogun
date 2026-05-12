@@ -13,5 +13,12 @@ public class Goal : MonoBehaviour
             //テキストを表示
             goalText.SetActive(true);
         }
+
+        // プレイヤーを停止
+        PlayerMove playerMove = collision.GetComponent<PlayerMove>();
+        if (playerMove != null)
+        {
+            playerMove.enabled = false;
+        }
     }
 }
