@@ -754,6 +754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Blood Cells
       objectReference: {fileID: 0}
+    - target: {fileID: 7826815390545683252, guid: d44ba19c48f5fd04db640052175cdba9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

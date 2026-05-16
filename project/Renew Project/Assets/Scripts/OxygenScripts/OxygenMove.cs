@@ -83,6 +83,13 @@ public class OxygenMove : MonoBehaviour
 
         if (!isAttached)
         {
+            //ƒ^[ƒQƒbƒg‚ÌRBC‚ª‹K’è—Ê‚Ì_‘f‚ğ‚Á‚Ä‚¢‚½ê‡ƒ^[ƒQƒbƒg‚ğÁ‹‚µˆ—‚ğ”²‚¯‚é
+            if (targetRbc.GetComponent<RbcStatus>().GetOneOxygenCount() == targetRbc.GetComponent<RbcStatus>().GetOxygenMaxCount())
+            {
+                targetRbc = null;
+                return;
+            }
+
             // RBC ‚Ì’†S‚É‹z’…
             transform.position = Vector3.Lerp(
                 transform.position,
@@ -93,13 +100,12 @@ public class OxygenMove : MonoBehaviour
             // \•ª‹ß‚Ã‚¢‚½‚ç‰ñ“]ƒ‚[ƒh‚Ö
             if (Vector2.Distance(transform.position, targetRbc.position) < 0.1f)
             {
-                isAttached = true;
-
                 // ‘_‘f”‚ğ‘‚â‚·
                 OxygenCounter.Add();
 
-                //// RBC‚Ì_‘f”‚ğ‘‚â‚·
-                //targetRbc.GetComponent<RbcStatus>().AddOxygen();
+                // RBC‚Ì_‘f”‚ğ‘‚â‚·
+                targetRbc.GetComponent<RbcStatus>().AddOxygen();
+                isAttached = true;
             }
         }
         else
