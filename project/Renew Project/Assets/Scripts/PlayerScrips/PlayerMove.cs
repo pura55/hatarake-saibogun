@@ -18,6 +18,9 @@ public class PlayerMove : MonoBehaviour
     //–Ú•W‚ª‚ ‚é‚©‚Ç‚¤‚©
     private bool hasTarget = false;
     public bool IsFreez = true;
+
+    //ƒS[ƒ‹‚µ‚½‚©‚Ç‚¤‚©
+    private bool isGoal = false;
     #endregion
 
     public Timer timer;
@@ -37,6 +40,15 @@ public class PlayerMove : MonoBehaviour
                 return;
             }
         }
+            //ƒS[ƒ‹‚µ‚½‚ç
+            if (isGoal)
+        {
+            //ã‚ÉˆÚ“®‚·‚é
+            transform.position += Vector3.up * 5f * Time.deltaTime;
+            return;
+        }
+
+       
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector3 mousePos = Mouse.current.position.ReadValue();
@@ -71,5 +83,10 @@ public class PlayerMove : MonoBehaviour
         }
     }
     #endregion
+    //ƒS[ƒ‹‚µ‚½‚ç“®‚­
+    public void StartGoalMove()
+    {
+        isGoal = true;
+    }
 }
 

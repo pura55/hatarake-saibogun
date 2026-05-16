@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class Goal : MonoBehaviour
 {
     public GameObject goalText;
@@ -27,7 +26,7 @@ public class Goal : MonoBehaviour
         PlayerMove playerMove = collision.GetComponent<PlayerMove>();
         if (playerMove != null)
         {
-            playerMove.enabled = false;
+            playerMove.StartGoalMove();
         }
     }
 }
