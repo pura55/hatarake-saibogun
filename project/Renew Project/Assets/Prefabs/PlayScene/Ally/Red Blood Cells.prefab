@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6633664722912515927}
   - component: {fileID: 892698996435450375}
   m_Layer: 6
-  m_Name: Red Blood Cells (1)
+  m_Name: Red Blood Cells
   m_TagString: RBC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7826815390545683252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9, y: -2.31, z: 0}
+  m_LocalPosition: {x: -7.03, y: -1.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

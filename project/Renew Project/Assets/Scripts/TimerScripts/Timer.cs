@@ -3,7 +3,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 60f;
+    public float timeRemaining = 15f;
 
     public TextMeshProUGUI timerText;
 
@@ -24,6 +24,19 @@ public class Timer : MonoBehaviour
         else
         {
             timeRemaining = 0;
+        }
+    }
+
+    //タイマーの時間が残っているかどうかを返す
+    public bool GetLeftTime() 
+    { 
+        if(timeRemaining > 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 }

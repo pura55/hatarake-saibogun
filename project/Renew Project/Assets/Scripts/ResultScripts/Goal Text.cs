@@ -10,7 +10,7 @@ public class Goal : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // プレイヤーがゴールに触れたら
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("RBC"))
         {
             // 黒幕表示
             blackPanel.SetActive(true);

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -23,25 +24,23 @@ public class PlayerMove : MonoBehaviour
     private bool isGoal = false;
     #endregion
 
-    public Timer timer;
-
+    private Timer timer;
     // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
     #region Unity Lifecycle
     void Start()
     {
-
     }
     void Update()
     {
         if (IsFreez)
         {
-            if (timer.timeRemaining < 1)
+            if (timer.GetLeftTime())
             {
                 return;
             }
         }
-            //ゴールしたら
-            if (isGoal)
+        //ゴールしたら
+        if (isGoal)
         {
             //上に移動する
             transform.position += Vector3.up * 5f * Time.deltaTime;
@@ -83,6 +82,11 @@ public class PlayerMove : MonoBehaviour
         }
     }
     #endregion
+
+    public void Init(Timer times)
+    {
+        timer = times;
+    }
     //ゴールしたら動く
     public void StartGoalMove()
     {
