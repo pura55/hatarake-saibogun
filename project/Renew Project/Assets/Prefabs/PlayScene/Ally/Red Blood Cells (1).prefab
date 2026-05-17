@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 2478487252260429889}
   - component: {fileID: 2605797949381550175}
   - component: {fileID: 4711309575649795165}
-  - component: {fileID: -5871209320347800675}
   - component: {fileID: -8258388350467232485}
   - component: {fileID: -3983225534187803093}
-  m_Layer: 7
-  m_Name: Red Blood Cells
+  - component: {fileID: 6633664722912515927}
+  - component: {fileID: 892698996435450375}
+  m_Layer: 6
+  m_Name: Red Blood Cells (1)
   m_TagString: RBC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7826815390545683252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.09, y: -2.32, z: 0}
+  m_LocalPosition: {x: -7.9, y: -2.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111,7 +112,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d0acf0354577bfc45a4277d4d6a7fceb, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -122,23 +123,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &-5871209320347800675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7826815390545683252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c97443425ac5ef4bbbd69dd6f78e40a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
-  moveForce: 20
-  maxSpeed: 3
-  minDistance: 2
-  dragAmount: 10
-  target: {fileID: 0}
 --- !u!58 &-8258388350467232485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -188,3 +172,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RbcStatus
   oxygenCount: 0
+  oxygenMaxCount: 5
+--- !u!114 &6633664722912515927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826815390545683252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f584b5a69568340b1f97dd008ca30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  speed: 3
+  IsFreez: 1
+  timer: {fileID: 0}
+--- !u!114 &892698996435450375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826815390545683252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0592f231a6dbc544ea0717a18357a180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHitWall
+  isCollidingWithWall: 0

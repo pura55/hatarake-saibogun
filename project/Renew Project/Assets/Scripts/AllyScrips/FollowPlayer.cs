@@ -6,8 +6,8 @@ public class FollowPlayer : MonoBehaviour
 
     #region Config 
     public float moveForce = 20f;   // 加える力の強さ
-    public float maxSpeed = 5f;    // 最大速度
-    public float minDistance = 2f; // 停止距離
+    public float maxSpeed = 3f;    // 最大速度
+    public float minDistance = 1.5f; // 停止距離
     public float dragAmount = 10f; // 停止時の抵抗
     #endregion
 
@@ -28,6 +28,16 @@ public class FollowPlayer : MonoBehaviour
 
         // 動きをキビキビさせるために少し抵抗をつける
         rb.linearDamping = 2f;
+
+        //  赤血球を自動で探す
+        if (target == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("RBC");
+            if (player != null)
+            {
+                target = player.transform;
+            }
+        }
     }
 
     void FixedUpdate()
