@@ -8,23 +8,25 @@ public class PlayerMove : MonoBehaviour
 
     // Configはゲームの設定値(例:速度、体力など)をまとめるためのセクション
     #region Config 
-    //移動速度
-    [SerializeField] public float speed = 3f;//[SerializeField]をつけると、Unityエディタ上でこの変数を編集できるようになる
+    //[SerializeField]をつけると、Unityエディタ上でこの変数を編集できるようになる
+
+    [SerializeField] private float speed = 3f;//移動速度
+    [SerializeField] public float effectedTime = 2f;//効果を受ける時間
     #endregion
 
     // Stateはゲームの状態を管理するためのセクション
     #region State
-    //目標座標
-    private Vector3 targetPos;
-    //目標があるかどうか
-    private bool hasTarget = false;
-    public bool IsFreez = true;
-
-    //ゴールしたかどうか
-    private bool isGoal = false;
+    private Timer timer;                 //タイマーの参照 
+    private Vector3 targetPos;           //目標座標
+    private bool hasTarget = false;      //目標があるかどうか
+    public bool IsFreez = true;          //フリーズのフラッグ(true:フリーズ中, false:行動中)
+    private bool isEffectedEnemy = false;//敵からの効果のフラッグ(true:効果を受けている, false:効果を受けていない)
+    private bool isGoal = false;         //ゴールしたかどうか
+    private float currentEffectedTime = 0f; //現在の効果時間
     #endregion
 
-    private Timer timer;
+    public void SetIsEffectedEnemy(bool isEffected) { isEffectedEnemy = isEffected; }
+    
     // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
     #region Unity Lifecycle
     void Start()
@@ -47,7 +49,13 @@ public class PlayerMove : MonoBehaviour
             return;
         }
 
-       
+        if(isEffectedEnemy)
+        {
+            EffectedTimeCounter();
+            return;
+        }
+
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector3 mousePos = Mouse.current.position.ReadValue();
@@ -91,6 +99,19 @@ public class PlayerMove : MonoBehaviour
     public void StartGoalMove()
     {
         isGoal = true;
+    }
+
+    public void EffectedTimeCounter()
+    {
+        if (currentEffectedTime< effectedTime)
+        {
+            currentEffectedTime += Time.deltaTime;
+        }
+        else
+        {
+            currentEffectedTime = 0f;
+            SetIsEffectedEnemy(false);
+        }
     }
 }
 

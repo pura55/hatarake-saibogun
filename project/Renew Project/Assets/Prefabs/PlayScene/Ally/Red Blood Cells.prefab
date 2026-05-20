@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   speed: 3
+  effectedTime: 2
   IsFreez: 1
-  timer: {fileID: 0}
 --- !u!114 &892698996435450375
 MonoBehaviour:
   m_ObjectHideFlags: 0
