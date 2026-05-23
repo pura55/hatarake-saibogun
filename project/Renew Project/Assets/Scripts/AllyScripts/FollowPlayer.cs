@@ -13,6 +13,7 @@ public class FollowPlayer : MonoBehaviour
 
     #region State
     public Transform target;
+    public WbcDetection wbcDetection;
     private Rigidbody2D rb;
     #endregion
 
@@ -42,6 +43,10 @@ public class FollowPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(wbcDetection.GetIsFound())
+        {
+            return;
+        }
         if (target == null) return;
 
         Vector2 direction = (Vector2)target.position - rb.position;

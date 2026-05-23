@@ -46,7 +46,7 @@ public class EnemySkills : MonoBehaviour
             {
                 Debug.Log("ÔŒŒ‹…‚ÉÚG‚µ‚½I");
                 //ÔŒŒ‹…‚ÌQÆ‚ğæ“¾
-                targetRbc = enemyDetection.GetTargetRbc();
+                targetRbc = col.transform;
                 isHitRbc = true;
                 //Destroy(col.gameObject);
             }

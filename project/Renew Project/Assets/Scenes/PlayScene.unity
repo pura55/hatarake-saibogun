@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1183ddeb31cf9904f9b27347d1c48632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  currentSpawnIndex: 2
+  currentSpawnIndex: 1
   enemyToSpawn: {fileID: 8842109261900865330, guid: fcc6e90bdc8e1c9438a9548077cdf62a, type: 3}
   spawnRange: {x: 10, y: 6, z: 0}
 --- !u!4 &382635221
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4f68a21ddce1a4285c4da65ab22a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WbcSpawner
-  currentSpawnIndex: 0
+  currentSpawnIndex: 1
   wbcToSpawn: {fileID: 2104101604759121645, guid: 68eabd087621be0468ee57ea9a1da6cf, type: 3}
   spawnRange: {x: 4.1, y: 2.25, z: 0}
 --- !u!4 &1725585352
