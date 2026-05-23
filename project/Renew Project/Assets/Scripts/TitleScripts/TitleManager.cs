@@ -9,13 +9,15 @@ public class TitleManager : MonoBehaviour
 {
     [SerializeField] GameObject quitPanel;
 
-    //ボタンを押したらプレイシーンへ移行
+    [SerializeField] GameObject settingsPanel;
+
+    //スタートボタンを押したらプレイシーンへ移行
     public void StartGame()
     {
         SceneManager.LoadScene("PlayScene");
     }
 
-    //ボタンを押したら修了確認
+    //終了ボタンを押したら修了確認
     public void ShowQuitPanel()
     {
         quitPanel.SetActive(true);
@@ -35,5 +37,16 @@ public class TitleManager : MonoBehaviour
     public void HideQuitPanel()
     {
         quitPanel.SetActive(false);
+    }
+
+    //
+    public void OpenSettings()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
     }
 }
