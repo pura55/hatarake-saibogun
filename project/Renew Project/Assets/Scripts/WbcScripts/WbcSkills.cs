@@ -29,7 +29,7 @@ public class WbcSkills : MonoBehaviour
             enemyDetection.SetIsEffectWbc(true);
             //スキルを使用済みに変更
             SetUsedSkill(true);
-            //白血球を硬直指せる
+            //白血球を硬直させる
             wbcDetection.SetIsFreez(true);
             //接触判定をリセット
             isHitEnemy = false;

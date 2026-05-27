@@ -13,7 +13,7 @@ public class WbcDetection : MonoBehaviour
     public WbcSkills wbcSkills;       //白血球のスキルScriptの参照
     private bool isAttached = false;  //白血球を敵に近づけるフラグ
     private bool isFreez = false;     //硬直のフラグ
-    private bool isFound = false;
+    private bool isFound = false;     //敵を発見したかどうかのフラグ
     private float currentFreezTime = 0f; //硬直経過時間
     #endregion
 

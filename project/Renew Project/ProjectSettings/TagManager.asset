@@ -9,6 +9,10 @@ TagManager:
   - RBC
   - Oxygen
   - Timer
+  - Platelet
+  - RelayPoint1
+  - RelayPoint2
+  - RelayPoint3
   layers:
   - Default
   - TransparentFX
@@ -20,8 +24,8 @@ TagManager:
   - Ally
   - Oxygen
   - Wall
-  - 
-  - 
+  - Platelet
+  - RelayPoint
   - 
   - 
   - 
