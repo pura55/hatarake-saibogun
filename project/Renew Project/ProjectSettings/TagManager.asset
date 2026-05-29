@@ -13,6 +13,7 @@ TagManager:
   - RelayPoint1
   - RelayPoint2
   - RelayPoint3
+  - Cut
   layers:
   - Default
   - TransparentFX

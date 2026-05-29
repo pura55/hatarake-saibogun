@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
             float randomY = Random.Range(-spawnRange.y / 2, spawnRange.y / 2);
             float randomZ = Random.Range(-spawnRange.z / 2, spawnRange.z / 2);
 
-            // スクリプトが付いているオブジェクトの位置を基準にする
+            //このスクリプトが付いているオブジェクトの位置を基準にする
             Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, randomZ);
 
             //オブジェクト生成

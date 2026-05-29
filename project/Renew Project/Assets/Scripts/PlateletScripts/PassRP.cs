@@ -17,11 +17,8 @@ public class PassRP : MonoBehaviour
     {
         if(relayPointStatus.GetIsPass())
         {
-            if(count == 0)
-            {
-                plateletMove.ResetRelayPoint();
-            }
-            count++;
+            plateletMove.ResetRelayPoint();
+            relayPointStatus.SetIsPass(false);
         }
     }
 
@@ -32,7 +29,7 @@ public class PassRP : MonoBehaviour
             Debug.Log("リレーポイントを通過した");
             if (!relayPointStatus.GetIsPass())
             {
-                relayPointStatus.SetTrueIsPass();
+                relayPointStatus.SetIsPass(true);
                 plateletMove = col.GetComponent<PlateletMove>();
             }
          }

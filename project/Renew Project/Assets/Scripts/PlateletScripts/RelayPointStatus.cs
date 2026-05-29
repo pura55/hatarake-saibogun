@@ -9,7 +9,7 @@ public class RelayPointStatus : MonoBehaviour
 
     #region Function
     public bool GetIsPass(){ return isPass; }
-    public void SetTrueIsPass() { isPass = true; }
+    public void SetIsPass(bool pass) { isPass = pass; }
     #endregion
     // Update is called once per frame
     void Update()
