@@ -131,9 +131,8 @@ GameObject:
   - component: {fileID: 9733945}
   - component: {fileID: 9733944}
   - component: {fileID: 9733943}
-  - component: {fileID: 9733946}
-  - component: {fileID: 9733947}
   - component: {fileID: 9733948}
+  - component: {fileID: 9733949}
   m_Layer: 5
   m_Name: WBCTimeLv1
   m_TagString: Untagged
@@ -204,9 +203,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9733946}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 9733948}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -216,9 +215,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 9733948}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 9733949}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -266,34 +265,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9733941}
   m_CullTransparentMesh: 1
---- !u!114 &9733946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9733941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 11
---- !u!114 &9733947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9733941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
 --- !u!114 &9733948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +277,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &9733949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9733941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 11
 --- !u!1 &10475020
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,9 +382,8 @@ GameObject:
   - component: {fileID: 21797255}
   - component: {fileID: 21797254}
   - component: {fileID: 21797253}
-  - component: {fileID: 21797252}
-  - component: {fileID: 21797251}
   - component: {fileID: 21797256}
+  - component: {fileID: 21797257}
   m_Layer: 5
   m_Name: RBCAmountLv1
   m_TagString: Untagged
@@ -426,34 +410,6 @@ RectTransform:
   m_AnchoredPosition: {x: -308.21, y: -72.076}
   m_SizeDelta: {x: 38.33, y: 32.1516}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &21797251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21797249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &21797252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21797249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 3
 --- !u!114 &21797253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,9 +454,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 21797252}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 21797256}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -510,9 +466,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 21797256}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 21797257}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -572,6 +528,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &21797257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21797249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 3
 --- !u!1 &45671907
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,9 +554,8 @@ GameObject:
   - component: {fileID: 45671913}
   - component: {fileID: 45671912}
   - component: {fileID: 45671911}
-  - component: {fileID: 45671910}
-  - component: {fileID: 45671909}
   - component: {fileID: 45671914}
+  - component: {fileID: 45671915}
   m_Layer: 5
   m_Name: RBCAmountLv2
   m_TagString: Untagged
@@ -613,34 +582,6 @@ RectTransform:
   m_AnchoredPosition: {x: -259.4901, y: -72.076}
   m_SizeDelta: {x: 38.33, y: 32.1516}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &45671909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45671907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &45671910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45671907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 4
 --- !u!114 &45671911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,9 +626,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45671910}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 45671914}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -697,9 +638,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45671914}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 45671915}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -759,6 +700,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &45671915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45671907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 4
 --- !u!1 &108511403
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,9 +726,8 @@ GameObject:
   - component: {fileID: 108511409}
   - component: {fileID: 108511408}
   - component: {fileID: 108511407}
-  - component: {fileID: 108511406}
-  - component: {fileID: 108511405}
   - component: {fileID: 108511410}
+  - component: {fileID: 108511411}
   m_Layer: 5
   m_Name: PLTAmountLv5
   m_TagString: Untagged
@@ -800,33 +754,6 @@ RectTransform:
   m_AnchoredPosition: {x: -120, y: 109.54}
   m_SizeDelta: {x: 35.358, y: 28.9243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &108511405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108511403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &108511406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108511403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 29
 --- !u!114 &108511407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,9 +798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 108511406}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 108511410}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -883,9 +810,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 108511410}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 108511411}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -945,6 +872,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &108511411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108511403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 29
 --- !u!1 &209710136
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,9 +898,8 @@ GameObject:
   - component: {fileID: 209710142}
   - component: {fileID: 209710141}
   - component: {fileID: 209710140}
-  - component: {fileID: 209710139}
-  - component: {fileID: 209710138}
   - component: {fileID: 209710143}
+  - component: {fileID: 209710144}
   m_Layer: 5
   m_Name: PLTAmountLv4
   m_TagString: Untagged
@@ -986,33 +926,6 @@ RectTransform:
   m_AnchoredPosition: {x: -164.51, y: 109.54}
   m_SizeDelta: {x: 35.358, y: 28.9243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &209710138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209710136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &209710139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209710136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 28
 --- !u!114 &209710140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,9 +970,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 209710139}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 209710143}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1069,9 +982,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 209710143}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 209710144}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1131,6 +1044,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &209710144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209710136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 28
 --- !u!1 &278217225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,9 +1070,8 @@ GameObject:
   - component: {fileID: 278217231}
   - component: {fileID: 278217230}
   - component: {fileID: 278217229}
-  - component: {fileID: 278217228}
-  - component: {fileID: 278217227}
   - component: {fileID: 278217232}
+  - component: {fileID: 278217233}
   m_Layer: 5
   m_Name: PLTCureLv2
   m_TagString: Untagged
@@ -1172,33 +1098,6 @@ RectTransform:
   m_AnchoredPosition: {x: -243, y: 150.1}
   m_SizeDelta: {x: 38.335, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &278217227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278217225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &278217228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278217225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 23
 --- !u!114 &278217229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,9 +1142,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 278217228}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 278217232}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1255,9 +1154,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 278217232}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 278217233}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1317,6 +1216,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &278217233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278217225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 23
 --- !u!1 &334660691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,9 +1242,8 @@ GameObject:
   - component: {fileID: 334660697}
   - component: {fileID: 334660696}
   - component: {fileID: 334660695}
-  - component: {fileID: 334660694}
-  - component: {fileID: 334660693}
   - component: {fileID: 334660698}
+  - component: {fileID: 334660699}
   m_Layer: 5
   m_Name: PLTCureLv3
   m_TagString: Untagged
@@ -1358,33 +1270,6 @@ RectTransform:
   m_AnchoredPosition: {x: -188, y: 150.1}
   m_SizeDelta: {x: 38.335, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &334660693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334660691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &334660694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334660691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 24
 --- !u!114 &334660695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,9 +1314,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 334660694}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 334660698}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1441,9 +1326,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 334660698}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 334660699}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1503,6 +1388,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &334660699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334660691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 24
 --- !u!1 &344151199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,9 +1555,8 @@ GameObject:
   - component: {fileID: 386813160}
   - component: {fileID: 386813159}
   - component: {fileID: 386813158}
-  - component: {fileID: 386813157}
-  - component: {fileID: 386813156}
   - component: {fileID: 386813161}
+  - component: {fileID: 386813162}
   m_Layer: 5
   m_Name: RBCSpeedLv2
   m_TagString: Untagged
@@ -1685,34 +1583,6 @@ RectTransform:
   m_AnchoredPosition: {x: -258, y: -127}
   m_SizeDelta: {x: 35.3498, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &386813156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386813154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &386813157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386813154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 1
 --- !u!114 &386813158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,9 +1627,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 386813157}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 386813161}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1769,9 +1639,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 386813161}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 386813162}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1831,6 +1701,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &386813162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386813154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 1
 --- !u!1001 &398082542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1904,9 +1788,8 @@ GameObject:
   - component: {fileID: 421978669}
   - component: {fileID: 421978668}
   - component: {fileID: 421978667}
-  - component: {fileID: 421978666}
-  - component: {fileID: 421978665}
   - component: {fileID: 421978670}
+  - component: {fileID: 421978671}
   m_Layer: 5
   m_Name: RBCHaveLv3
   m_TagString: Untagged
@@ -1933,34 +1816,6 @@ RectTransform:
   m_AnchoredPosition: {x: -212.58, y: -25}
   m_SizeDelta: {x: 35.355, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &421978665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421978663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &421978666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421978663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 10
 --- !u!114 &421978667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,9 +1860,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 421978666}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 421978670}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2017,9 +1872,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 421978670}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 421978671}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2079,6 +1934,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &421978671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421978663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 10
 --- !u!1 &431227720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,9 +1960,8 @@ GameObject:
   - component: {fileID: 431227726}
   - component: {fileID: 431227725}
   - component: {fileID: 431227724}
-  - component: {fileID: 431227723}
-  - component: {fileID: 431227722}
   - component: {fileID: 431227727}
+  - component: {fileID: 431227728}
   m_Layer: 5
   m_Name: WBCAmountLv3
   m_TagString: Untagged
@@ -2120,34 +1988,6 @@ RectTransform:
   m_AnchoredPosition: {x: 137.05, y: -25}
   m_SizeDelta: {x: 38.382, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &431227722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431227720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &431227723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431227720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 19
 --- !u!114 &431227724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,9 +2032,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 431227723}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 431227727}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2204,9 +2044,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 431227727}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 431227728}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2266,6 +2106,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &431227728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431227720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 19
 --- !u!1 &513008171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,9 +2132,8 @@ GameObject:
   - component: {fileID: 513008177}
   - component: {fileID: 513008176}
   - component: {fileID: 513008175}
-  - component: {fileID: 513008174}
-  - component: {fileID: 513008173}
   - component: {fileID: 513008178}
+  - component: {fileID: 513008179}
   m_Layer: 5
   m_Name: WBCRangeLv2
   m_TagString: Untagged
@@ -2307,34 +2160,6 @@ RectTransform:
   m_AnchoredPosition: {x: 88.86499, y: -74.228}
   m_SizeDelta: {x: 37.243, y: 27.848}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &513008173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513008171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &513008174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513008171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 15
 --- !u!114 &513008175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2379,9 +2204,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 513008174}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 513008178}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2391,9 +2216,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 513008178}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 513008179}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2453,6 +2278,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &513008179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513008171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 15
 --- !u!1 &527965564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,9 +2304,8 @@ GameObject:
   - component: {fileID: 527965570}
   - component: {fileID: 527965569}
   - component: {fileID: 527965568}
-  - component: {fileID: 527965567}
-  - component: {fileID: 527965566}
   - component: {fileID: 527965571}
+  - component: {fileID: 527965572}
   m_Layer: 5
   m_Name: RBCAmountLv3
   m_TagString: Untagged
@@ -2494,34 +2332,6 @@ RectTransform:
   m_AnchoredPosition: {x: -211.09, y: -72.076}
   m_SizeDelta: {x: 38.33, y: 32.1516}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &527965566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527965564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &527965567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527965564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 5
 --- !u!114 &527965568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,9 +2376,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 527965567}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 527965571}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2578,9 +2388,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 527965571}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 527965572}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2640,6 +2450,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &527965572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527965564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 5
 --- !u!1 &596352893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,9 +2476,8 @@ GameObject:
   - component: {fileID: 596352899}
   - component: {fileID: 596352898}
   - component: {fileID: 596352897}
-  - component: {fileID: 596352896}
-  - component: {fileID: 596352895}
   - component: {fileID: 596352900}
+  - component: {fileID: 596352901}
   m_Layer: 5
   m_Name: WBCAmountLv2
   m_TagString: Untagged
@@ -2681,34 +2504,6 @@ RectTransform:
   m_AnchoredPosition: {x: 89.338, y: -25}
   m_SizeDelta: {x: 36.299, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &596352895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596352893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &596352896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596352893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 18
 --- !u!114 &596352897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,9 +2548,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 596352896}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 596352900}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2765,9 +2560,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 596352900}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 596352901}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2827,6 +2622,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &596352901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596352893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 18
 --- !u!1 &610481763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,9 +2648,8 @@ GameObject:
   - component: {fileID: 610481769}
   - component: {fileID: 610481768}
   - component: {fileID: 610481767}
-  - component: {fileID: 610481766}
-  - component: {fileID: 610481765}
   - component: {fileID: 610481770}
+  - component: {fileID: 610481771}
   m_Layer: 5
   m_Name: WBCAmountLv5
   m_TagString: Untagged
@@ -2868,34 +2676,6 @@ RectTransform:
   m_AnchoredPosition: {x: 232, y: -25}
   m_SizeDelta: {x: 38.382, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &610481765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610481763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &610481766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610481763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 21
 --- !u!114 &610481767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2940,9 +2720,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 610481766}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 610481770}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2952,9 +2732,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 610481770}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 610481771}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3014,6 +2794,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &610481771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610481763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 21
 --- !u!1 &635741935
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,9 +2820,8 @@ GameObject:
   - component: {fileID: 635741941}
   - component: {fileID: 635741940}
   - component: {fileID: 635741939}
-  - component: {fileID: 635741938}
-  - component: {fileID: 635741937}
   - component: {fileID: 635741942}
+  - component: {fileID: 635741943}
   m_Layer: 5
   m_Name: RBCAmountLv5
   m_TagString: Untagged
@@ -3055,34 +2848,6 @@ RectTransform:
   m_AnchoredPosition: {x: -120, y: -72.076}
   m_SizeDelta: {x: 38.33, y: 32.1516}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &635741937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635741935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &635741938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635741935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 7
 --- !u!114 &635741939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,9 +2892,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 635741938}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 635741942}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3139,9 +2904,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 635741942}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 635741943}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3201,6 +2966,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &635741943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635741935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 7
 --- !u!1 &725117703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,9 +2992,8 @@ GameObject:
   - component: {fileID: 725117709}
   - component: {fileID: 725117708}
   - component: {fileID: 725117707}
-  - component: {fileID: 725117706}
-  - component: {fileID: 725117705}
   - component: {fileID: 725117710}
+  - component: {fileID: 725117711}
   m_Layer: 5
   m_Name: PLTAmountLv2
   m_TagString: Untagged
@@ -3242,33 +3020,6 @@ RectTransform:
   m_AnchoredPosition: {x: -247.94, y: 109.5379}
   m_SizeDelta: {x: 35.358, y: 28.9243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &725117705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725117703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &725117706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725117703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 26
 --- !u!114 &725117707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,9 +3064,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 725117706}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 725117710}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3325,9 +3076,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 725117710}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 725117711}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3387,6 +3138,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &725117711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725117703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 26
 --- !u!1 &734337477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,9 +3164,8 @@ GameObject:
   - component: {fileID: 734337483}
   - component: {fileID: 734337482}
   - component: {fileID: 734337481}
-  - component: {fileID: 734337480}
-  - component: {fileID: 734337479}
   - component: {fileID: 734337484}
+  - component: {fileID: 734337485}
   m_Layer: 5
   m_Name: StageTimeLv2
   m_TagString: Untagged
@@ -3428,33 +3192,6 @@ RectTransform:
   m_AnchoredPosition: {x: 104.02, y: 126}
   m_SizeDelta: {x: 46.809, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &734337479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734337477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &734337480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734337477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 36
 --- !u!114 &734337481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3499,9 +3236,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 734337480}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 734337484}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3511,9 +3248,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 734337484}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 734337485}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3573,6 +3310,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &734337485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734337477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 36
 --- !u!1 &777302632
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,9 +3336,8 @@ GameObject:
   - component: {fileID: 777302638}
   - component: {fileID: 777302637}
   - component: {fileID: 777302636}
-  - component: {fileID: 777302635}
-  - component: {fileID: 777302634}
   - component: {fileID: 777302639}
+  - component: {fileID: 777302640}
   m_Layer: 5
   m_Name: RBCHaveLv1
   m_TagString: Untagged
@@ -3614,34 +3364,6 @@ RectTransform:
   m_AnchoredPosition: {x: -306.72, y: -25}
   m_SizeDelta: {x: 35.355, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &777302634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777302632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &777302635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777302632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 8
 --- !u!114 &777302636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,9 +3408,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 777302635}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 777302639}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3698,9 +3420,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 777302639}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 777302640}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3760,6 +3482,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &777302640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777302632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 8
 --- !u!1 &848136687
 GameObject:
   m_ObjectHideFlags: 0
@@ -3772,9 +3508,8 @@ GameObject:
   - component: {fileID: 848136693}
   - component: {fileID: 848136692}
   - component: {fileID: 848136691}
-  - component: {fileID: 848136690}
-  - component: {fileID: 848136689}
   - component: {fileID: 848136694}
+  - component: {fileID: 848136695}
   m_Layer: 5
   m_Name: PLTAmountLv3
   m_TagString: Untagged
@@ -3801,33 +3536,6 @@ RectTransform:
   m_AnchoredPosition: {x: -202.84, y: 109.5379}
   m_SizeDelta: {x: 35.358, y: 28.9243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &848136689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848136687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &848136690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848136687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 27
 --- !u!114 &848136691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3872,9 +3580,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 848136690}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 848136694}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3884,9 +3592,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 848136694}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 848136695}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3946,6 +3654,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &848136695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848136687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 27
 --- !u!1 &875147582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,9 +3680,8 @@ GameObject:
   - component: {fileID: 875147588}
   - component: {fileID: 875147587}
   - component: {fileID: 875147586}
-  - component: {fileID: 875147585}
-  - component: {fileID: 875147584}
   - component: {fileID: 875147589}
+  - component: {fileID: 875147590}
   m_Layer: 5
   m_Name: WBCRangeLv1
   m_TagString: Untagged
@@ -3987,34 +3708,6 @@ RectTransform:
   m_AnchoredPosition: {x: 43, y: -74.228}
   m_SizeDelta: {x: 37.243, y: 27.848}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &875147584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875147582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &875147585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875147582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 14
 --- !u!114 &875147586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,10 +3752,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 875147585}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: StopCoroutine
-        m_Mode: 5
+      - m_Target: {fileID: 875147589}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4071,9 +3764,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 875147589}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 875147590}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4133,6 +3826,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &875147590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875147582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 14
 --- !u!1 &889591773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4145,9 +3852,8 @@ GameObject:
   - component: {fileID: 889591779}
   - component: {fileID: 889591778}
   - component: {fileID: 889591777}
-  - component: {fileID: 889591776}
-  - component: {fileID: 889591775}
   - component: {fileID: 889591780}
+  - component: {fileID: 889591781}
   m_Layer: 5
   m_Name: StageOxLv5
   m_TagString: Untagged
@@ -4174,33 +3880,6 @@ RectTransform:
   m_AnchoredPosition: {x: 241, y: 68}
   m_SizeDelta: {x: 38.382, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &889591775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889591773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &889591776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889591773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 34
 --- !u!114 &889591777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4245,9 +3924,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 889591776}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 889591780}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4257,9 +3936,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 889591780}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 889591781}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4319,6 +3998,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &889591781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889591773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 34
 --- !u!1 &922242552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,9 +4024,8 @@ GameObject:
   - component: {fileID: 922242558}
   - component: {fileID: 922242557}
   - component: {fileID: 922242556}
-  - component: {fileID: 922242555}
-  - component: {fileID: 922242554}
   - component: {fileID: 922242559}
+  - component: {fileID: 922242560}
   m_Layer: 5
   m_Name: StageTimeLv4
   m_TagString: Untagged
@@ -4360,33 +4052,6 @@ RectTransform:
   m_AnchoredPosition: {x: 215, y: 126}
   m_SizeDelta: {x: 46.809, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &922242554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922242552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &922242555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922242552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 38
 --- !u!114 &922242556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4431,9 +4096,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922242555}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 922242559}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4443,9 +4108,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 922242559}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 922242560}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4505,6 +4170,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &922242560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922242552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 38
 --- !u!1 &972538652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,9 +4196,8 @@ GameObject:
   - component: {fileID: 972538658}
   - component: {fileID: 972538657}
   - component: {fileID: 972538656}
-  - component: {fileID: 972538655}
-  - component: {fileID: 972538654}
   - component: {fileID: 972538659}
+  - component: {fileID: 972538660}
   m_Layer: 5
   m_Name: StageTimeLv1
   m_TagString: Untagged
@@ -4546,33 +4224,6 @@ RectTransform:
   m_AnchoredPosition: {x: 47.784, y: 126}
   m_SizeDelta: {x: 46.809, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &972538654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972538652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &972538655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972538652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 35
 --- !u!114 &972538656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4617,9 +4268,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 972538655}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 972538659}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4629,9 +4280,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 972538659}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 972538660}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4691,6 +4342,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &972538660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972538652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 35
 --- !u!1 &983824663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4703,9 +4368,8 @@ GameObject:
   - component: {fileID: 983824669}
   - component: {fileID: 983824668}
   - component: {fileID: 983824667}
-  - component: {fileID: 983824666}
-  - component: {fileID: 983824665}
   - component: {fileID: 983824670}
+  - component: {fileID: 983824671}
   m_Layer: 5
   m_Name: WBCAmountLv4
   m_TagString: Untagged
@@ -4732,34 +4396,6 @@ RectTransform:
   m_AnchoredPosition: {x: 185, y: -25}
   m_SizeDelta: {x: 38.382, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &983824665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983824663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &983824666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983824663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 20
 --- !u!114 &983824667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4804,9 +4440,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 983824666}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 983824670}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4816,9 +4452,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 983824670}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 983824671}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4878,6 +4514,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &983824671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983824663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 20
 --- !u!1 &1036406185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,9 +4540,8 @@ GameObject:
   - component: {fileID: 1036406191}
   - component: {fileID: 1036406190}
   - component: {fileID: 1036406189}
-  - component: {fileID: 1036406188}
-  - component: {fileID: 1036406187}
   - component: {fileID: 1036406192}
+  - component: {fileID: 1036406193}
   m_Layer: 5
   m_Name: StageTimeLv3
   m_TagString: Untagged
@@ -4919,33 +4568,6 @@ RectTransform:
   m_AnchoredPosition: {x: 157, y: 126}
   m_SizeDelta: {x: 46.809, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1036406187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036406185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &1036406188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036406185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 37
 --- !u!114 &1036406189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4990,9 +4612,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1036406188}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1036406192}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5002,9 +4624,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1036406192}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1036406193}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5064,6 +4686,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1036406193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036406185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 37
 --- !u!1 &1097145096
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,9 +4712,8 @@ GameObject:
   - component: {fileID: 1097145102}
   - component: {fileID: 1097145101}
   - component: {fileID: 1097145100}
-  - component: {fileID: 1097145099}
-  - component: {fileID: 1097145098}
   - component: {fileID: 1097145103}
+  - component: {fileID: 1097145104}
   m_Layer: 5
   m_Name: StageOxLv4
   m_TagString: Untagged
@@ -5105,33 +4740,6 @@ RectTransform:
   m_AnchoredPosition: {x: 193.62, y: 68}
   m_SizeDelta: {x: 38.382, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1097145098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097145096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &1097145099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097145096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 33
 --- !u!114 &1097145100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5176,9 +4784,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1097145099}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1097145103}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5188,9 +4796,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1097145103}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1097145104}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5250,6 +4858,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1097145104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097145096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 33
 --- !u!1 &1164184390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,9 +4884,8 @@ GameObject:
   - component: {fileID: 1164184394}
   - component: {fileID: 1164184393}
   - component: {fileID: 1164184392}
-  - component: {fileID: 1164184395}
-  - component: {fileID: 1164184396}
   - component: {fileID: 1164184397}
+  - component: {fileID: 1164184398}
   m_Layer: 5
   m_Name: StageOxLv1
   m_TagString: Untagged
@@ -5335,9 +4956,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1164184395}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1164184397}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5347,9 +4968,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1164184397}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1164184398}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5397,33 +5018,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164184390}
   m_CullTransparentMesh: 1
---- !u!114 &1164184395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164184390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 30
---- !u!114 &1164184396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164184390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
 --- !u!114 &1164184397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5436,6 +5030,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1164184398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164184390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 30
 --- !u!1 &1221345606
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,9 +5210,8 @@ GameObject:
   - component: {fileID: 1246242018}
   - component: {fileID: 1246242017}
   - component: {fileID: 1246242016}
-  - component: {fileID: 1246242015}
-  - component: {fileID: 1246242014}
   - component: {fileID: 1246242019}
+  - component: {fileID: 1246242020}
   m_Layer: 5
   m_Name: PLTAmountLv1
   m_TagString: Untagged
@@ -5631,33 +5238,6 @@ RectTransform:
   m_AnchoredPosition: {x: -296.33, y: 109.5379}
   m_SizeDelta: {x: 35.358, y: 28.9243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1246242014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246242012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
---- !u!114 &1246242015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246242012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 25
 --- !u!114 &1246242016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5702,9 +5282,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1246242015}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1246242019}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5714,9 +5294,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1246242019}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1246242020}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5776,6 +5356,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1246242020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246242012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 25
 --- !u!1 &1292378402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,9 +5382,8 @@ GameObject:
   - component: {fileID: 1292378408}
   - component: {fileID: 1292378407}
   - component: {fileID: 1292378406}
-  - component: {fileID: 1292378405}
-  - component: {fileID: 1292378404}
   - component: {fileID: 1292378409}
+  - component: {fileID: 1292378410}
   m_Layer: 5
   m_Name: WBCTimeLv3
   m_TagString: Untagged
@@ -5817,34 +5410,6 @@ RectTransform:
   m_AnchoredPosition: {x: 138.76, y: -127}
   m_SizeDelta: {x: 39.513, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1292378404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292378402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &1292378405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292378402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 13
 --- !u!114 &1292378406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,9 +5454,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1292378405}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1292378409}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5901,9 +5466,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1292378409}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1292378410}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5963,6 +5528,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1292378410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292378402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 13
 --- !u!1 &1305054884
 GameObject:
   m_ObjectHideFlags: 0
@@ -5975,9 +5554,8 @@ GameObject:
   - component: {fileID: 1305054890}
   - component: {fileID: 1305054889}
   - component: {fileID: 1305054888}
-  - component: {fileID: 1305054887}
-  - component: {fileID: 1305054886}
   - component: {fileID: 1305054891}
+  - component: {fileID: 1305054892}
   m_Layer: 5
   m_Name: StageOxLv2
   m_TagString: Untagged
@@ -6004,33 +5582,6 @@ RectTransform:
   m_AnchoredPosition: {x: 98.66796, y: 68}
   m_SizeDelta: {x: 38.382, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1305054886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305054884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &1305054887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305054884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 31
 --- !u!114 &1305054888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6075,9 +5626,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1305054887}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1305054891}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6087,9 +5638,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1305054891}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1305054892}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6149,6 +5700,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1305054892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305054884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 31
 --- !u!1 &1321319816
 GameObject:
   m_ObjectHideFlags: 0
@@ -6161,9 +5726,8 @@ GameObject:
   - component: {fileID: 1321319822}
   - component: {fileID: 1321319821}
   - component: {fileID: 1321319820}
-  - component: {fileID: 1321319819}
-  - component: {fileID: 1321319818}
   - component: {fileID: 1321319823}
+  - component: {fileID: 1321319824}
   m_Layer: 5
   m_Name: StageOxLv3
   m_TagString: Untagged
@@ -6190,33 +5754,6 @@ RectTransform:
   m_AnchoredPosition: {x: 146.62, y: 68}
   m_SizeDelta: {x: 38.382, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1321319818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321319816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &1321319819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321319816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 32
 --- !u!114 &1321319820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6261,9 +5798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1321319819}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1321319823}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6273,9 +5810,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1321319823}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1321319824}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6335,6 +5872,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1321319824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321319816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 32
 --- !u!1 &1328646476
 GameObject:
   m_ObjectHideFlags: 0
@@ -6347,9 +5898,8 @@ GameObject:
   - component: {fileID: 1328646482}
   - component: {fileID: 1328646481}
   - component: {fileID: 1328646480}
-  - component: {fileID: 1328646479}
-  - component: {fileID: 1328646478}
   - component: {fileID: 1328646483}
+  - component: {fileID: 1328646484}
   m_Layer: 5
   m_Name: WBCAmountLv1
   m_TagString: Untagged
@@ -6376,34 +5926,6 @@ RectTransform:
   m_AnchoredPosition: {x: 42.431, y: -25}
   m_SizeDelta: {x: 38.382, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1328646478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328646476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &1328646479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328646476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 17
 --- !u!114 &1328646480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6448,9 +5970,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1328646479}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1328646483}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6460,9 +5982,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1328646483}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1328646484}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6522,6 +6044,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1328646484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328646476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 17
 --- !u!1 &1349220669
 GameObject:
   m_ObjectHideFlags: 0
@@ -6534,9 +6070,8 @@ GameObject:
   - component: {fileID: 1349220675}
   - component: {fileID: 1349220674}
   - component: {fileID: 1349220673}
-  - component: {fileID: 1349220672}
-  - component: {fileID: 1349220671}
   - component: {fileID: 1349220676}
+  - component: {fileID: 1349220677}
   m_Layer: 5
   m_Name: RBCHaveLv2
   m_TagString: Untagged
@@ -6563,34 +6098,6 @@ RectTransform:
   m_AnchoredPosition: {x: -259.4901, y: -25}
   m_SizeDelta: {x: 35.355, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1349220671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349220669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &1349220672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349220669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 9
 --- !u!114 &1349220673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6635,9 +6142,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349220672}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1349220676}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6647,9 +6154,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1349220676}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1349220677}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6709,6 +6216,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1349220677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349220669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 9
 --- !u!1 &1361305577
 GameObject:
   m_ObjectHideFlags: 0
@@ -6721,9 +6242,8 @@ GameObject:
   - component: {fileID: 1361305583}
   - component: {fileID: 1361305582}
   - component: {fileID: 1361305581}
-  - component: {fileID: 1361305580}
-  - component: {fileID: 1361305579}
   - component: {fileID: 1361305584}
+  - component: {fileID: 1361305585}
   m_Layer: 5
   m_Name: WBCTimeLv2
   m_TagString: Untagged
@@ -6750,34 +6270,6 @@ RectTransform:
   m_AnchoredPosition: {x: 90, y: -127}
   m_SizeDelta: {x: 39.513, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1361305579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361305577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &1361305580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361305577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 12
 --- !u!114 &1361305581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6822,9 +6314,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1361305580}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1361305584}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6834,9 +6326,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1361305584}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1361305585}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6896,6 +6388,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1361305585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361305577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 12
 --- !u!1 &1510958417
 GameObject:
   m_ObjectHideFlags: 0
@@ -6908,9 +6414,8 @@ GameObject:
   - component: {fileID: 1510958421}
   - component: {fileID: 1510958420}
   - component: {fileID: 1510958419}
-  - component: {fileID: 1510958422}
-  - component: {fileID: 1510958423}
   - component: {fileID: 1510958424}
+  - component: {fileID: 1510958425}
   m_Layer: 5
   m_Name: PLTCureLv1
   m_TagString: Untagged
@@ -6981,9 +6486,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510958422}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1510958424}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6993,9 +6498,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1510958424}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1510958425}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7043,33 +6548,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510958417}
   m_CullTransparentMesh: 1
---- !u!114 &1510958422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510958417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 22
---- !u!114 &1510958423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510958417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b300cd18a9e692469d4970c31584904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLTEnhance
-  curu: 1
-  amount: 0
 --- !u!114 &1510958424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7082,6 +6560,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1510958425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510958417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 22
 --- !u!1 &1541568513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7094,9 +6586,8 @@ GameObject:
   - component: {fileID: 1541568519}
   - component: {fileID: 1541568518}
   - component: {fileID: 1541568517}
-  - component: {fileID: 1541568516}
-  - component: {fileID: 1541568515}
   - component: {fileID: 1541568520}
+  - component: {fileID: 1541568521}
   m_Layer: 5
   m_Name: RBCAmountLv4
   m_TagString: Untagged
@@ -7123,34 +6614,6 @@ RectTransform:
   m_AnchoredPosition: {x: -166, y: -72.076}
   m_SizeDelta: {x: 38.33, y: 32.1516}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1541568515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541568513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &1541568516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541568513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 6
 --- !u!114 &1541568517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7195,9 +6658,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1541568516}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1541568520}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7207,9 +6670,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1541568520}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1541568521}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7269,6 +6732,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1541568521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541568513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 6
 --- !u!1 &1674556790
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,9 +6895,8 @@ GameObject:
   - component: {fileID: 1836158765}
   - component: {fileID: 1836158764}
   - component: {fileID: 1836158763}
-  - component: {fileID: 1836158762}
-  - component: {fileID: 1836158761}
   - component: {fileID: 1836158766}
+  - component: {fileID: 1836158767}
   m_Layer: 5
   m_Name: RBCSpeedLv3
   m_TagString: Untagged
@@ -7447,34 +6923,6 @@ RectTransform:
   m_AnchoredPosition: {x: -212.58, y: -127}
   m_SizeDelta: {x: 35.3498, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1836158761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836158759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
---- !u!114 &1836158762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836158759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 2
 --- !u!114 &1836158763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7519,9 +6967,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1836158762}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1836158766}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7531,9 +6979,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1836158766}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1836158767}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7593,6 +7041,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1836158767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836158759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 2
 --- !u!1 &1878646868
 GameObject:
   m_ObjectHideFlags: 0
@@ -7605,9 +7067,8 @@ GameObject:
   - component: {fileID: 1878646874}
   - component: {fileID: 1878646873}
   - component: {fileID: 1878646872}
-  - component: {fileID: 1878646871}
-  - component: {fileID: 1878646870}
   - component: {fileID: 1878646875}
+  - component: {fileID: 1878646876}
   m_Layer: 5
   m_Name: WBCRangeLv3
   m_TagString: Untagged
@@ -7634,34 +7095,6 @@ RectTransform:
   m_AnchoredPosition: {x: 137.62, y: -74.228}
   m_SizeDelta: {x: 37.243, y: 27.848}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1878646870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878646868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842c07aed539c71478ca4c6079f5cb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WBCEnhance
-  time: 2
-  range: 1
-  amount: 0
---- !u!114 &1878646871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878646868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 16
 --- !u!114 &1878646872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7706,9 +7139,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1878646871}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1878646875}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7718,9 +7151,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1878646875}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1878646876}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7780,6 +7213,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &1878646876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878646868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 16
 --- !u!1 &1933245070
 GameObject:
   m_ObjectHideFlags: 0
@@ -7894,9 +7341,8 @@ GameObject:
   - component: {fileID: 2037179964}
   - component: {fileID: 2037179963}
   - component: {fileID: 2037179962}
-  - component: {fileID: 2037179961}
-  - component: {fileID: 2037179960}
   - component: {fileID: 2037179965}
+  - component: {fileID: 2037179966}
   m_Layer: 5
   m_Name: StageTimeLv5
   m_TagString: Untagged
@@ -7923,33 +7369,6 @@ RectTransform:
   m_AnchoredPosition: {x: 274.6, y: 126}
   m_SizeDelta: {x: 46.809, y: 32.1316}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2037179960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037179958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc1c0b499c54164299820328b6769d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageEnhance
-  ox: 30
-  time: 10
---- !u!114 &2037179961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037179958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillTree
-  upgradeType: 39
 --- !u!114 &2037179962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7994,9 +7413,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2037179961}
-        m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 2037179965}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8006,9 +7425,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2037179965}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 2037179966}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8068,6 +7487,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &2037179966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037179958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 39
 --- !u!1 &2118459037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,9 +7513,8 @@ GameObject:
   - component: {fileID: 2118459041}
   - component: {fileID: 2118459040}
   - component: {fileID: 2118459039}
-  - component: {fileID: 2118459042}
-  - component: {fileID: 2118459043}
   - component: {fileID: 2118459044}
+  - component: {fileID: 2118459045}
   m_Layer: 5
   m_Name: RBCSpeedLv1
   m_TagString: Untagged
@@ -8153,9 +7585,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2118459042}
-        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 2118459044}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: LightUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8165,9 +7597,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2118459044}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 2118459045}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8215,34 +7647,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118459037}
   m_CullTransparentMesh: 1
---- !u!114 &2118459042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118459037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98799c50a8fd26b4d9aa20888c122d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skill
-  upgradeType: 0
---- !u!114 &2118459043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118459037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd0f3b87e6fb79409848ecd0f914dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RBCEnhance
-  speed: 5
-  amount: 1
-  have: 1
 --- !u!114 &2118459044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8255,6 +7659,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+--- !u!114 &2118459045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118459037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63051f0b0c8ec4944a55a1317760499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  upgradeType: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

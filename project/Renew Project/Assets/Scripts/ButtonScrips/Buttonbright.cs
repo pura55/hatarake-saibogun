@@ -19,6 +19,7 @@ public class Buttonbright : MonoBehaviour
     {
         if (!isOn)
         {
+            //‘O‚ÌLv‚ğ‰ğ•ú‚µ‚È‚¢‚Æ‰Ÿ‚¹‚È‚¢AŒõ‚ç‚È‚¢‚æ‚¤‚É‚·‚é
             Color c = image.color;
 
             c.r = Mathf.Clamp01(c.r + 0.5f);
