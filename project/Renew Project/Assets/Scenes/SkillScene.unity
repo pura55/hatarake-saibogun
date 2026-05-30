@@ -157,7 +157,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 43, y: -127}
-  m_SizeDelta: {x: 39.513, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9733943
 MonoBehaviour:
@@ -205,7 +205,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9733948}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -240,15 +240,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8349390551686856484, guid: 61cd1cc7f000cd5468f287fa01d6fd40, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -277,6 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 3
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &9733949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +411,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -308.21, y: -72.076}
-  m_SizeDelta: {x: 38.33, y: 32.1516}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21797253
 MonoBehaviour:
@@ -456,7 +459,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 21797256}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -491,15 +494,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8461545872325796427, guid: aff5b7c4ade8a0c41ae8b27f8797ab8a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -528,6 +531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 1
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &21797257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +586,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -259.4901, y: -72.076}
-  m_SizeDelta: {x: 38.33, y: 32.1516}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45671911
 MonoBehaviour:
@@ -628,7 +634,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 45671914}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -663,15 +669,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2294673472843087100, guid: 58a8a70d823e823429a52cc66ebbbcbe, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -700,6 +706,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 1
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &45671915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,7 +761,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120, y: 109.54}
-  m_SizeDelta: {x: 35.358, y: 28.9243}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108511407
 MonoBehaviour:
@@ -800,7 +809,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 108511410}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -835,15 +844,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2280077644951882730, guid: 7b82b48367d582547b8b7b5f24cc819a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -872,6 +881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 7
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &108511411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +936,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -164.51, y: 109.54}
-  m_SizeDelta: {x: 35.358, y: 28.9243}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209710140
 MonoBehaviour:
@@ -972,7 +984,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 209710143}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1007,15 +1019,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8956326479753837171, guid: 0aab9f7aa4df12f4b94e951a3282e45e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1044,6 +1056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 7
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &209710144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1111,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -243, y: 150.1}
-  m_SizeDelta: {x: 38.335, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278217229
 MonoBehaviour:
@@ -1144,7 +1159,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 278217232}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1179,15 +1194,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7287346197510633813, guid: 1ba8d1ac3348ffd48a1e3611d13faf49, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1216,6 +1231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 6
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &278217233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,7 +1286,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -188, y: 150.1}
-  m_SizeDelta: {x: 38.335, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334660695
 MonoBehaviour:
@@ -1316,7 +1334,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 334660698}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1351,15 +1369,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -9029102839051164640, guid: 6176ee8d1b82c0d4cadac18c158fd9f4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1388,6 +1406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 6
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &334660699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,7 +1602,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -258, y: -127}
-  m_SizeDelta: {x: 35.3498, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &386813158
 MonoBehaviour:
@@ -1629,7 +1650,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 386813161}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1664,15 +1685,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 905408215826217385, guid: e93fdbe3a6dcded498777ee886bff04e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1701,6 +1722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 0
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &386813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,7 +1838,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -212.58, y: -25}
-  m_SizeDelta: {x: 35.355, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421978667
 MonoBehaviour:
@@ -1862,7 +1886,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 421978670}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1897,15 +1921,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1664888094108103124, guid: e65db96aab31bb541860a321ab8ee6a9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1934,6 +1958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 2
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &421978671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,7 +2013,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 137.05, y: -25}
-  m_SizeDelta: {x: 38.382, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431227724
 MonoBehaviour:
@@ -2034,7 +2061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 431227727}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2069,15 +2096,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6087000514721144603, guid: 7e6ec83f65e3d4c4fb2f1da5c53b2e11, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2106,6 +2133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 5
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &431227728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2158,7 +2188,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 88.86499, y: -74.228}
-  m_SizeDelta: {x: 37.243, y: 27.848}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &513008175
 MonoBehaviour:
@@ -2206,7 +2236,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 513008178}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2241,15 +2271,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4997169253051784788, guid: 963d6d2d1bc5f8149baac869eddea0d7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2278,6 +2308,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 4
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &513008179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,7 +2363,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -211.09, y: -72.076}
-  m_SizeDelta: {x: 38.33, y: 32.1516}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527965568
 MonoBehaviour:
@@ -2378,7 +2411,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 527965571}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2413,15 +2446,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6466442726216267977, guid: 3e2c5b2b20430cd418c3280f718652ab, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2450,6 +2483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 1
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &527965572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2502,7 +2538,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 89.338, y: -25}
-  m_SizeDelta: {x: 36.299, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596352897
 MonoBehaviour:
@@ -2550,7 +2586,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 596352900}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2585,15 +2621,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5007180966178747152, guid: 48f49b54369f99a479e18dc071b87e98, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2622,6 +2658,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 5
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &596352901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,7 +2713,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 232, y: -25}
-  m_SizeDelta: {x: 38.382, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610481767
 MonoBehaviour:
@@ -2722,7 +2761,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 610481770}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2757,15 +2796,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5848972441500293280, guid: 45422d41032a07f47bba79b1cd7bae9a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2794,6 +2833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 5
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &610481771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2846,7 +2888,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120, y: -72.076}
-  m_SizeDelta: {x: 38.33, y: 32.1516}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635741939
 MonoBehaviour:
@@ -2894,7 +2936,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 635741942}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2929,15 +2971,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7088303267604092383, guid: 1790e68ff3de2ad4bacce8d9cdbaa4e5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2966,6 +3008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 1
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &635741943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,7 +3063,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -247.94, y: 109.5379}
-  m_SizeDelta: {x: 35.358, y: 28.9243}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &725117707
 MonoBehaviour:
@@ -3066,7 +3111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 725117710}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3101,15 +3146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6289263522630619612, guid: 00b359039b0469e4795705cfa9f088c7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3138,6 +3183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 7
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &725117711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3190,7 +3238,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 104.02, y: 126}
-  m_SizeDelta: {x: 46.809, y: 32.1316}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734337481
 MonoBehaviour:
@@ -3238,7 +3286,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 734337484}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3273,15 +3321,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6782630372313924656, guid: cfef571fc2a723a4ab80fd79f63a59db, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3310,6 +3358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 8
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &734337485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3362,7 +3413,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -306.72, y: -25}
-  m_SizeDelta: {x: 35.355, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777302636
 MonoBehaviour:
@@ -3410,7 +3461,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 777302639}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3445,15 +3496,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -445762979866375809, guid: c58533a74ad5dde47bdcd8fc2af68918, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3482,6 +3533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 2
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &777302640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3534,7 +3588,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -202.84, y: 109.5379}
-  m_SizeDelta: {x: 35.358, y: 28.9243}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &848136691
 MonoBehaviour:
@@ -3582,7 +3636,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848136694}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3617,15 +3671,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7230798931751429176, guid: a81e343411322a540943b47e044e0877, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3654,6 +3708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 7
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &848136695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3706,7 +3763,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 43, y: -74.228}
-  m_SizeDelta: {x: 37.243, y: 27.848}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875147586
 MonoBehaviour:
@@ -3754,7 +3811,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 875147589}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3789,15 +3846,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3453235908112629814, guid: 27f436328fac6b944ace0f622a29c6b3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3826,6 +3883,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 4
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &875147590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3926,7 +3986,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 889591780}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3961,7 +4021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3998,6 +4058,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 9
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &889591781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4050,7 +4113,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 215, y: 126}
-  m_SizeDelta: {x: 46.809, y: 32.1316}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922242556
 MonoBehaviour:
@@ -4098,7 +4161,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 922242559}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4133,15 +4196,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2291088090213327876, guid: 083112db6cbc9e54c88f03c9d588ff68, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4170,6 +4233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 8
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &922242560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4222,7 +4288,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 47.784, y: 126}
-  m_SizeDelta: {x: 46.809, y: 32.1316}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972538656
 MonoBehaviour:
@@ -4270,7 +4336,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 972538659}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4305,15 +4371,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6446909402321300482, guid: 5e66a3db880be2c4487b25cd024df61d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4342,6 +4408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 8
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &972538660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4394,7 +4463,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 185, y: -25}
-  m_SizeDelta: {x: 38.382, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983824667
 MonoBehaviour:
@@ -4442,7 +4511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 983824670}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4477,15 +4546,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 2682296010442157010, guid: 9887dae86f950dd4185e64f485b30a81, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4514,6 +4583,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 5
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &983824671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4566,7 +4638,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 157, y: 126}
-  m_SizeDelta: {x: 46.809, y: 32.1316}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036406189
 MonoBehaviour:
@@ -4614,7 +4686,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1036406192}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4649,15 +4721,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -4758694836658481548, guid: 502e55192dc005c4492e97c38c7f39f9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4686,6 +4758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 8
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1036406193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4786,7 +4861,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097145103}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4821,7 +4896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4858,6 +4933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 9
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1097145104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4958,7 +5036,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1164184397}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4993,7 +5071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5030,6 +5108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 9
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1164184398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5236,7 +5317,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -296.33, y: 109.5379}
-  m_SizeDelta: {x: 35.358, y: 28.9243}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246242016
 MonoBehaviour:
@@ -5284,7 +5365,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1246242019}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5319,15 +5400,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 9081906100439646777, guid: dbf9bf90a7cc2c641bb35897f413a251, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5356,6 +5437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 7
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1246242020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5408,7 +5492,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 138.76, y: -127}
-  m_SizeDelta: {x: 39.513, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292378406
 MonoBehaviour:
@@ -5456,7 +5540,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1292378409}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5491,15 +5575,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1805772506948087406, guid: 5c1c4a2dd6a20ca4d8fde16559d04423, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5528,6 +5612,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 3
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1292378410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5628,7 +5715,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1305054891}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5663,7 +5750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5700,6 +5787,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 9
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1305054892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5800,7 +5890,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1321319823}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5835,7 +5925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5872,6 +5962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 9
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1321319824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5924,7 +6017,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 42.431, y: -25}
-  m_SizeDelta: {x: 38.382, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328646480
 MonoBehaviour:
@@ -5972,7 +6065,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1328646483}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6007,15 +6100,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1440372649874257006, guid: 4958f5a7a8cbc88438151cb7f1689bb3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6044,6 +6137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 5
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1328646484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6096,7 +6192,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -259.4901, y: -25}
-  m_SizeDelta: {x: 35.355, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349220673
 MonoBehaviour:
@@ -6144,7 +6240,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1349220676}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6179,15 +6275,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6278931141300997879, guid: bdbccecc2edc6374b9a2cbdc864c0656, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6216,6 +6312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 2
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1349220677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6268,7 +6367,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 90, y: -127}
-  m_SizeDelta: {x: 39.513, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361305581
 MonoBehaviour:
@@ -6316,7 +6415,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1361305584}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6351,15 +6450,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6621908180014105060, guid: 97150f44ec05e27468bf70872f9da251, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6388,6 +6487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 3
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1361305585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6440,7 +6542,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -296.33, y: 150.1}
-  m_SizeDelta: {x: 35.355, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510958419
 MonoBehaviour:
@@ -6488,7 +6590,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1510958424}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6523,15 +6625,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4866247, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2497693084371589891, guid: 0a8f0a6f53f3c30448953f28250c348a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6560,6 +6662,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 6
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1510958425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6612,7 +6717,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -166, y: -72.076}
-  m_SizeDelta: {x: 38.33, y: 32.1516}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541568517
 MonoBehaviour:
@@ -6660,7 +6765,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1541568520}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6695,15 +6800,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1216878294457445721, guid: 3e44446ad03737846b705f5be6d035c7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6732,6 +6837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 1
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1541568521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6921,7 +7029,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -212.58, y: -127}
-  m_SizeDelta: {x: 35.3498, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836158763
 MonoBehaviour:
@@ -6967,9 +7075,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1836158766}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 1836158767}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6979,9 +7087,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1836158767}
-        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 1836158766}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7004,15 +7112,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1763010737725388484, guid: 289107e0df51e294987f4a1a028c146c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7041,6 +7149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 0
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1836158767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7093,7 +7204,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 137.62, y: -74.228}
-  m_SizeDelta: {x: 37.243, y: 27.848}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878646872
 MonoBehaviour:
@@ -7141,7 +7252,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1878646875}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7176,15 +7287,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7842280389760732303, guid: 23a4ee29be60dd04e92e043afb0ea074, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7213,6 +7324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 4
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &1878646876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7367,7 +7481,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 274.6, y: 126}
-  m_SizeDelta: {x: 46.809, y: 32.1316}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2037179962
 MonoBehaviour:
@@ -7415,7 +7529,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2037179965}
         m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7450,15 +7564,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8324972719446075323, guid: 90a572333dfbc194ab8cf5f4dc18f4ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7487,6 +7601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 8
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &2037179966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7539,7 +7656,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -308.215, y: -127}
-  m_SizeDelta: {x: 35.3498, y: 30}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118459039
 MonoBehaviour:
@@ -7585,9 +7702,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2118459044}
-        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
-        m_MethodName: LightUp
+      - m_Target: {fileID: 2118459045}
+        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7597,9 +7714,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2118459045}
-        m_TargetAssemblyTypeName: SkillTreeDemo, Assembly-CSharp
-        m_MethodName: Upgrade
+      - m_Target: {fileID: 2118459044}
+        m_TargetAssemblyTypeName: Buttonbright, Assembly-CSharp
+        m_MethodName: Bright
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7622,15 +7739,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.69411767, g: 0.69411767, b: 0.69411767, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -4328219954155080840, guid: 38393b29af8097248b49ca21d3f64449, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7659,6 +7776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8604918e19e4a643baf4af0d574fbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
+  skillType: 0
+  myLevel: 0
+  image: {fileID: 0}
 --- !u!114 &2118459045
 MonoBehaviour:
   m_ObjectHideFlags: 0
