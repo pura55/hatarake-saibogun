@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//担当　千葉結加
 //ScriptableObjectテスト
 
 [CreateAssetMenu(fileName = "StatusSkill", menuName = "Game/StatusSkill")]

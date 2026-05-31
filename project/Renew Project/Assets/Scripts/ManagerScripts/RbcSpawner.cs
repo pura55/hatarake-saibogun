@@ -8,7 +8,7 @@ using UnityEngine;
 public class RbcSpawner : MonoBehaviour
 {
     #region Config
-    [SerializeField] private int currentSpawnIndex = 2;
+    [SerializeField] private int currentSpawnIndex = 1;
     private int spawnCounter = 0;
     #endregion
 
@@ -23,8 +23,15 @@ public class RbcSpawner : MonoBehaviour
         RbcSpawn();
     }
 
+    public void AddRbcSpawn(int addCount)
+    {
+        currentSpawnIndex += addCount;
+        Debug.Log($"赤血球をスポーン数:{currentSpawnIndex}");
+        RbcSpawn();
+    }
+
     //ゲーム開始時に赤血球を生成
-    void RbcSpawn()
+    public void RbcSpawn()
     {
         //現在の赤血球のスポーン数を超えたら処理を抜ける
         while (spawnCounter < currentSpawnIndex)

@@ -21,6 +21,12 @@ public class WbcSpawner : MonoBehaviour
     {
         WbcSpawn();
     }
+    public void AddWbcSpawn(int addCount)
+    {
+        currentSpawnIndex += addCount;
+        Debug.Log($"白血球をスポーン数:{currentSpawnIndex}");
+        WbcSpawn();
+    }
     void WbcSpawn()
     {
         //現在の白血球のスポーン数を超えたら処理を抜ける

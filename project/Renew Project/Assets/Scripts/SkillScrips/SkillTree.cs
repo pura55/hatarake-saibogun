@@ -1,10 +1,12 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
-
+//íSìñÅ@êÁótåãâ¡
 public class SkillTree : MonoBehaviour
 {
     public StatusSkill status;
-
+    public RbcSpawner rbcSpawner;
+    public WbcSpawner wbcSpawner;
+    public Timer timer;
 
     public enum UpgradeType
     {
@@ -84,6 +86,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 20; */)
                 {
                     status.rbcAmount = 2;
+                    rbcSpawner.AddRbcSpawn(1);
                     Debug.Log("RBCAmountLV1");
                 }
                 break;
@@ -92,6 +95,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 35; */)
                 {
                     status.rbcAmount = 3;
+                    rbcSpawner.AddRbcSpawn(1);
                     Debug.Log("RBCAmountLV2");
                 }
                 break;
@@ -100,6 +104,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 60; */)
                 {
                     status.rbcAmount = 5;
+                    rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV3");
                 }
                 break;
@@ -108,6 +113,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 85; */)
                 {
                     status.rbcAmount = 7;
+                    rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV4");
                 }
                 break;
@@ -116,6 +122,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 120; */)
                 {
                     status.rbcAmount = 10;
+                    rbcSpawner.AddRbcSpawn(3);
                     Debug.Log("RBCAmountLV5");
                 }
                 break;
@@ -200,6 +207,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 15; */)
                 {
                     status.wbcAmount = 3;
+                    wbcSpawner.AddWbcSpawn(3);
                     Debug.Log("WBCAmountLV1");
                 }
                 break;
@@ -208,6 +216,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 35; */)
                 {
                     status.wbcAmount = 8;
+                    wbcSpawner.AddWbcSpawn(5);
                     Debug.Log("WBCAmountLV2");
                 }
                 break;
@@ -216,6 +225,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 50; */)
                 {
                     status.wbcAmount = 15;
+                    wbcSpawner.AddWbcSpawn(7);
                     Debug.Log("WBCAmountLV3");
                 }
                 break;
@@ -224,6 +234,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 80; */)
                 {
                     status.wbcAmount = 30;
+                    wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV4");
                 }
                 break;
@@ -232,6 +243,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 120; */)
                 {
                     status.wbcAmount = 45;
+                    wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV5");
                 }
                 break;
@@ -348,6 +360,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 10; */)
                 {
                     status.stageTime = 11;
+                    timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV1");
                 }
                 break;
@@ -356,6 +369,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 30; */)
                 {
                     status.stageTime = 13;
+                    timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV2");
                 }
                 break;
@@ -364,6 +378,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 45; */)
                 {
                     status.stageTime = 15;
+                    timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV3");
                 }
                 break;
@@ -372,6 +387,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 70; */)
                 {
                     status.stageTime = 18;
+                    timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV4");
                 }
                 break;
@@ -380,6 +396,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 100; */)
                 {
                     status.stageTime = 22;
+                    timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV5");
                 }
                 break;

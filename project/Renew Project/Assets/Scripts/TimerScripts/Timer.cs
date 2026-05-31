@@ -1,11 +1,18 @@
 using UnityEngine;
 using TMPro;
-
+//’S“–@ç—tŒ‹‰Á
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 15f;
+    public StatusSkill status;
+
+    public float timeRemaining;
 
     public TextMeshProUGUI timerText;
+
+    void Start()
+    {
+        timeRemaining = status.stageTime;
+    }
 
     void Update()
     {

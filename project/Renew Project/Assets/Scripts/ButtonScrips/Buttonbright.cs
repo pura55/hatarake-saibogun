@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
-
+//’S“–@ç—tŒ‹‰Á
 public class Buttonbright : MonoBehaviour
 {
     public enum SkillType
