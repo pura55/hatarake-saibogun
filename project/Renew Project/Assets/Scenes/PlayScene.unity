@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Goal
   goalText: {fileID: 1613713969}
   blackPanel: {fileID: 1325966482}
-  resultManager: {fileID: 694749947}
+  resultmanager: {fileID: 694749947}
 --- !u!1001 &1005909235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3645,6 +3645,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 434199268926041655, guid: 683ef24e45b8daa4c956f9e5e6098c57, type: 3}
+      propertyPath: status
+      value: 
+      objectReference: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
     - target: {fileID: 3737202451507278835, guid: 683ef24e45b8daa4c956f9e5e6098c57, type: 3}
       propertyPath: m_Name
       value: ObjectSpawner(W)
@@ -3706,6 +3710,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1225479776}
+    - target: {fileID: 2410934387479121506, guid: fb5e87314f714cf4797b4be29dfa7bcf, type: 3}
+      propertyPath: status
+      value: 
+      objectReference: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
     - target: {fileID: 5485770025941965706, guid: fb5e87314f714cf4797b4be29dfa7bcf, type: 3}
       propertyPath: m_Name
       value: ObjectSpawner(R)

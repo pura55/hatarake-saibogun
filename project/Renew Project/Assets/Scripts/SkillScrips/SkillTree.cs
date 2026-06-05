@@ -4,10 +4,9 @@ using UnityEngine;
 public class SkillTree : MonoBehaviour
 {
     public StatusSkill status;
-    public RbcSpawner rbcSpawner;
-    public WbcSpawner wbcSpawner;
+    //public RbcSpawner rbcSpawner;
+    //public WbcSpawner wbcSpawner;
     public Timer timer;
-
     public enum UpgradeType
     {
         RBCSpeedLv1,//ÔŒŒ‹…ƒXƒs[ƒh
@@ -82,47 +81,51 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCAmountLv1://ÔŒŒ‹…”
-                if (status.rbcAmount == 1 /*&& OxygenCounter.totalOxygen>=20){
-                            OxygenCounter.totalOxygen -= 20; */)
+                if (status.rbcAmount == 1 && OxygenCounter.totalOxygen >= 20)
                 {
+                    OxygenCounter.totalOxygen -= 20;
                     status.rbcAmount = 2;
-                    rbcSpawner.AddRbcSpawn(1);
+                    //rbcSpawner.AddRbcSpawn(1);
                     Debug.Log("RBCAmountLV1");
                 }
-                break;
-            case UpgradeType.RBCAmountLv2:
-                if (status.rbcAmount == 2 /*&& OxygenCounter.totalOxygen>=35){
-                            OxygenCounter.totalOxygen -= 35; */)
+                else
                 {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
+                    break;
+            case UpgradeType.RBCAmountLv2:
+                if (status.rbcAmount == 2 && OxygenCounter.totalOxygen >= 35)
+                {
+                    OxygenCounter.totalOxygen -= 35;
                     status.rbcAmount = 3;
-                    rbcSpawner.AddRbcSpawn(1);
+                    //rbcSpawner.AddRbcSpawn(1);
                     Debug.Log("RBCAmountLV2");
                 }
                 break;
             case UpgradeType.RBCAmountLv3:
-                if (status.rbcAmount == 3 /*&& OxygenCounter.totalOxygen>=60){
-                            OxygenCounter.totalOxygen -= 60; */)
+                if (status.rbcAmount == 3 && OxygenCounter.totalOxygen >= 60)
                 {
+                    OxygenCounter.totalOxygen -= 60;
                     status.rbcAmount = 5;
-                    rbcSpawner.AddRbcSpawn(2);
+                    //rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV3");
                 }
                 break;
             case UpgradeType.RBCAmountLv4:
-                if (status.rbcAmount == 5 /*&& OxygenCounter.totalOxygen>=85){
-                            OxygenCounter.totalOxygen -= 85; */)
+                if (status.rbcAmount == 5 && OxygenCounter.totalOxygen >= 85)
                 {
+                    OxygenCounter.totalOxygen -= 85;
                     status.rbcAmount = 7;
-                    rbcSpawner.AddRbcSpawn(2);
+                    //rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV4");
                 }
                 break;
             case UpgradeType.RBCAmountLv5:
-                if (status.rbcAmount == 7 /*&& OxygenCounter.totalOxygen>=120){
-                            OxygenCounter.totalOxygen -= 120; */)
+                if (status.rbcAmount == 7 && OxygenCounter.totalOxygen >= 120)
                 {
+                    OxygenCounter.totalOxygen -= 120;
                     status.rbcAmount = 10;
-                    rbcSpawner.AddRbcSpawn(3);
+                    //rbcSpawner.AddRbcSpawn(3);
                     Debug.Log("RBCAmountLV5");
                 }
                 break;
@@ -203,47 +206,47 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.WBCAmountLv1://”’ŒŒ‹…”
-                if (status.wbcAmount == 0 /*&& OxygenCounter.totalOxygen>=15){
-                            OxygenCounter.totalOxygen -= 15; */)
+                if (status.wbcAmount == 0 && OxygenCounter.totalOxygen >= 15)
                 {
+                    OxygenCounter.totalOxygen -= 15;
                     status.wbcAmount = 3;
-                    wbcSpawner.AddWbcSpawn(3);
+                    //wbcSpawner.AddWbcSpawn(3);
                     Debug.Log("WBCAmountLV1");
                 }
                 break;
             case UpgradeType.WBCAmountLv2:
-                if (status.wbcAmount == 3 /*&& OxygenCounter.totalOxygen>=35){
-                            OxygenCounter.totalOxygen -= 35; */)
+                if (status.wbcAmount == 3 && OxygenCounter.totalOxygen >= 35)
                 {
+                    OxygenCounter.totalOxygen -= 35;
                     status.wbcAmount = 8;
-                    wbcSpawner.AddWbcSpawn(5);
+                    //wbcSpawner.AddWbcSpawn(5);
                     Debug.Log("WBCAmountLV2");
                 }
                 break;
             case UpgradeType.WBCAmountLv3:
-                if (status.wbcAmount == 8 /*&& OxygenCounter.totalOxygen>=50){
-                            OxygenCounter.totalOxygen -= 50; */)
+                if (status.wbcAmount == 8 && OxygenCounter.totalOxygen >= 50)
                 {
+                    OxygenCounter.totalOxygen -= 50;
                     status.wbcAmount = 15;
-                    wbcSpawner.AddWbcSpawn(7);
+                    //wbcSpawner.AddWbcSpawn(7);
                     Debug.Log("WBCAmountLV3");
                 }
                 break;
             case UpgradeType.WBCAmountLv4:
-                if (status.wbcAmount == 15 /*&& OxygenCounter.totalOxygen>=80){
-                            OxygenCounter.totalOxygen -= 80; */)
+                if (status.wbcAmount == 15 && OxygenCounter.totalOxygen >= 80)
                 {
+                    OxygenCounter.totalOxygen -= 80;
                     status.wbcAmount = 30;
-                    wbcSpawner.AddWbcSpawn(15);
+                    //wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV4");
                 }
                 break;
             case UpgradeType.WBCAmountLv5:
-                if (status.wbcAmount == 30 /*&& OxygenCounter.totalOxygen>=120){
-                            OxygenCounter.totalOxygen -= 120; */)
+                if (status.wbcAmount == 30 && OxygenCounter.totalOxygen >= 120)
                 {
+                    OxygenCounter.totalOxygen -= 120;
                     status.wbcAmount = 45;
-                    wbcSpawner.AddWbcSpawn(15);
+                    //wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV5");
                 }
                 break;
@@ -360,7 +363,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 10; */)
                 {
                     status.stageTime = 11;
-                    timer.timeRemaining = status.stageTime;
+                    //timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV1");
                 }
                 break;
@@ -369,7 +372,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 30; */)
                 {
                     status.stageTime = 13;
-                    timer.timeRemaining = status.stageTime;
+                    //timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV2");
                 }
                 break;
@@ -378,7 +381,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 45; */)
                 {
                     status.stageTime = 15;
-                    timer.timeRemaining = status.stageTime;
+                    //timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV3");
                 }
                 break;
@@ -387,7 +390,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 70; */)
                 {
                     status.stageTime = 18;
-                    timer.timeRemaining = status.stageTime;
+                    //timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV4");
                 }
                 break;
@@ -396,7 +399,7 @@ public class SkillTree : MonoBehaviour
                             OxygenCounter.totalOxygen -= 100; */)
                 {
                     status.stageTime = 22;
-                    timer.timeRemaining = status.stageTime;
+                    //timer.timeRemaining = status.stageTime;
                     Debug.Log("StageTimeLV5");
                 }
                 break;

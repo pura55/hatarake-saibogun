@@ -5,7 +5,7 @@ public class Goal : MonoBehaviour
     public GameObject goalText;
     public GameObject blackPanel;
 
-    public ResultManager resultManager;
+    public ResultManager resultmanager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,7 +19,7 @@ public class Goal : MonoBehaviour
             goalText.SetActive(true);
 
             // リザルト表示
-            resultManager.ShowResult();
+            resultmanager.ShowResult();
         }
 
         // プレイヤーを停止

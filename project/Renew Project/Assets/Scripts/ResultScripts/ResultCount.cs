@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 
 public class ResultManager : MonoBehaviour
+//public class ResultCount : MonoBehaviour
 {
     public GameObject resultPanel;
     public TextMeshProUGUI oxygenValueText;

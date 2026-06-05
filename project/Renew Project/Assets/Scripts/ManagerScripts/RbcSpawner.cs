@@ -16,10 +16,13 @@ public class RbcSpawner : MonoBehaviour
     public GameObject rbcToSpawn;
     public Vector3 spawnRange = new Vector3(4.1f, 4.5f, 0f);
     public Timer timer;
+    public StatusSkill status;
     #endregion
 
     void Start()
     {
+        currentSpawnIndex = status.rbcAmount;
+
         RbcSpawn();
     }
 
