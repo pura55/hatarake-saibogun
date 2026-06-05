@@ -24,6 +24,9 @@ public class ResultManager : MonoBehaviour
 
     public void ShowGoalResult()
     {
+        // 酸素の数を集計
+        OxygenCounter.OxygenTotaling();
+
         UpdateOxygenText();
 
         // リザルト表示
@@ -32,7 +35,9 @@ public class ResultManager : MonoBehaviour
 
     public void ShowTimeResult()
     {
-        Debug.Log("ShowTimeResultが呼ばれています");
+        // 現在所持している酸素を破棄
+        OxygenCounter.DeleteCurrentOxygen();
+
         UpdateOxygenText();
 
         // リザルト表示
