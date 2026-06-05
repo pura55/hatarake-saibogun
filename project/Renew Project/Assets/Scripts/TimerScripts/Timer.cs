@@ -9,6 +9,8 @@ public class Timer : MonoBehaviour
 
     public TextMeshProUGUI timerText;
 
+    public bool isStop = false;
+
     void Start()
     {
         timeRemaining = status.stageTime;
@@ -16,6 +18,12 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        // タイマー停止中なら何もしない
+        if (isStop)
+        {
+            return;
+        }
+
         if (timeRemaining > 1)
         {
             // 時間を減らす

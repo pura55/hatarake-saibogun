@@ -3,7 +3,11 @@ using UnityEngine;
 public class Timeup : MonoBehaviour
 {
     public Timer timer;
-    bool log = true;
+    public GameObject timeResultPanel;
+
+    public ResultManager resultmanager;
+
+    bool log = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,10 +23,13 @@ public class Timeup : MonoBehaviour
             if (log)
             {
                 Debug.Log("タイムアップ！");
-                log = false;
+                log = true;
                 return;
             }
-            
+
+            timeResultPanel.SetActive(true);
+            // リザルト表示
+            resultmanager.ShowTimeResult();
         }
     }
 }

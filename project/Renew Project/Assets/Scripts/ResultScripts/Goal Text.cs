@@ -7,11 +7,16 @@ public class Goal : MonoBehaviour
 
     public ResultManager resultmanager;
 
+    public Timer timer;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // プレイヤーがゴールに触れたら
         if (collision.CompareTag("RBC"))
         {
+            // タイマー停止
+            timer.isStop = true;
+
             // 黒幕表示
             blackPanel.SetActive(true);
 
@@ -19,7 +24,7 @@ public class Goal : MonoBehaviour
             goalText.SetActive(true);
 
             // リザルト表示
-            resultmanager.ShowResult();
+            resultmanager.ShowGoalResult();
         }
 
         // プレイヤーを停止

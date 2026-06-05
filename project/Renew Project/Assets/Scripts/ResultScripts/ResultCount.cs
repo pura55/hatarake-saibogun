@@ -4,18 +4,38 @@ using TMPro;
 public class ResultManager : MonoBehaviour
 //public class ResultCount : MonoBehaviour
 {
-    public GameObject resultPanel;
-    public TextMeshProUGUI oxygenValueText;
+    public GameObject goalResultPanel;
+    public GameObject timeResultPanel;
+    public TextMeshProUGUI goalOxygenValueText;
+    public TextMeshProUGUI timeOxygenValueText;
 
-    public void ShowResult()
+    private void UpdateOxygenText()
     {
         // 0～99999に制限
         int oxygen = Mathf.Clamp(OxygenCounter.totalOxygen, 0, 99999);
+        Debug.Log(oxygen);
 
         // 数字表示
-        oxygenValueText.text = oxygen.ToString();
+        goalOxygenValueText.text = oxygen.ToString();
+        timeOxygenValueText.text = oxygen.ToString();
+
+
+    }
+
+    public void ShowGoalResult()
+    {
+        UpdateOxygenText();
 
         // リザルト表示
-        resultPanel.SetActive(true);
+        goalResultPanel.SetActive(true);
+    }
+
+    public void ShowTimeResult()
+    {
+        Debug.Log("ShowTimeResultが呼ばれています");
+        UpdateOxygenText();
+
+        // リザルト表示
+        timeResultPanel.SetActive(true);
     }
 }
