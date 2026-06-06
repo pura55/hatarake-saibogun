@@ -48,3 +48,4 @@ MonoBehaviour:
   rbcToSpawn: {fileID: 7826815390545683252, guid: 7f4963213a1a4624e80b4cd7ad8b319d, type: 3}
   spawnRange: {x: 4.1, y: 2.25, z: 0}
   timer: {fileID: 0}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}

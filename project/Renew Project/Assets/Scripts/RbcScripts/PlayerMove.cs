@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     #region Config 
     //[SerializeField]をつけると、Unityエディタ上でこの変数を編集できるようになる
 
-    [SerializeField] private float speed = 3f;//移動速度
+    [SerializeField] private float speed = 5f;//移動速度
     [SerializeField] public float effectedTime = 2f;//効果を受ける時間
     #endregion
 
@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
     private bool isEffectedEnemy = false;//敵からの効果のフラッグ(true:効果を受けている, false:効果を受けていない)
     private bool isGoal = false;         //ゴールしたかどうか
     private float currentEffectedTime = 0f; //現在の効果時間
+    public StatusSkill status;
     #endregion
 
     public void SetIsEffectedEnemy(bool isEffected) { isEffectedEnemy = isEffected; }
@@ -31,6 +32,7 @@ public class PlayerMove : MonoBehaviour
     #region Unity Lifecycle
     void Start()
     {
+        speed = status.rbcSpeed;
     }
     void Update()
     {
@@ -74,7 +76,7 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            speed = 3f;
+            speed = status.rbcSpeed;
         }
 
         //目標がある場合、プレイヤーを目標に向かって移動させる

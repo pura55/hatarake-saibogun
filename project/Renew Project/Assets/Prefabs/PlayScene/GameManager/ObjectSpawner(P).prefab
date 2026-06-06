@@ -47,3 +47,4 @@ MonoBehaviour:
   currentSpawnIndex: 1
   plateletToSpawn: {fileID: 960205184641188635, guid: 545c67cf17a0cd94b8029e72e2630a1c, type: 3}
   spawnRange: {x: 4.1, y: 2, z: 0}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}

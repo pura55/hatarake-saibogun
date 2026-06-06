@@ -10,10 +10,12 @@ public class PlateletSpawner : MonoBehaviour
     #region State
     public GameObject plateletToSpawn;
     public Vector3 spawnRange = new Vector3(4.1f, 4.5f, 0f);
+    public StatusSkill status;
     #endregion
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentSpawnIndex = status.pltAmount;
         PlateletSpawn();
     }
     void PlateletSpawn()

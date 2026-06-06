@@ -6,7 +6,7 @@ public class EnemyDetection : MonoBehaviour
     public float followSpeed = 3f; // ’Ç]‘¬“x
     public float detectRange = 1f; // ŒŸ’m”ÍˆÍ
     public const float freezingTime = 1f; //d’¼ŠÔ
-    public const float effectedTime = 3f; //”’ŒŒ‹…‚ÌŒø‰ÊŠÔ
+    public /*const*/ float effectedTime = 3f; //”’ŒŒ‹…‚ÌŒø‰ÊŠÔ
     #endregion
 
     #region State
@@ -17,6 +17,7 @@ public class EnemyDetection : MonoBehaviour
     private bool isEffect = false;          //”’ŒŒ‹…‚ÌŒø‰Ê‚ğó‚¯‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
     private float currentFreezTime = 0f;    //d’¼Œo‰ßŠÔ
     private float currentEffectedTime = 0f; //Œø‰ÊŒp‘±ŠÔ
+    public StatusSkill status;
     #endregion
 
     public void SetIsFreez(bool freez) { isFreez = freez; }
@@ -25,7 +26,7 @@ public class EnemyDetection : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        effectedTime = status.wbcTime;
     }
 
     // Update is called once per frame

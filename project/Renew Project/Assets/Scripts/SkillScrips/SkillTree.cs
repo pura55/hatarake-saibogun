@@ -4,8 +4,6 @@ using UnityEngine;
 public class SkillTree : MonoBehaviour
 {
     public StatusSkill status;
-    //public RbcSpawner rbcSpawner;
-    //public WbcSpawner wbcSpawner;
     public Timer timer;
     public enum UpgradeType
     {
@@ -56,27 +54,39 @@ public class SkillTree : MonoBehaviour
         switch (upgradeType)
         {
             case UpgradeType.RBCSpeedLv1://ÔŒŒ‹…ƒXƒs[ƒh
-                if (status.rbcSpeed == 5f /*&& OxygenCounter.totalOxygen>=10) {
-                            OxygenCounter.totalOxygen -= 10;     //Ž_‘fÁ”ï*/)
+                if (status.rbcSpeed == 5f && OxygenCounter.totalOxygen >= 10)
                 {
+                    OxygenCounter.totalOxygen -= 10;     //Ž_‘fÁ”ï
                     status.rbcSpeed = 5.2f;
                     Debug.Log("RBCSpeedLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCSpeedLv2:
-                if (status.rbcSpeed == 5.2f /*&& OxygenCounter.totalOxygen>=25){
-                            OxygenCounter.totalOxygen -= 25; */)
+                if (status.rbcSpeed == 5.2f && OxygenCounter.totalOxygen >= 25)
                 {
+                    OxygenCounter.totalOxygen -= 25;
                     status.rbcSpeed = 5.5f;
                     Debug.Log("RBCSpeedLV2");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCSpeedLv3:
-                if (status.rbcSpeed == 5.5f /*&& OxygenCounter.totalOxygen>=50){
-                            OxygenCounter.totalOxygen -= 50; */)
+                if (status.rbcSpeed == 5.5f && OxygenCounter.totalOxygen >= 50)
                 {
+                    OxygenCounter.totalOxygen -= 50;
                     status.rbcSpeed = 5.75f;
                     Debug.Log("RBCSpeedLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
@@ -101,6 +111,10 @@ public class SkillTree : MonoBehaviour
                     //rbcSpawner.AddRbcSpawn(1);
                     Debug.Log("RBCAmountLV2");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCAmountLv3:
                 if (status.rbcAmount == 3 && OxygenCounter.totalOxygen >= 60)
@@ -109,6 +123,10 @@ public class SkillTree : MonoBehaviour
                     status.rbcAmount = 5;
                     //rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.RBCAmountLv4:
@@ -119,6 +137,10 @@ public class SkillTree : MonoBehaviour
                     //rbcSpawner.AddRbcSpawn(2);
                     Debug.Log("RBCAmountLV4");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCAmountLv5:
                 if (status.rbcAmount == 7 && OxygenCounter.totalOxygen >= 120)
@@ -128,80 +150,120 @@ public class SkillTree : MonoBehaviour
                     //rbcSpawner.AddRbcSpawn(3);
                     Debug.Log("RBCAmountLV5");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
 
             case UpgradeType.RBCHaveLv1://Ž‚Ä‚éŽ_‘f”
-                if (status.rbcHave == 1 /*&& OxygenCounter.totalOxygen>=10){
-                            OxygenCounter.totalOxygen -= 10; */)
+                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= 10)
                 {
+                    OxygenCounter.totalOxygen -= 10;
                     status.rbcHave = 2;
                     Debug.Log("RBCHaveLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCHaveLv2:
-                if (status.rbcHave == 2 /*&& OxygenCounter.totalOxygen>=20){
-                            OxygenCounter.totalOxygen -= 20; */)
+                if (status.rbcHave == 2 && OxygenCounter.totalOxygen >= 20)
                 {
+                    OxygenCounter.totalOxygen -= 20;
                     status.rbcHave = 3;
                     Debug.Log("RBCHaveLV2");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.RBCHaveLv3:
-                if (status.rbcHave == 3 /*&& OxygenCounter.totalOxygen>=50){
-                            OxygenCounter.totalOxygen -= 50;*/)
+                if (status.rbcHave == 3 && OxygenCounter.totalOxygen >= 50)
                 {
+                    OxygenCounter.totalOxygen -= 50;
                     status.rbcHave = 5;
                     Debug.Log("RBCHaveLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
             case UpgradeType.WBCTimeLv1://—}‚¦‚éŽžŠÔ
-                if (status.wbcTime == 2.0f /*&& OxygenCounter.totalOxygen>=10){
-                            OxygenCounter.totalOxygen -= 10; */)
+                if (status.wbcTime == 2.0f && OxygenCounter.totalOxygen >= 10)
                 {
+                    OxygenCounter.totalOxygen -= 10;
                     status.wbcTime = 2.4f;
                     Debug.Log("WBCTimeLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCTimeLv2:
-                if (status.wbcTime == 2.4f /*&& OxygenCounter.totalOxygen>=25){
-                            OxygenCounter.totalOxygen -= 25; */)
+                if (status.wbcTime == 2.4f && OxygenCounter.totalOxygen >= 25)
                 {
+                    OxygenCounter.totalOxygen -= 25;
                     status.wbcTime = 3.0f;
                     Debug.Log("WBCTimeLV2");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCTimeLv3:
-                if (status.wbcTime == 3.0f /*&& OxygenCounter.totalOxygen>=50){
-                            OxygenCounter.totalOxygen -= 50; */)
+                if (status.wbcTime == 3.0f && OxygenCounter.totalOxygen >= 50)
                 {
+                    OxygenCounter.totalOxygen -= 50;
                     status.wbcTime = 4.0f;
                     Debug.Log("WBCTimeLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
             case UpgradeType.WBCRangeLv1://ƒEƒCƒ‹ƒXŠ´’m”ÍˆÍ
-                if (status.wbcRange == 1.0f /*&& OxygenCounter.totalOxygen>=10){
-                            OxygenCounter.totalOxygen -= 10; */)
+                if (status.wbcRange == 1.0f && OxygenCounter.totalOxygen >= 10)
                 {
+                    OxygenCounter.totalOxygen -= 10;
                     status.wbcRange = 1.2f;
                     Debug.Log("WBCRangeLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCRangeLv2:
-                if (status.wbcRange == 1.2f /*&& OxygenCounter.totalOxygen>=25) {
-                            OxygenCounter.totalOxygen -= 25; */)
+                if (status.wbcRange == 1.2f && OxygenCounter.totalOxygen >= 25)
                 {
+                    OxygenCounter.totalOxygen -= 25;
                     status.wbcRange = 1.5f;
                     Debug.Log("WBCRangeLV2");
                 }
-                break;
-            case UpgradeType.WBCRangeLv3:
-                if (status.wbcRange == 1.5f /*&& OxygenCounter.totalOxygen>=60){
-                            OxygenCounter.totalOxygen -= 60; */)
+                else
                 {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
+        break;
+            case UpgradeType.WBCRangeLv3:
+                if (status.wbcRange == 1.5f && OxygenCounter.totalOxygen >= 60)
+                {
+                    OxygenCounter.totalOxygen -= 60;
                     status.wbcRange = 2.0f;
                     Debug.Log("WBCRangeLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
@@ -213,6 +275,10 @@ public class SkillTree : MonoBehaviour
                     //wbcSpawner.AddWbcSpawn(3);
                     Debug.Log("WBCAmountLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCAmountLv2:
                 if (status.wbcAmount == 3 && OxygenCounter.totalOxygen >= 35)
@@ -221,6 +287,10 @@ public class SkillTree : MonoBehaviour
                     status.wbcAmount = 8;
                     //wbcSpawner.AddWbcSpawn(5);
                     Debug.Log("WBCAmountLV2");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.WBCAmountLv3:
@@ -231,6 +301,10 @@ public class SkillTree : MonoBehaviour
                     //wbcSpawner.AddWbcSpawn(7);
                     Debug.Log("WBCAmountLV3");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCAmountLv4:
                 if (status.wbcAmount == 15 && OxygenCounter.totalOxygen >= 80)
@@ -240,6 +314,10 @@ public class SkillTree : MonoBehaviour
                     //wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV4");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.WBCAmountLv5:
                 if (status.wbcAmount == 30 && OxygenCounter.totalOxygen >= 120)
@@ -248,6 +326,10 @@ public class SkillTree : MonoBehaviour
                     status.wbcAmount = 45;
                     //wbcSpawner.AddWbcSpawn(15);
                     Debug.Log("WBCAmountLV5");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
@@ -277,43 +359,63 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.PLTAmountLv1://ŒŒ¬”Â”
-                if (status.pltAmount == 0 /*&& OxygenCounter.totalOxygen>=15){
-                            OxygenCounter.totalOxygen -= 15; */)
+                if (status.pltAmount == 0 && OxygenCounter.totalOxygen >= 15)
                 {
+                    OxygenCounter.totalOxygen -= 15;
                     status.pltAmount = 10;
                     Debug.Log("PLTAmountLV1");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.PLTAmountLv2:
-                if (status.pltAmount == 10 /*&& OxygenCounter.totalOxygen>=35){
-                            OxygenCounter.totalOxygen -= 35; */)
+                if (status.pltAmount == 10 && OxygenCounter.totalOxygen >= 35)
                 {
+                    OxygenCounter.totalOxygen -= 35;
                     status.pltAmount = 18;
                     Debug.Log("PLTAmountLV2");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.PLTAmountLv3:
-                if (status.pltAmount == 18 /*&& OxygenCounter.totalOxygen>=50){
-                            OxygenCounter.totalOxygen -= 50;*/)
+                if (status.pltAmount == 18 && OxygenCounter.totalOxygen >= 50)
                 {
-                    status.pltAmount  = 25;
+                    OxygenCounter.totalOxygen -= 50;
+                    status.pltAmount = 25;
                     Debug.Log("PLTAmountLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.PLTAmountLv4:
-                if (status.pltAmount == 25 /*&& OxygenCounter.totalOxygen>=80) {
-                            OxygenCounter.totalOxygen -= 80; */)
+                if (status.pltAmount == 25 && OxygenCounter.totalOxygen >= 80)
                 {
+                    OxygenCounter.totalOxygen -= 80;
                     status.pltAmount = 40;
                     Debug.Log("PLTAmountLV4");
                 }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
                 break;
             case UpgradeType.PLTAmountLv5:
-                if (status.pltAmount == 40 /*&& OxygenCounter.totalOxygen>=120){
-                            OxygenCounter.totalOxygen -= 120; */)
+                if (status.pltAmount == 40 && OxygenCounter.totalOxygen >= 120)
                 {
+                    OxygenCounter.totalOxygen -= 120;
                     status.pltAmount = 60;
                     Debug.Log("PLTAmountLV5");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 

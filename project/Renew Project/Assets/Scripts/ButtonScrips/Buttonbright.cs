@@ -23,10 +23,24 @@ public class Buttonbright : MonoBehaviour
 
     public Image image;
     
-    bool isOn = false;
+
     void Start()
     {
         image = GetComponent<Image>();
+        RefreshButton();
+    }
+    void RefreshButton()
+    {
+        int currentLevel = GetCurrentLevel();
+
+        if (currentLevel > myLevel)
+        {
+            image.color = Color.white;
+        }
+        //else
+        //{
+        //    image.color = Color.gray;
+        //}
     }
     public void Bright()
     {
@@ -36,12 +50,9 @@ public class Buttonbright : MonoBehaviour
             Debug.Log("èáî‘Ç™à·Ç§");
             return;
         }
-        if (!isOn)
-        {
-            image.color = Color.white;
-            isOn = true;
-            AddLevel();
-        }
+
+        AddLevel();
+        RefreshButton();
     }
     int GetCurrentLevel()
     {

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusSkill
   rbcSpeed: 5
   rbcAmount: 1
-  rbcHave: 1
+  rbcHave: 7
   wbcTime: 2
   wbcRange: 1
   wbcAmount: 0

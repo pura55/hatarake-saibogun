@@ -47,3 +47,4 @@ MonoBehaviour:
   currentSpawnIndex: 1
   wbcToSpawn: {fileID: 2104101604759121645, guid: 68eabd087621be0468ee57ea9a1da6cf, type: 3}
   spawnRange: {x: 4.1, y: 2.25, z: 0}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}

@@ -172,7 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   followSpeed: 1
   detectRange: 4
+  effectedTime: 3
   enemySkills: {fileID: 3193364201308228552}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
 --- !u!114 &3193364201308228552
 MonoBehaviour:
   m_ObjectHideFlags: 0

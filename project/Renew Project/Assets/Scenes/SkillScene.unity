@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 1
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &45671915
 MonoBehaviour:
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 7
-  myLevel: 0
+  myLevel: 4
   image: {fileID: 0}
 --- !u!114 &108511411
 MonoBehaviour:
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 7
-  myLevel: 0
+  myLevel: 3
   image: {fileID: 0}
 --- !u!114 &209710144
 MonoBehaviour:
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 6
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &278217233
 MonoBehaviour:
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 6
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &334660699
 MonoBehaviour:
@@ -1864,7 +1864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 0
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &386813162
 MonoBehaviour:
@@ -2101,7 +2101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 2
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &421978671
 MonoBehaviour:
@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 5
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &431227728
 MonoBehaviour:
@@ -2453,7 +2453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 4
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &513008179
 MonoBehaviour:
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 1
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &527965572
 MonoBehaviour:
@@ -2981,7 +2981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 5
-  myLevel: 0
+  myLevel: 4
   image: {fileID: 0}
 --- !u!114 &610481771
 MonoBehaviour:
@@ -3157,7 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 1
-  myLevel: 0
+  myLevel: 4
   image: {fileID: 0}
 --- !u!114 &635741943
 MonoBehaviour:
@@ -3377,7 +3377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 7
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &725117711
 MonoBehaviour:
@@ -3553,7 +3553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 8
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &734337485
 MonoBehaviour:
@@ -3905,7 +3905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 7
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &848136695
 MonoBehaviour:
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 9
-  myLevel: 0
+  myLevel: 4
   image: {fileID: 0}
 --- !u!114 &889591781
 MonoBehaviour:
@@ -4433,7 +4433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 8
-  myLevel: 0
+  myLevel: 3
   image: {fileID: 0}
 --- !u!114 &922242560
 MonoBehaviour:
@@ -4785,7 +4785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 5
-  myLevel: 0
+  myLevel: 3
   image: {fileID: 0}
 --- !u!114 &983824671
 MonoBehaviour:
@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 8
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &1036406193
 MonoBehaviour:
@@ -5137,7 +5137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 9
-  myLevel: 0
+  myLevel: 3
   image: {fileID: 0}
 --- !u!114 &1097145104
 MonoBehaviour:
@@ -5819,7 +5819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 3
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &1292378410
 MonoBehaviour:
@@ -5995,7 +5995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 9
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &1305054892
 MonoBehaviour:
@@ -6171,7 +6171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 9
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &1321319824
 MonoBehaviour:
@@ -6523,7 +6523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 2
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &1349220677
 MonoBehaviour:
@@ -6699,7 +6699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 3
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &1361305585
 MonoBehaviour:
@@ -7051,7 +7051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 1
-  myLevel: 0
+  myLevel: 3
   image: {fileID: 0}
 --- !u!114 &1541568521
 MonoBehaviour:
@@ -7364,7 +7364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 0
-  myLevel: 0
+  myLevel: 2
   image: {fileID: 0}
 --- !u!114 &1836158767
 MonoBehaviour:
@@ -7540,7 +7540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 4
-  myLevel: 0
+  myLevel: 1
   image: {fileID: 0}
 --- !u!114 &1878646876
 MonoBehaviour:
@@ -7818,7 +7818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttonbright
   skillType: 8
-  myLevel: 0
+  myLevel: 4
   image: {fileID: 0}
 --- !u!114 &2037179966
 MonoBehaviour:
