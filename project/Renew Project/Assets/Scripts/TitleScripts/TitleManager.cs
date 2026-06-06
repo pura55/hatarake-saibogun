@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//’S“–ÒGÎì“V”n
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif

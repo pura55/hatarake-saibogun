@@ -10,6 +10,8 @@ public static class OxygenCounter
     public static int totalOxygen = 0;
     private static int currentOxygen = 0;
 
+    public static int CurrentOxygen => currentOxygen;
+
     public static void Add(int amount = 1)
     {
         currentOxygen += amount;

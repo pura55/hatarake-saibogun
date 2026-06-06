@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//’S“–ÒGÎì“V”n
+
 public class Goal : MonoBehaviour
 {
     public GameObject goalText;

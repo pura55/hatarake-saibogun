@@ -3,6 +3,8 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
 
+//’S“–ÒGÎì“V”n
+
 //Unity‚Ì’†‚©‚çˆø—p‚·‚é
 public class AudioSettingUI : MonoBehaviour
 {

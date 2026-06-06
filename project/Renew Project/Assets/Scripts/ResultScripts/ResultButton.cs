@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//担当者；石川天馬
+
 public class ResultButton : MonoBehaviour
 {
     //SkillTreeボタンを押したらSkillSceneへ移行
