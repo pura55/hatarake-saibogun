@@ -29,7 +29,7 @@ public class Buttonbright : MonoBehaviour
         image = GetComponent<Image>();
         RefreshButton();
     }
-    void RefreshButton()
+    public void RefreshButton()
     {
         int currentLevel = GetCurrentLevel();
 
@@ -51,8 +51,8 @@ public class Buttonbright : MonoBehaviour
             return;
         }
 
-        AddLevel();
-        RefreshButton();
+        //AddLevel();
+        //RefreshButton();
     }
     int GetCurrentLevel()
     {
@@ -92,7 +92,7 @@ public class Buttonbright : MonoBehaviour
         return 0;
     }
 
-    void AddLevel()
+    public void AddLevel()
     {
         switch (skillType)
         {

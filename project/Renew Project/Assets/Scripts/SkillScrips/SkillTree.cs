@@ -5,6 +5,7 @@ public class SkillTree : MonoBehaviour
 {
     public StatusSkill status;
     public Timer timer;
+    public Buttonbright buttonBright;
     public enum UpgradeType
     {
         RBCSpeedLv1,//ÔŒŒ‹…ƒXƒs[ƒh
@@ -58,6 +59,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 10;     //Ž_‘fÁ”ï
                     status.rbcSpeed = 5.2f;
+                    SkillUnlock.rbcSpeedLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCSpeedLV1");
                 }
                 else
@@ -70,6 +73,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 25;
                     status.rbcSpeed = 5.5f;
+                    SkillUnlock.rbcSpeedLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCSpeedLV2");
                 }
                 else
@@ -82,6 +87,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 50;
                     status.rbcSpeed = 5.75f;
+                    SkillUnlock.rbcSpeedLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCSpeedLV3");
                 }
                 else
@@ -94,8 +101,9 @@ public class SkillTree : MonoBehaviour
                 if (status.rbcAmount == 1 && OxygenCounter.totalOxygen >= 20)
                 {
                     OxygenCounter.totalOxygen -= 20;
-                    status.rbcAmount = 2;
-                    //rbcSpawner.AddRbcSpawn(1);
+                    status.rbcAmount = 2; 
+                    SkillUnlock.rbcAmountLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV1");
                 }
                 else
@@ -108,7 +116,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 35;
                     status.rbcAmount = 3;
-                    //rbcSpawner.AddRbcSpawn(1);
+                    SkillUnlock.rbcAmountLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV2");
                 }
                 else
@@ -121,7 +130,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 60;
                     status.rbcAmount = 5;
-                    //rbcSpawner.AddRbcSpawn(2);
+                    SkillUnlock.rbcAmountLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV3");
                 }
                 else
@@ -134,7 +144,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 85;
                     status.rbcAmount = 7;
-                    //rbcSpawner.AddRbcSpawn(2);
+                    SkillUnlock.rbcAmountLevel = 4;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV4");
                 }
                 else
@@ -147,7 +158,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 120;
                     status.rbcAmount = 10;
-                    //rbcSpawner.AddRbcSpawn(3);
+                    SkillUnlock.rbcAmountLevel = 5;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV5");
                 }
                 else
@@ -161,6 +173,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 10;
                     status.rbcHave = 2;
+                    SkillUnlock.rbcHaveLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCHaveLV1");
                 }
                 else
@@ -173,6 +187,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 20;
                     status.rbcHave = 3;
+                    SkillUnlock.rbcHaveLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCHaveLV2");
                 }
                 else
@@ -185,6 +201,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 50;
                     status.rbcHave = 5;
+                    SkillUnlock.rbcHaveLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("RBCHaveLV3");
                 }
                 else
@@ -197,7 +215,9 @@ public class SkillTree : MonoBehaviour
                 if (status.wbcTime == 2.0f && OxygenCounter.totalOxygen >= 10)
                 {
                     OxygenCounter.totalOxygen -= 10;
-                    status.wbcTime = 2.4f;
+                    status.wbcTime = 2.4f; 
+                    SkillUnlock.wbcTimeLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCTimeLV1");
                 }
                 else
@@ -210,6 +230,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 25;
                     status.wbcTime = 3.0f;
+                    SkillUnlock.wbcTimeLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCTimeLV2");
                 }
                 else
@@ -222,6 +244,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 50;
                     status.wbcTime = 4.0f;
+                    SkillUnlock.wbcTimeLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCTimeLV3");
                 }
                 else
@@ -235,6 +259,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 10;
                     status.wbcRange = 1.2f;
+                    SkillUnlock.wbcRangeLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCRangeLV1");
                 }
                 else
@@ -247,6 +273,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 25;
                     status.wbcRange = 1.5f;
+                    SkillUnlock.wbcRangeLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCRangeLV2");
                 }
                 else
@@ -259,6 +287,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 60;
                     status.wbcRange = 2.0f;
+                    SkillUnlock.wbcRangeLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCRangeLV3");
                 }
                 else
@@ -272,7 +302,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 15;
                     status.wbcAmount = 3;
-                    //wbcSpawner.AddWbcSpawn(3);
+                    SkillUnlock.wbcAmountLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV1");
                 }
                 else
@@ -285,7 +316,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 35;
                     status.wbcAmount = 8;
-                    //wbcSpawner.AddWbcSpawn(5);
+                    SkillUnlock.wbcAmountLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV2");
                 }
                 else
@@ -298,7 +330,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 50;
                     status.wbcAmount = 15;
-                    //wbcSpawner.AddWbcSpawn(7);
+                    SkillUnlock.wbcAmountLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV3");
                 }
                 else
@@ -311,7 +344,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 80;
                     status.wbcAmount = 30;
-                    //wbcSpawner.AddWbcSpawn(15);
+                    SkillUnlock.wbcAmountLevel = 4;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV4");
                 }
                 else
@@ -324,7 +358,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 120;
                     status.wbcAmount = 45;
-                    //wbcSpawner.AddWbcSpawn(15);
+                    SkillUnlock.wbcAmountLevel = 5;
+                    buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV5");
                 }
                 else
@@ -363,6 +398,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 15;
                     status.pltAmount = 10;
+                    SkillUnlock.pltAmountLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV1");
                 }
                 else
@@ -375,6 +412,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 35;
                     status.pltAmount = 18;
+                    SkillUnlock.pltAmountLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV2");
                 }
                 else
@@ -387,6 +426,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 50;
                     status.pltAmount = 25;
+                    SkillUnlock.pltAmountLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV3");
                 }
                 else
@@ -399,6 +440,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 80;
                     status.pltAmount = 40;
+                    SkillUnlock.pltAmountLevel = 4;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV4");
                 }
                 else
@@ -411,6 +454,8 @@ public class SkillTree : MonoBehaviour
                 {
                     OxygenCounter.totalOxygen -= 120;
                     status.pltAmount = 60;
+                    SkillUnlock.pltAmountLevel = 5;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV5");
                 }
                 else
