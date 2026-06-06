@@ -293,7 +293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 11
 --- !u!1 &10475020
@@ -549,7 +548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 3
 --- !u!1 &45671907
@@ -726,7 +724,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 4
 --- !u!1 &108511403
@@ -903,7 +900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 29
 --- !u!1 &209710136
@@ -1080,7 +1076,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 28
 --- !u!1 &267132304
@@ -1119,7 +1114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -200}
+  m_AnchoredPosition: {x: 274, y: -178}
   m_SizeDelta: {x: 160, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &267132306
@@ -1390,7 +1385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 23
 --- !u!1 &334660691
@@ -1567,7 +1561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 24
 --- !u!1 &344151199
@@ -1886,7 +1879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 1
 --- !u!1001 &398082542
@@ -2124,7 +2116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 10
 --- !u!1 &431227720
@@ -2301,7 +2292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 19
 --- !u!1 &513008171
@@ -2478,7 +2468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 15
 --- !u!1 &527965564
@@ -2655,7 +2644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 5
 --- !u!1 &596352893
@@ -2832,7 +2820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 18
 --- !u!1 &610481763
@@ -3009,7 +2996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 21
 --- !u!1 &635741935
@@ -3186,7 +3172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 7
 --- !u!1 &693109751
@@ -3407,7 +3392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 26
 --- !u!1 &734337477
@@ -3584,7 +3568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 36
 --- !u!1 &777302632
@@ -3761,7 +3744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 8
 --- !u!1 &848136687
@@ -3938,7 +3920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 27
 --- !u!1 &875147582
@@ -4115,7 +4096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 14
 --- !u!1 &889591773
@@ -4292,7 +4272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 34
 --- !u!1 &922242552
@@ -4469,7 +4448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 38
 --- !u!1 &972538652
@@ -4646,7 +4624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 35
 --- !u!1 &983824663
@@ -4823,7 +4800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 20
 --- !u!1 &1036406185
@@ -5000,7 +4976,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 37
 --- !u!1 &1097145096
@@ -5177,7 +5152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 33
 --- !u!1 &1164184390
@@ -5354,7 +5328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 30
 --- !u!1 &1221345606
@@ -5685,7 +5658,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 25
 --- !u!1 &1292378402
@@ -5862,7 +5834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 13
 --- !u!1 &1305054884
@@ -6039,7 +6010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 31
 --- !u!1 &1321319816
@@ -6216,7 +6186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 32
 --- !u!1 &1328646476
@@ -6393,7 +6362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 17
 --- !u!1 &1349220669
@@ -6570,7 +6538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 9
 --- !u!1 &1361305577
@@ -6747,7 +6714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 12
 --- !u!1 &1510958417
@@ -6924,7 +6890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 22
 --- !u!1 &1541568513
@@ -7101,7 +7066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 6
 --- !u!1 &1674556790
@@ -7415,7 +7379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 2
 --- !u!1 &1878646868
@@ -7592,7 +7555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 16
 --- !u!1 &1933245070
@@ -7871,7 +7833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 39
 --- !u!1 &2064721462
@@ -8185,7 +8146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  wbcSpawner: {fileID: 0}
   timer: {fileID: 0}
   upgradeType: 0
 --- !u!1660057539 &9223372036854775807
