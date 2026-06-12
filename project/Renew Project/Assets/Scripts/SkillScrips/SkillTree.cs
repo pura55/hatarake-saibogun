@@ -253,7 +253,7 @@ public class SkillTree : MonoBehaviour
                     Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
-
+                //‚Ü‚¾
             case UpgradeType.WBCRangeLv1://ƒEƒCƒ‹ƒXŠ´’m”ÍˆÍ
                 if (status.wbcRange == 1.0f && OxygenCounter.totalOxygen >= 10)
                 {
@@ -296,7 +296,7 @@ public class SkillTree : MonoBehaviour
                     Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
-
+                //
             case UpgradeType.WBCAmountLv1://”’ŒŒ‹…”
                 if (status.wbcAmount == 0 && OxygenCounter.totalOxygen >= 15)
                 {
@@ -369,27 +369,45 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.PLTCureLv1://‰ñ•œ‘¬“x
-                if (status.pltCure == 1.0f /*&& OxygenCounter.totalOxygen>=15){
-                            OxygenCounter.totalOxygen -= 15; */)
+                if (status.pltCure == 1.0f && OxygenCounter.totalOxygen >= 15)
                 {
+                    OxygenCounter.totalOxygen -= 15;
                     status.pltCure = 1.2f;
+                    SkillUnlock.pltCureLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTCureLV1");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.PLTCureLv2:
-                if (status.pltCure == 1.2f /*&& OxygenCounter.totalOxygen>=30){
-                            OxygenCounter.totalOxygen -= 30; */)
+                if (status.pltCure == 1.2f && OxygenCounter.totalOxygen >= 30)
                 {
+                    OxygenCounter.totalOxygen -= 30;
                     status.pltCure = 1.5f;
+                    SkillUnlock.pltCureLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTCureLV2");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.PLTCureLv3:
-                if (status.pltCure == 1.5f /*&& OxygenCounter.totalOxygen>=60){
-                            OxygenCounter.totalOxygen -= 60; */)
+                if (status.pltCure == 1.5f && OxygenCounter.totalOxygen >= 60)
                 {
+                    OxygenCounter.totalOxygen -= 60;
                     status.pltCure = 1.8f;
+                    SkillUnlock.pltCureLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("PLTCureLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
 
@@ -463,91 +481,151 @@ public class SkillTree : MonoBehaviour
                     Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
-
+                //‚Ü‚¾
             case UpgradeType.StageOxLv1://ƒXƒe[ƒW‚ÌŽ_‘f—Ê
-                if (status.stageOx == 30 /*&& OxygenCounter.totalOxygen>=15){
-                            OxygenCounter.totalOxygen -= 15; */)
+                if (status.stageOx == 30 && OxygenCounter.totalOxygen >= 15)
                 {
+                    OxygenCounter.totalOxygen -= 15;
                     status.stageOx = 35;
+                    SkillUnlock.stageOxLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageOxLV1");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageOxLv2:
-                if (status.stageOx == 35 /*&& OxygenCounter.totalOxygen>=30){
-                            OxygenCounter.totalOxygen -= 30; */)
+                if (status.stageOx == 35 && OxygenCounter.totalOxygen >= 30)
                 {
+                    OxygenCounter.totalOxygen -= 30;
                     status.stageOx = 48;
+                    SkillUnlock.stageOxLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageOxLV2");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageOxLv3:
-                if (status.stageOx == 48 /*&& OxygenCounter.totalOxygen>=45){
-                            OxygenCounter.totalOxygen -= 45; */)
+                if (status.stageOx == 48 && OxygenCounter.totalOxygen >= 45)
                 {
+                    OxygenCounter.totalOxygen -= 45;
                     status.stageOx = 60;
+                    SkillUnlock.stageOxLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageOxLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageOxLv4:
-                if (status.stageOx == 60 /*&& OxygenCounter.totalOxygen>=70){
-                            OxygenCounter.totalOxygen -= 70; */)
+                if (status.stageOx == 60 && OxygenCounter.totalOxygen >= 70)
                 {
+                    OxygenCounter.totalOxygen -= 70;
                     status.stageOx = 75;
+                    SkillUnlock.stageOxLevel = 4;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageOxLV4");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageOxLv5:
-                if (status.stageOx == 75 /*&& OxygenCounter.totalOxygen>=100) {
-                            OxygenCounter.totalOxygen -= 100; */)
+                if (status.stageOx == 75 && OxygenCounter.totalOxygen >= 100)
                 {
+                    OxygenCounter.totalOxygen -= 100;
                     status.stageOx = 100;
+                    SkillUnlock.stageOxLevel = 5;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageOxLV5");
                 }
-                break;
-
-            case UpgradeType.StageTimeLv1://§ŒÀŽžŠÔ
-                if (status.stageTime == 10 /*&& OxygenCounter.totalOxygen>=10){
-                            OxygenCounter.totalOxygen -= 10; */)
+                else
                 {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
+                }
+                break;
+                //
+            case UpgradeType.StageTimeLv1://§ŒÀŽžŠÔ
+                if (status.stageTime == 10 && OxygenCounter.totalOxygen >= 10)
+                {
+                    OxygenCounter.totalOxygen -= 10;
                     status.stageTime = 11;
                     //timer.timeRemaining = status.stageTime;
+                    SkillUnlock.stageTimeLevel = 1;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV1");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageTimeLv2:
-                if (status.stageTime == 11 /*&& OxygenCounter.totalOxygen>=30){
-                            OxygenCounter.totalOxygen -= 30; */)
+                if (status.stageTime == 11 && OxygenCounter.totalOxygen >= 30)
                 {
+                    OxygenCounter.totalOxygen -= 30;
                     status.stageTime = 13;
                     //timer.timeRemaining = status.stageTime;
+                    SkillUnlock.stageTimeLevel = 2;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV2");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageTimeLv3:
-                if (status.stageTime == 13 /*&& OxygenCounter.totalOxygen>=45){
-                            OxygenCounter.totalOxygen -= 45; */)
+                if (status.stageTime == 13 && OxygenCounter.totalOxygen >= 45)
                 {
+                    OxygenCounter.totalOxygen -= 45;
                     status.stageTime = 15;
                     //timer.timeRemaining = status.stageTime;
+                    SkillUnlock.stageTimeLevel = 3;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV3");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageTimeLv4:
-                if (status.stageTime == 15 /*&& OxygenCounter.totalOxygen>=70){
-                            OxygenCounter.totalOxygen -= 70; */)
+                if (status.stageTime == 15 && OxygenCounter.totalOxygen >= 70)
                 {
+                    OxygenCounter.totalOxygen -= 70;
                     status.stageTime = 18;
                     //timer.timeRemaining = status.stageTime;
+                    SkillUnlock.stageTimeLevel = 4;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV4");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
             case UpgradeType.StageTimeLv5:
-                if (status.stageTime == 18 /*&& OxygenCounter.totalOxygen>=100){
-                            OxygenCounter.totalOxygen -= 100; */)
+                if (status.stageTime == 18 && OxygenCounter.totalOxygen >= 100)
                 {
+                    OxygenCounter.totalOxygen -= 100;
                     status.stageTime = 22;
                     //timer.timeRemaining = status.stageTime;
+                    SkillUnlock.stageTimeLevel = 5;
+                    buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV5");
+                }
+                else
+                {
+                    Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
         }

@@ -1144,6 +1144,7 @@ MonoBehaviour:
   timeResultPanel: {fileID: 2026259930}
   goalOxygenValueText: {fileID: 1701728323}
   timeOxygenValueText: {fileID: 1302124901}
+  currentOxygenValueText: {fileID: 1302124901}
 --- !u!114 &694749948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4287,6 +4288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cut
       objectReference: {fileID: 0}
+    - target: {fileID: 6764500995883556498, guid: 51dd1d5624dc1b64380f7b82a9947bbd, type: 3}
+      propertyPath: status
+      value: 
+      objectReference: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

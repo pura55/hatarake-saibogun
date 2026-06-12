@@ -9,7 +9,9 @@ public class WbcSkills : MonoBehaviour
     private bool isHitEnemy = false;
     public WbcDetection wbcDetection;
     private Transform targetEnemy;
-#endregion
+    public StatusSkill status;
+
+    #endregion
     public bool GetUsedSkill() { return isUsedSkill; }
     public void SetUsedSkill(bool isUsed) { isUsedSkill = isUsed; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

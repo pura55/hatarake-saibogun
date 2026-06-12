@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea6c9cea2d099ed4bad82c801a1548f4, type: 3}
   m_Name: StatusSkill
   m_EditorClassIdentifier: Assembly-CSharp::StatusSkill
-  rbcSpeed: 5.2
-  rbcAmount: 2
-  rbcHave: 10
+  rbcSpeed: 5
+  rbcAmount: 1
+  rbcHave: 1
   wbcTime: 2
   wbcRange: 1
   wbcAmount: 0
   pltCure: 1
   pltAmount: 0
-  stageTime: 10
+  stageTime: 11
   stageOx: 30

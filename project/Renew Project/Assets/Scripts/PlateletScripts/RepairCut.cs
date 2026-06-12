@@ -12,11 +12,13 @@ public class RepairCut : MonoBehaviour
     private int currentPlatelet = 0;        //Œ»İ‚ÌŒŒ¬”Â‚ÌŒÂ”
     private float currentTime = 0.0f;       //Œ»İ‚ÌC•œŠÔ
     private Stack<Transform> plateletStack;
+    public StatusSkill status;
     #endregion
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        maxTime = status.pltCure;
         plateletStack = new Stack<Transform>();
     }
 
