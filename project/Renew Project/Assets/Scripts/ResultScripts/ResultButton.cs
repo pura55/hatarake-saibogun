@@ -16,4 +16,10 @@ public class ResultButton : MonoBehaviour
     {
         SceneManager.LoadScene("PlayScene");
     }
+
+    //Continueボタンを押すと、ゲームを最初から再開する
+    public void ReturnTitle()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
 }
