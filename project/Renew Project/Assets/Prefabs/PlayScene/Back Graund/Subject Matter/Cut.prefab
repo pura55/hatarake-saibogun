@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3574062915269097083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77, y: -3.43, z: 0}
-  m_LocalScale: {x: 1.9928, y: 3.2808459, z: 1}
+  m_LocalPosition: {x: -0.91, y: -3.3992, z: 4}
+  m_LocalScale: {x: 0.8755301, y: 1.2821933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.01877891, g: 0.018794196, b: 0.01886791, a: 1}
+  m_Sprite: {fileID: 2040494709452941086, guid: 47b4072bf2676a04287677e629f35c5a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,17 +128,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01750654, y: 0.01063347}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.4, y: 2.47}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.435534, y: 2.495784}
   m_EdgeRadius: 0
 --- !u!61 &5686190904604383039
 BoxCollider2D:
@@ -174,17 +174,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01750654, y: 0.010633469}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.4, y: 2.47}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.4355345, y: 2.4957838}
   m_EdgeRadius: 0
 --- !u!114 &6764500995883556498
 MonoBehaviour:
@@ -199,3 +199,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepairCut
   maxTime: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}

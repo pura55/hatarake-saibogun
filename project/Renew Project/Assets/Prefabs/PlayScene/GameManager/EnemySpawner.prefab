@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7071588086683387229
+--- !u!1 &349827340436120358
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6262711430213919180}
-  - component: {fileID: 2911907321387453242}
+  - component: {fileID: 321530321653439843}
+  - component: {fileID: 7787804150097951531}
   m_Layer: 0
-  m_Name: ObjectSpawner(P)
+  m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6262711430213919180
+--- !u!4 &321530321653439843
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071588086683387229}
+  m_GameObject: {fileID: 349827340436120358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2, y: 2.49, z: 0}
+  m_LocalPosition: {x: 3.71, y: -1.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2911907321387453242
+--- !u!114 &7787804150097951531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071588086683387229}
+  m_GameObject: {fileID: 349827340436120358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb5c7325b5207ff4f8fe86275bde49c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1183ddeb31cf9904f9b27347d1c48632, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlateletSpawner
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   currentSpawnIndex: 1
-  plateletToSpawn: {fileID: 960205184641188635, guid: 545c67cf17a0cd94b8029e72e2630a1c, type: 3}
-  spawnRange: {x: 4.1, y: 2, z: 0}
-  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  enemyToSpawn: {fileID: 8842109261900865330, guid: fcc6e90bdc8e1c9438a9548077cdf62a, type: 3}
+  spawnRange: {x: 10, y: 6, z: 0}

@@ -8,8 +8,9 @@ using UnityEngine;
 public class WbcSpawner : MonoBehaviour
 {
     #region Config
-    [SerializeField] private int currentSpawnIndex = 1;
-    private int spawnCounter = 0;
+    private int currentSpawnIndex = 0; // 現在のスポーンする回数
+    private int spawnCounter = 0;      // スポーンを数える変数
+    private const float spawnZ = 0f;   // z軸のスポーン座標
     #endregion
 
     #region State
@@ -38,10 +39,9 @@ public class WbcSpawner : MonoBehaviour
             // ランダムな位置を計算
             float randomX = Random.Range(-spawnRange.x / 2, spawnRange.x / 2);
             float randomY = Random.Range(-spawnRange.y / 2, spawnRange.y / 2);
-            float randomZ = Random.Range(-spawnRange.z / 2, spawnRange.z / 2);
 
             //このスクリプトが付いているオブジェクトの位置を基準にする
-            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, randomZ);
+            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, spawnZ);
 
             //オブジェクト生成
             GameObject spawnedWbc = Instantiate(wbcToSpawn, spawnPosition, Quaternion.identity);

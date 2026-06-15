@@ -8,8 +8,9 @@ using UnityEngine;
 public class RbcSpawner : MonoBehaviour
 {
     #region Config
-    [SerializeField] private int currentSpawnIndex = 1;
-    private int spawnCounter = 0;
+    private int currentSpawnIndex = 1; // 現在のスポーンする回数
+    private int spawnCounter = 0;      // スポーンを数える変数
+    private const float spawnZ = 0f;   // z軸のスポーン座標
     #endregion
 
     #region State
@@ -23,6 +24,7 @@ public class RbcSpawner : MonoBehaviour
     {
         currentSpawnIndex = status.rbcAmount;
 
+        // 赤血球の生成処理を実行
         RbcSpawn();
     }
 
@@ -33,8 +35,8 @@ public class RbcSpawner : MonoBehaviour
         RbcSpawn();
     }
 
-    //ゲーム開始時に赤血球を生成
-    public void RbcSpawn()
+    // ゲーム開始時に赤血球を生成します
+    private  void RbcSpawn()
     {
         //現在の赤血球のスポーン数を超えたら処理を抜ける
         while (spawnCounter < currentSpawnIndex)
@@ -46,7 +48,7 @@ public class RbcSpawner : MonoBehaviour
             float randomZ = Random.Range(-spawnRange.z / 2, spawnRange.z / 2);
 
             //このスクリプトが付いているオブジェクトの位置を基準にする
-            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, randomZ);
+            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, spawnZ);
 
             //オブジェクト生成
             GameObject spawnedPlayer = Instantiate(rbcToSpawn, spawnPosition, Quaternion.identity);
