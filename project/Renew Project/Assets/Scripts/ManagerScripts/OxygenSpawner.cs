@@ -3,7 +3,7 @@ using UnityEngine;
 public class OxygenSpawner : MonoBehaviour
 {
     #region Config
-    private int currentSpawnIndex = 10; // 現在のスポーンする回数
+    private int currentSpawnIndex = 30; // 現在のスポーンする回数
     private int spawnCounter = 0;      // スポーンを数える変数
     private float checkRadius = 0.5f;  // 判定の範囲（球体の半径）
     private const float spawnZ = -1f;  // z軸のスポーン座標
@@ -14,10 +14,13 @@ public class OxygenSpawner : MonoBehaviour
     public Vector3 spawnRange = new Vector3(4.1f, 4.5f, 1f); // スポーン範囲
     public string targetTagWall = "Wall";                    // 検知したいタグ(壁)
     public string targetTagCut = "Cut";                      // 検知したいタグ(傷)
+    public StatusSkill status;
     #endregion
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentSpawnIndex = status.stageOx;
+
         // 酸素の生成処理を実行
         OxygenSpawn();
     }

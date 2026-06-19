@@ -481,7 +481,7 @@ public class SkillTree : MonoBehaviour
                     Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
-                //‚Ü‚¾
+                
             case UpgradeType.StageOxLv1://ƒXƒe[ƒW‚ÌŽ_‘f—Ê
                 if (status.stageOx == 30 && OxygenCounter.totalOxygen >= 15)
                 {
@@ -552,7 +552,7 @@ public class SkillTree : MonoBehaviour
                     Debug.Log("Ž_‘f‚ª‘«‚è‚È‚¢");
                 }
                 break;
-                //
+                
             case UpgradeType.StageTimeLv1://§ŒÀŽžŠÔ
                 if (status.stageTime == 10 && OxygenCounter.totalOxygen >= 10)
                 {
