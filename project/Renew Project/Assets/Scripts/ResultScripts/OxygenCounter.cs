@@ -11,13 +11,21 @@ public static class OxygenCounter
     private static int currentOxygen = 0;
 
     public static int CurrentOxygen => currentOxygen;
-
+    
+    // _‘f‚ğ‰ÁZ‚·‚éŠÖ”
     public static void Add(int amount = 1)
     {
         currentOxygen += amount;
         Debug.Log("Œ»İ‚Ì_‘f”: " + currentOxygen);
     }
-    
+
+    // Œ»İŠ‚µ‚Ä‚¢‚é_‘f‚ğŒ¸­‚³‚¹‚éŠÖ”
+    public static void Reduction(int amount = 1)
+    {
+        currentOxygen -= amount;
+        Debug.Log("Œ»İ‚Ì_‘f”: " + currentOxygen);
+    }
+
     //@_‘f‚ğWŒv‚·‚éŠÖ”
     public static void OxygenTotaling()
     {
