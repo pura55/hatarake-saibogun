@@ -13,14 +13,28 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] GameObject settingsPanel;
 
+    [SerializeField] GameObject tutorialPnael;
+
     //スタートボタンを押したらプレイシーンへ移行
     public void StartGame()
     {
         SceneManager.LoadScene("PlayScene");
     }
 
+    //チュートリアルボタンを押したらチュートリアル画像を表示
+    public void OpenTutorial()
+    {
+        tutorialPnael.SetActive(true);
+    }
+
+    //クローズボタンを押したら、チュートリアルパネルを閉じる
+    public void CloseTutorial()
+    {
+        tutorialPnael.SetActive(false);
+    }
+
     //終了ボタンを押したら修了確認
-    public void ShowQuitPanel()
+    public void OpenQuitPanel()
     {
         quitPanel.SetActive(true);
     }
@@ -36,17 +50,18 @@ public class TitleManager : MonoBehaviour
     }
 
     // 「いいえ」タイトルに戻る
-    public void HideQuitPanel()
+    public void CloseQuitPanel()
     {
         quitPanel.SetActive(false);
     }
 
-    //
+    //セッティングボタンを押したらセッティングを表示
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
     }
 
+    //クローズボタンを押したら、セッティングパネルを閉じる
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
