@@ -44,7 +44,9 @@ public class EnemyDetection : MonoBehaviour
             if (FindClosestRbcWithinRange(detectRange) == null)
             {
                 targetRbc = null;
+                return;
             }
+
         }
 
         if(isEffect)
