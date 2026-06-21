@@ -27,9 +27,7 @@ public class OxygenMove : MonoBehaviour
     #region State
     private Transform targetRbc;
     private OxygenState state = OxygenState.idle;
-    private bool isAttached = false;
     private float angleOffset; // •¡”_‘f—p‚ÌŠp“x‚¸‚ç‚µ
-    private bool isLeaving = false;
     #endregion
 
     void Start()

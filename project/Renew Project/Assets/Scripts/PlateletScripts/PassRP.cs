@@ -5,7 +5,7 @@ public class PassRP : MonoBehaviour
     public RelayPointStatus relayPointStatus;
     private Transform targetPlatelet;
     PlateletMove plateletMove;
-    int count = 0;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
