@@ -42,6 +42,7 @@ public class Goal : MonoBehaviour
         }
     }
 
+    // ゴール時のエフェクトを実行する関数
     private void PlayGoalEffect()
     {
         Vector3 effectPosition = transform.position;

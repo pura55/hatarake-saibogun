@@ -1,5 +1,11 @@
 using UnityEngine;
 
+/// <summary>
+/// ’S“–FÎú±•Ÿl
+/// 
+/// _‘f‚ÌˆÚ“®
+/// </summary>
+
 public class OxygenMove : MonoBehaviour
 {
     // _‘f‚Ìó‘Ô

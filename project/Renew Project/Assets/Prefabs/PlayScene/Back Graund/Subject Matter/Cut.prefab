@@ -200,3 +200,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RepairCut
   maxTime: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  effectPrefab: {fileID: 2176751554526786764, guid: a9d9f49ee8bb654438a48b5b89f456d7, type: 3}

@@ -1,5 +1,11 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// リレーポイントの通過処理
+/// </summary>
+
 public class PassRP : MonoBehaviour
 {
     public RelayPointStatus relayPointStatus;
