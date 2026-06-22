@@ -45,10 +45,9 @@ public class RbcSpawner : MonoBehaviour
             // ランダムな位置を計算
             float randomX = Random.Range(-spawnRange.x / 2, spawnRange.x / 2);
             float randomY = Random.Range(-spawnRange.y / 2, spawnRange.y / 2);
-            float randomZ = Random.Range(-spawnRange.z / 2, spawnRange.z / 2);
 
             //このスクリプトが付いているオブジェクトの位置を基準にする
-            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, spawnZ);
+            Vector3 spawnPosition = transform.position + new Vector3(randomX, randomY, 0f);
 
             //オブジェクト生成
             GameObject spawnedPlayer = Instantiate(rbcToSpawn, spawnPosition, Quaternion.identity);

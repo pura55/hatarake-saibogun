@@ -74,7 +74,7 @@ public class OxygenMove : MonoBehaviour
                 AttachProcess();
 
                 // 十分近づいたら回転モードへ
-        　　　　if (Vector2.Distance(transform.position, targetRbc.position) < 0.1f)
+        　　　　if (Vector2.Distance(transform.position, targetRbc.position) < 0.3f)
                 {
                     // 総獲得酸素数を増やす
                     OxygenCounter.Add();
@@ -208,10 +208,10 @@ public class OxygenMove : MonoBehaviour
     private void PlayGetEffect(Transform rbc)
     {
         Vector3 effectPosition = rbc.position;
-        // エフェクトのz座標を0に設定
-        if (effectPosition.z != 1f)
+        // エフェクトのz座標を2に設定
+        if (effectPosition.z != 2f)
         {
-            effectPosition.z = 1f;
+            effectPosition.z = 2f;
         }
 
         // 赤血球の座標にエフェクトを生成
