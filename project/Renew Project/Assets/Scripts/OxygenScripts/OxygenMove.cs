@@ -34,6 +34,7 @@ public class OxygenMove : MonoBehaviour
     private Transform targetRbc;
     private OxygenState state = OxygenState.idle;
     private float angleOffset; // 複数酸素用の角度ずらし
+    public GameObject effectPrefab;
     #endregion
 
     void Start()
@@ -80,6 +81,10 @@ public class OxygenMove : MonoBehaviour
 
                     // RBCの所持酸素数を増やす
                     targetRbc.GetComponent<RbcStatus>().AddOxygen();
+
+                    // 酸素獲得エフェクトを実行
+                    PlayGetEffect(targetRbc);
+
                     // 状態を回転に設定
                     state = OxygenState.rotating;
                 }
@@ -197,5 +202,25 @@ public class OxygenMove : MonoBehaviour
         OxygenCounter.Reduction();
         // RBCの所持酸素数を減らす
         targetRbc.GetComponent<RbcStatus>().ReductionOxygenCount();
+    }
+
+    // 傷を修復するエフェクトを実行する関数
+    private void PlayGetEffect(Transform rbc)
+    {
+        Vector3 effectPosition = rbc.position;
+        // エフェクトのz座標を0に設定
+        if (effectPosition.z != 1f)
+        {
+            effectPosition.z = 1f;
+        }
+
+        // 赤血球の座標にエフェクトを生成
+        GameObject effectInstans = Instantiate(effectPrefab, effectPosition, Quaternion.identity);
+
+        //エフェクトの移動用スクリプトの参照を取得
+        GetOxygenEffectMove effectMove = effectInstans.GetComponent<GetOxygenEffectMove>();
+
+        // エフェクトの移動用スクリプトに赤血球の参照を渡す
+        effectMove.SetRbcReference(rbc);
     }
 }
