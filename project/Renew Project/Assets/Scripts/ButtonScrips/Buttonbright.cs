@@ -1,6 +1,5 @@
 using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 //’S“–@ç—tŒ‹‰Á
 public class Buttonbright : MonoBehaviour
@@ -33,22 +32,16 @@ public class Buttonbright : MonoBehaviour
     public void RefreshButton()
     {
         int currentLevel = GetCurrentLevel();
-        void OnPointerEnter(PointerEventData eventData)
+
+        if (currentLevel > myLevel)
         {
-            if (currentLevel > myLevel)
-            {
-                image.color = Color.white;
-            }
+            image.color = Color.white;
         }
-        void OnPointerExit(PointerEventData eventData)
-        {
-            image.color = Color.gray7;
-        }
-            //else
-            //{
-            //    image.color = Color.gray;
-            //}
-        }
+        //else
+        //{
+        //    image.color = Color.gray;
+        //}
+    }
     public void Bright()
     {
         int currentLevel = GetCurrentLevel();

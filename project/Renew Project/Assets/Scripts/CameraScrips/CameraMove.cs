@@ -3,39 +3,34 @@ using UnityEngine.InputSystem;
 //担当　千葉結加
 
 public class CameraMove : MonoBehaviour
-{
-    private Vector3 lastMousePos;
+{   
+    #region Config 
+    public float moveSpeed = 5f;
+    #endregion
 
-    float minX = 15f;
-    float maxX = 40f;
-    float minY = 10f;
-    float maxY = 28f;
+    #region State
+    private Vector3 targetPos;
+    #endregion
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        targetPos = transform.position;
+    }
 
+    // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;
-
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
-
-        transform.position = pos;
-        // 左クリックした瞬間
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            lastMousePos = Mouse.current.position.ReadValue();
+
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+
+            Vector3 worldPos =Camera.main.ScreenToWorldPoint(mousePos);
+
+            worldPos.z = transform.position.z;
+
+            transform.position = worldPos;
         }
-
-        // 左クリック中
-        if (Mouse.current.leftButton.isPressed)
-        {
-            Vector3 currentMousePos = Mouse.current.position.ReadValue();
-
-            Vector3 delta = currentMousePos - lastMousePos;
-
-            // マウス移動と逆方向にカメラを動かす
-            transform.position -= new Vector3(delta.x, delta.y, 0) * 0.02f;
-
-            lastMousePos = currentMousePos;
-        }
+        //transform.position =Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
     }
 }
