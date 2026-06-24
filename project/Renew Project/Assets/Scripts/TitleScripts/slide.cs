@@ -1,10 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+//担当者：石川天馬
 
 public class slide : MonoBehaviour
 {
     [SerializeField] private Image tutorialImage;
     [SerializeField] private Sprite[] slideSprites;
+
+    [SerializeField] private GameObject prevButton; // 戻るボタン
+    [SerializeField] private GameObject nextButton; // 次へボタン
+    [SerializeField] private GameObject startButton; //スタートボタン
 
     private enum SlideState 
     {
@@ -24,6 +31,7 @@ public class slide : MonoBehaviour
     void Start()
     {
         state = SlideState.first;
+        UpdateSlide();
     }
 
     // 次へボタン
@@ -46,41 +54,26 @@ public class slide : MonoBehaviour
         }
     }
 
+    //スタートボタンを押すとPlaySceneへ遷移する
+    public void TStartGame()
+    {
+        SceneManager.LoadScene("PlayScene");
+    }
+
     //画像更新処理
     private void UpdateSlide()
     {
         tutorialImage.sprite = slideSprites[(int)state];
-    }
 
-    void Update()
-    {
-        // このスイッチ文の中に処理を書く（各スライドの処理を関数化した方が見やすいかも）
-        switch (state)
-        {
-            case SlideState.first: // 一枚目のスライドの処理
-                //　例　FirstSlideProcess();
-                break;
+        int maxIndex = System.Enum.GetValues(typeof(SlideState)).Length - 1;
 
-            case SlideState.second: // 二枚目のスライドの処理
-                break;
+        // 戻るボタン
+        prevButton.SetActive((int)state > 0);
 
-            case SlideState.third: // 三枚目のスライドの処理
-                break;
+        // 次へボタン
+        nextButton.SetActive((int)state < maxIndex);
 
-            case SlideState.fourth: // 四枚目のスライドの処理
-                break;
-
-            case SlideState.fifth: // 五枚目のスライドの処理
-                break;
-
-            case SlideState.sixth: // 六枚目のスライドの処理
-                break;
-
-            case SlideState.seventh: // 七枚目のスライドの処理
-                break;
-
-            case SlideState.eighth: // 八枚目のスライドの処理
-                break;
-        }
+        // スタートボタン
+        startButton.SetActive((int)state == maxIndex);
     }
 }
