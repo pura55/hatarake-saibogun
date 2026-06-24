@@ -6,6 +6,7 @@ public class SkillTree : MonoBehaviour
     public StatusSkill status;
     public Timer timer;
     public Buttonbright buttonBright;
+    public int skillmax = 0;//10になったらスキル全開放済み
     public enum UpgradeType
     {
         RBCSpeedLv1,//赤血球スピード
@@ -90,6 +91,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.rbcSpeedLevel = 3;
                     buttonBright.RefreshButton();
                     Debug.Log("RBCSpeedLV3");
+                    ++skillmax;
                 }
                 else
                 {
@@ -161,6 +163,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.rbcAmountLevel = 5;
                     buttonBright.RefreshButton();
                     Debug.Log("RBCAmountLV5");
+                    ++skillmax;
                 }
                 else
                 {
@@ -204,6 +207,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.rbcHaveLevel = 3;
                     buttonBright.RefreshButton();
                     Debug.Log("RBCHaveLV3");
+                    ++skillmax;
                 }
                 else
                 {
@@ -247,6 +251,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.wbcTimeLevel = 3;
                     buttonBright.RefreshButton();
                     Debug.Log("WBCTimeLV3");
+                    ++skillmax;
                 }
                 else
                 {
@@ -290,6 +295,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.wbcRangeLevel = 3;
                     buttonBright.RefreshButton();
                     Debug.Log("WBCRangeLV3");
+                    ++skillmax;
                 }
                 else
                 {
@@ -361,6 +367,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.wbcAmountLevel = 5;
                     buttonBright.RefreshButton();
                     Debug.Log("WBCAmountLV5");
+                    ++skillmax;
                 }
                 else
                 {
@@ -404,6 +411,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.pltCureLevel = 3;
                     buttonBright.RefreshButton();
                     Debug.Log("PLTCureLV3");
+                    ++skillmax;
                 }
                 else
                 {
@@ -475,6 +483,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.pltAmountLevel = 5;
                     buttonBright.RefreshButton();
                     Debug.Log("PLTAmountLV5");
+                    ++skillmax;
                 }
                 else
                 {
@@ -546,6 +555,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.stageOxLevel = 5;
                     buttonBright.RefreshButton();
                     Debug.Log("StageOxLV5");
+                    ++skillmax;
                 }
                 else
                 {
@@ -622,6 +632,7 @@ public class SkillTree : MonoBehaviour
                     SkillUnlock.stageTimeLevel = 5;
                     buttonBright.RefreshButton();
                     Debug.Log("StageTimeLV5");
+                    ++skillmax;
                 }
                 else
                 {
