@@ -26,14 +26,10 @@ public class ResultManager : MonoBehaviour
 
     }
 
-    private IEnumerator CountOxygenAnimation()
+    private IEnumerator CountOxygenAnimation(int gained, int totalBefore)
     {
         // 演出スタートまでの秒数
         yield return new WaitForSeconds(1.0f);
-
-        //獲得した数と現在の合計の保存
-        int gained = OxygenCounter.CurrentOxygen;
-        int totalBefore = OxygenCounter.totalOxygen;
 
         //gainedが0になるまで繰り返す
         while (gained > 0)
@@ -49,8 +45,6 @@ public class ResultManager : MonoBehaviour
             //更新秒数
             yield return new WaitForSeconds(0.1f);
         }
-
-        OxygenCounter.OxygenTotaling();
     }
 
     public void ShowGoalResult()
@@ -58,11 +52,18 @@ public class ResultManager : MonoBehaviour
         // リザルト表示
         goalResultPanel.SetActive(true);
 
-         //現在値を表示
-        currentOxygenValueText.text = OxygenCounter.CurrentOxygen.ToString();
-        goalOxygenValueText.text = OxygenCounter.totalOxygen.ToString();
+        // アニメーション用に保存
+        int gained = OxygenCounter.CurrentOxygen;
+        int beforeTotal = OxygenCounter.totalOxygen;
 
-        StartCoroutine(CountOxygenAnimation());
+        // 保存した値で最初の表示
+        currentOxygenValueText.text = gained.ToString();
+        goalOxygenValueText.text = beforeTotal.ToString();
+
+        // 合計を更新する
+        OxygenCounter.OxygenTotaling();
+
+        StartCoroutine(CountOxygenAnimation(gained, beforeTotal));
     }
 
     public void ShowTimeResult()
