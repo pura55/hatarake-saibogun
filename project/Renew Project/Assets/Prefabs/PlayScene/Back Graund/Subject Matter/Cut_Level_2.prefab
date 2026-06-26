@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5686190904604383039}
   - component: {fileID: 6764500995883556498}
   m_Layer: 0
-  m_Name: Cut
+  m_Name: Cut_Level_2
   m_TagString: Cut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2040494709452941086, guid: 47b4072bf2676a04287677e629f35c5a, type: 3}
+  m_Sprite: {fileID: -7128563493221374177, guid: e15e8f0b661db7a48b6769508e853290, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.47}
+    oldSize: {x: 2.4, y: 2.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -178,7 +178,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.47}
+    oldSize: {x: 2.4, y: 2.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc003c1d63308d4c84cd9794f5a49da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepairCut
-  maxTime: 2
+  cutLevel: 2
+  maxRepairTime: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   effectPrefab: {fileID: 2176751554526786764, guid: a9d9f49ee8bb654438a48b5b89f456d7, type: 3}

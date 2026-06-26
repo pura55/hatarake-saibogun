@@ -10,7 +10,8 @@ using UnityEngine;
 public class RepairCut : MonoBehaviour
 {
     #region Config
-    public int maxPlatelet = 10;   //血小板の最大値
+    private int maxPlatelet = 10;   //血小板の最大値
+    public int cutLevel = 1;
     public float maxRepairTime = 2.0f;   //修復されるまでの時間
     #endregion
 
@@ -28,6 +29,20 @@ public class RepairCut : MonoBehaviour
     {
         maxRepairTime = status.pltCure;
         plateletStack = new Stack<Transform>();
+
+        // 傷のレベルによって必要な血小板の最大値を変更
+        switch(cutLevel)
+        {
+            case 1: // level1
+                maxPlatelet = 10;
+                break;
+            case 2: // level2
+                maxPlatelet = 18;
+                break;
+            case 3: // level3
+                maxPlatelet = 25;
+                break;
+        }
     }
 
     // Update is called once per frame
