@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1291c73783683dc49a0e39ba3ba24f91
+guid: 78ba54ab707fef147b23ac5e5da038ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5383546811107811753
-    second: "\u30DC\u30BF\u30F3\u3000\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B_0"
+      213: 6568306296315595351
+    second: "\u30DC\u30BF\u30F3\u3000\u30B9\u30AD\u30EB\u3092\u898B\u308B_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30DC\u30BF\u30F3\u3000\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B_0"
+      name: "\u30DC\u30BF\u30F3\u3000\u30B9\u30AD\u30EB\u3092\u898B\u308B_0"
       rect:
         serializedVersion: 2
         x: 3
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a1a4cb2d4336ba40800000000000000
-      internalID: 5383546811107811753
+      spriteID: 75a4adfa6cf472b50800000000000000
+      internalID: 6568306296315595351
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u30DC\u30BF\u30F3\u3000\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B_0": 5383546811107811753
+      "\u30DC\u30BF\u30F3\u3000\u30B9\u30AD\u30EB\u3092\u898B\u308B_0": 6568306296315595351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
