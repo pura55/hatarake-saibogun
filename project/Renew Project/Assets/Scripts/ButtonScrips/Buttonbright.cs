@@ -1,11 +1,14 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.VolumeComponent;
 //íSìñÅ@êÁótåãâ¡
-public class Buttonbright : MonoBehaviour
+public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHandler
 {
     public enum SkillType
     {
+        SkillButton,
         RBCSpeed,
         RBCAmount,
         RBCHave,
@@ -18,46 +21,108 @@ public class Buttonbright : MonoBehaviour
         StageOx
     }
     public SkillType skillType;
-
+    public StatusSkill status;
     public int myLevel;
-
+    public int needOxygen;
     public Image image;
-    
+ 
+
 
     void Start()
     {
         image = GetComponent<Image>();
         RefreshButton();
+        //Bright();
     }
+    //public void OnPointerEnter(PointerEventData eventData)
+    //{
+    //    int currentLevel = GetCurrentLevel();
+
+    //    if (currentLevel > myLevel)
+    //    {
+    //        image.color = Color.white;
+    //    }
+    //}
+
+    //public void OnPointerExit(PointerEventData eventData)
+    //{
+    //    image.color = Color.gray7;
+    //}
+    //else
+    //{
+    //    image.color = Color.gray;
+    //}
+
     public void RefreshButton()
     {
         int currentLevel = GetCurrentLevel();
 
-        if (currentLevel > myLevel)
+        // âï˙çœÇ›
+        if (currentLevel >= myLevel)
         {
             image.color = Color.white;
         }
-        //else
-        //{
-        //    image.color = Color.gray;
-        //}
+        // éüÇ…âï˙Ç≈Ç´ÇÈ
+        else if (CanUnlock())
+        {
+            image.color = Color.yellow;
+        }
+        // Ç‹Çæâï˙Ç≈Ç´Ç»Ç¢
+        else
+        {
+            image.color = Color.gray7;
+        }
+
+        bool CanUnlock()
+        {
+            switch (skillType)
+            {
+                case SkillType.RBCSpeed:
+                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount >= 2;
+
+                case SkillType.RBCHave:
+                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount >= 2;
+
+                case SkillType.WBCTime:
+                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3;
+
+                case SkillType.WBCRange:
+                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3;
+
+                default:
+                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen;
+            }
+        }
     }
+
     public void Bright()
     {
         int currentLevel = GetCurrentLevel();
-        if (currentLevel != myLevel)
+        if (currentLevel + 1 != myLevel)
         {
             Debug.Log("èáî‘Ç™à·Ç§");
             return;
+        }
+        AddLevel();
+
+        Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
+
+        foreach (Buttonbright button in buttons)
+        {
+            button.RefreshButton();
         }
 
         //AddLevel();
         //RefreshButton();
     }
+
     int GetCurrentLevel()
     {
         switch (skillType)
         {
+            case SkillType.SkillButton:
+                return SkillUnlock.skillButtonLevel;
+
             case SkillType.RBCSpeed:
                 return SkillUnlock.rbcSpeedLevel;
 
@@ -96,6 +161,10 @@ public class Buttonbright : MonoBehaviour
     {
         switch (skillType)
         {
+            //case SkillType.SkillButton:
+            //    SkillUnlock.skillButtonLevel++;
+            //    break;
+
             case SkillType.RBCSpeed:
                 SkillUnlock.rbcSpeedLevel++;
                 break;

@@ -20,5 +20,5 @@ MonoBehaviour:
   wbcAmount: 0
   pltCure: 1
   pltAmount: 0
-  stageTime: 11
+  stageTime: 10
   stageOx: 30
