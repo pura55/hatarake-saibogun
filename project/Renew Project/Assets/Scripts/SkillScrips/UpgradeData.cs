@@ -10,7 +10,7 @@ public class StatusSkill : ScriptableObject
     public int rbcHave = 1;
 
     public float wbcTime = 2f;
-    public float wbcRange = 1f;
+    public float wbcRange = 0.5f;
     public int wbcAmount = 0;
 
     public float pltCure = 1f;

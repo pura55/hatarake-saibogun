@@ -25,8 +25,6 @@ public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHand
     public int myLevel;
     public int needOxygen;
     public Image image;
- 
-
 
     void Start()
     {
@@ -73,49 +71,50 @@ public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHand
             image.color = Color.gray7;
         }
 
-        bool CanUnlock()
+        
+    }
+
+    bool CanUnlock()
+    {
+        int currentLevel = GetCurrentLevel();
+
+        switch (skillType)
         {
-            switch (skillType)
-            {
-                case SkillType.RBCSpeed:
-                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount >= 2;
+            case SkillType.RBCSpeed:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.rbcAmountLevel >= 1;
 
-                case SkillType.RBCHave:
-                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount >= 2;
+            case SkillType.RBCHave:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.rbcAmountLevel >= 1;
 
-                case SkillType.WBCTime:
-                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3;
+            case SkillType.WBCTime:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.wbcAmountLevel >= 1;
 
-                case SkillType.WBCRange:
-                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3;
+            case SkillType.WBCRange:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.wbcAmountLevel >= 1;
 
-                default:
-                    return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen;
-            }
+            default:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen;
         }
     }
 
     public void Bright()
     {
-        int currentLevel = GetCurrentLevel();
-        if (currentLevel + 1 != myLevel)
+        if (!CanUnlock())
         {
-            Debug.Log("‡”Ô‚ªˆá‚¤");
+            Debug.Log("ğŒ‚ğ–‚½‚µ‚Ä‚¢‚Ü‚¹‚ñ");
             return;
         }
+
         AddLevel();
 
-        Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
+        Buttonbright[] buttons =
+            FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
 
         foreach (Buttonbright button in buttons)
         {
             button.RefreshButton();
         }
-
-        //AddLevel();
-        //RefreshButton();
     }
-
     int GetCurrentLevel()
     {
         switch (skillType)

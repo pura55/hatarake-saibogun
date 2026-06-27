@@ -297,6 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 9733950}
   buttonBright: {fileID: 9733948}
   skillmax: 0
   needOxygen: 10
@@ -314,6 +315,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 874166733}
+  skillText: {fileID: 874166735}
+  skillType: 4
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 9733948}
 --- !u!1 &10475020
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 21797258}
   buttonBright: {fileID: 21797256}
   skillmax: 0
   needOxygen: 20
@@ -629,6 +635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1663309946}
+  skillText: {fileID: 1663309948}
+  skillType: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 21797256}
 --- !u!1 &31271888
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 45671916}
   buttonBright: {fileID: 45671914}
   skillmax: 0
   needOxygen: 35
@@ -903,6 +914,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 201816448}
+  skillText: {fileID: 201816450}
+  skillType: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 45671914}
 --- !u!1 &108511403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 108511412}
   buttonBright: {fileID: 108511410}
   skillmax: 0
   needOxygen: 120
@@ -1098,6 +1114,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 399309062}
+  skillText: {fileID: 399309064}
+  skillType: 8
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 108511410}
 --- !u!1 &147252070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -599205824080471861, guid: 5cb3febddedfb244f854402b3b01ee91, type: 3}
+  m_Sprite: {fileID: -599205824080471861, guid: d907622c057d98c44a3c026882fea56a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1267,7 +1287,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 451309652}
+  - {fileID: 1277129204}
   - {fileID: 1914788550}
   - {fileID: 1172172936}
   - {fileID: 1004865749}
@@ -1648,6 +1668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 209710145}
   buttonBright: {fileID: 209710143}
   skillmax: 0
   needOxygen: 80
@@ -1665,6 +1686,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1390983179}
+  skillText: {fileID: 1390983181}
+  skillType: 8
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 209710143}
 --- !u!1 &219329957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 278217234}
   buttonBright: {fileID: 278217232}
   skillmax: 0
   needOxygen: 30
@@ -2151,6 +2177,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 2105979858}
+  skillText: {fileID: 2105979860}
+  skillType: 7
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 278217232}
 --- !u!1 &280149317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 334660700}
   buttonBright: {fileID: 334660698}
   skillmax: 0
   needOxygen: 60
@@ -2504,6 +2535,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1587178579}
+  skillText: {fileID: 1587178581}
+  skillType: 7
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 334660698}
 --- !u!1 &344151199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,6 +2859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 386813163}
   buttonBright: {fileID: 386813161}
   skillmax: 0
   needOxygen: 25
@@ -2841,6 +2877,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1172172935}
+  skillText: {fileID: 1172172937}
+  skillType: 1
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 386813161}
 --- !u!1001 &398082542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3167,6 +3207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 421978672}
   buttonBright: {fileID: 421978670}
   skillmax: 0
   needOxygen: 50
@@ -3184,6 +3225,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1039711023}
+  skillText: {fileID: 1039711025}
+  skillType: 3
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 421978670}
 --- !u!1 &431227720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,6 +3407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 431227729}
   buttonBright: {fileID: 431227727}
   skillmax: 0
   needOxygen: 50
@@ -3379,85 +3425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1859539686}
---- !u!1 &451309651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 451309652}
-  - component: {fileID: 451309654}
-  - component: {fileID: 451309653}
-  m_Layer: 5
-  m_Name: SkillButtonText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &451309652
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451309651}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 150723912}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171.38297, y: -112.91745}
-  m_SizeDelta: {x: 379.9659, y: 126.8349}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &451309653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451309651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u9178\u7D20\u306E\u6240\u6301\u6570\u3092\u5897\u3084\u3059\n1\u21922\n\u5FC5\u8981\u9178\u7D20\u6570:1"
---- !u!222 &451309654
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451309651}
-  m_CullTransparentMesh: 1
+  skillText: {fileID: 1859539688}
+  skillType: 6
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 431227727}
 --- !u!1 &464428118
 GameObject:
   m_ObjectHideFlags: 0
@@ -3594,7 +3565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3384788273967893022, guid: 51a56422da704364f9a3879d771113c0, type: 3}
+  m_Sprite: {fileID: -3384788273967893022, guid: 7e4cd0512d55cc54a9875d10d694bbc5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3972,6 +3943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 513008180}
   buttonBright: {fileID: 513008178}
   skillmax: 0
   needOxygen: 25
@@ -3989,6 +3961,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 805196845}
+  skillText: {fileID: 805196847}
+  skillType: 5
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 513008178}
 --- !u!1 &527965564
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,6 +4143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 527965573}
   buttonBright: {fileID: 527965571}
   skillmax: 0
   needOxygen: 60
@@ -4184,6 +4161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 713726342}
+  skillText: {fileID: 713726344}
+  skillType: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 527965571}
 --- !u!1 &582317695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2796765779502313341, guid: 3e4f825ba83817e42a1fd1ebe2c7cc44, type: 3}
+  m_Sprite: {fileID: -2796765779502313341, guid: f54b7e68eb1dab84a85f5a096279e223, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4437,6 +4418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 596352902}
   buttonBright: {fileID: 596352900}
   skillmax: 0
   needOxygen: 35
@@ -4454,6 +4436,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1459426753}
+  skillText: {fileID: 1459426755}
+  skillType: 6
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 596352900}
 --- !u!1 &610481763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,6 +4618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 610481772}
   buttonBright: {fileID: 610481770}
   skillmax: 0
   needOxygen: 120
@@ -4649,6 +4636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 737371150}
+  skillText: {fileID: 737371152}
+  skillType: 6
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 610481770}
 --- !u!1 &635741935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,6 +4818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 635741944}
   buttonBright: {fileID: 635741942}
   skillmax: 0
   needOxygen: 120
@@ -4844,6 +4836,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 464428118}
+  skillText: {fileID: 464428120}
+  skillType: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 635741942}
 --- !u!1 &637955543
 GameObject:
   m_ObjectHideFlags: 0
@@ -5394,6 +5390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 725117712}
   buttonBright: {fileID: 725117710}
   skillmax: 0
   needOxygen: 35
@@ -5411,6 +5408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 970024825}
+  skillText: {fileID: 970024827}
+  skillType: 8
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 725117710}
 --- !u!1 &734337477
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 734337486}
   buttonBright: {fileID: 734337484}
   skillmax: 0
   needOxygen: 30
@@ -5606,6 +5608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1483785329}
+  skillText: {fileID: 1483785331}
+  skillType: 9
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 734337484}
 --- !u!1 &737371150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,7 +5725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171.38297, y: -112.91745}
+  m_AnchoredPosition: {x: 184, y: -63.417}
   m_SizeDelta: {x: 379.9659, y: 126.8349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773813529
@@ -5942,6 +5948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 777302641}
   buttonBright: {fileID: 777302639}
   skillmax: 0
   needOxygen: 10
@@ -5959,6 +5966,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 2057012761}
+  skillText: {fileID: 2057012763}
+  skillType: 3
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 777302639}
 --- !u!1 &788274613
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,7 +6348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6250291468023228421, guid: f997aabf051d17840b805a6370cc7208, type: 3}
+  m_Sprite: {fileID: -6250291468023228421, guid: 4de2bc7445f93c44994b20a86eaacf16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6533,6 +6544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 848136696}
   buttonBright: {fileID: 848136694}
   skillmax: 0
   needOxygen: 50
@@ -6550,6 +6562,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 916632489}
+  skillText: {fileID: 916632491}
+  skillType: 8
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 848136694}
 --- !u!1 &874166733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 875147591}
   buttonBright: {fileID: 875147589}
   skillmax: 0
   needOxygen: 10
@@ -6824,6 +6841,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 294854414}
+  skillText: {fileID: 294854416}
+  skillType: 5
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 875147589}
 --- !u!1 &889591773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6953,7 +6974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4710883175235999910, guid: c0478909c19f5dd4c93ad00f71b91cbc, type: 3}
+  m_Sprite: {fileID: -4710883175235999910, guid: 8afef40a5833c464ea66dddc99c4933c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7002,6 +7023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 889591782}
   buttonBright: {fileID: 889591780}
   skillmax: 0
   needOxygen: 100
@@ -7019,6 +7041,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 280149317}
+  skillText: {fileID: 280149319}
+  skillType: 10
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1097145103}
 --- !u!1 &916632489
 GameObject:
   m_ObjectHideFlags: 0
@@ -7276,6 +7302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 922242561}
   buttonBright: {fileID: 922242559}
   skillmax: 0
   needOxygen: 70
@@ -7293,6 +7320,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1226478822}
+  skillText: {fileID: 1226478824}
+  skillType: 9
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 922242559}
 --- !u!1 &970024825
 GameObject:
   m_ObjectHideFlags: 0
@@ -7550,6 +7581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 972538661}
   buttonBright: {fileID: 972538659}
   skillmax: 0
   needOxygen: 10
@@ -7567,6 +7599,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 219329957}
+  skillText: {fileID: 219329959}
+  skillType: 9
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 972538659}
 --- !u!1 &983824663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7745,6 +7781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 983824672}
   buttonBright: {fileID: 983824670}
   skillmax: 0
   needOxygen: 80
@@ -7762,6 +7799,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 637955543}
+  skillText: {fileID: 637955545}
+  skillType: 6
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 983824670}
 --- !u!1 &1004865748
 GameObject:
   m_ObjectHideFlags: 0
@@ -8019,6 +8060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1036406194}
   buttonBright: {fileID: 1036406192}
   skillmax: 0
   needOxygen: 45
@@ -8036,6 +8078,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 238496014}
+  skillText: {fileID: 238496016}
+  skillType: 9
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1036406192}
 --- !u!1 &1039711023
 GameObject:
   m_ObjectHideFlags: 0
@@ -8244,7 +8290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 718034031937326170, guid: 2561b444f30d2704395976ce819f4d31, type: 3}
+  m_Sprite: {fileID: 718034031937326170, guid: 88e2d2d6432d3ee44af13cb7b65491e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8293,6 +8339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1097145105}
   buttonBright: {fileID: 1097145103}
   skillmax: 0
   needOxygen: 70
@@ -8310,6 +8357,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 662341892}
+  skillText: {fileID: 662341894}
+  skillType: 10
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1097145103}
 --- !u!1 &1137970897
 GameObject:
   m_ObjectHideFlags: 0
@@ -8484,7 +8535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4417578344897124688, guid: 48416033276e17f4980cc490eb05ba0d, type: 3}
+  m_Sprite: {fileID: -4417578344897124688, guid: a0eb70b0b5eaf3a4cab8c7e87c9499af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8533,6 +8584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1164184399}
   buttonBright: {fileID: 1164184397}
   skillmax: 0
   needOxygen: 15
@@ -8550,6 +8602,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1678605866}
+  skillText: {fileID: 1678605868}
+  skillType: 10
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1164184397}
 --- !u!1 &1172172935
 GameObject:
   m_ObjectHideFlags: 0
@@ -8643,7 +8699,7 @@ GameObject:
   - component: {fileID: 1203728651}
   - component: {fileID: 1203728650}
   - component: {fileID: 1203728649}
-  - component: {fileID: 1203728648}
+  - component: {fileID: 1203728654}
   m_Layer: 5
   m_Name: SkillButton
   m_TagString: Untagged
@@ -8670,19 +8726,6 @@ RectTransform:
   m_AnchoredPosition: {x: -15.6, y: 9.7}
   m_SizeDelta: {x: 87, y: 87}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1203728648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203728646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3231e467e15053b4481784ce9db69746, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
-  descriptionUI: {fileID: 451309651}
 --- !u!114 &1203728649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8697,6 +8740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 0}
   buttonBright: {fileID: 1203728650}
   skillmax: 0
   needOxygen: 1
@@ -8824,6 +8868,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203728646}
   m_CullTransparentMesh: 1
+--- !u!114 &1203728654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203728646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3231e467e15053b4481784ce9db69746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
+  descriptionUI: {fileID: 1277129203}
+  skillText: {fileID: 1277129205}
+  skillType: 0
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1203728650}
 --- !u!1 &1204641933
 GameObject:
   m_ObjectHideFlags: 0
@@ -9418,6 +9479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1246242021}
   buttonBright: {fileID: 1246242019}
   skillmax: 0
   needOxygen: 15
@@ -9435,6 +9497,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1235598732}
+  skillText: {fileID: 1235598734}
+  skillType: 8
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1246242019}
+--- !u!1 &1277129203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277129204}
+  - component: {fileID: 1277129206}
+  - component: {fileID: 1277129205}
+  m_Layer: 5
+  m_Name: SkillButtonText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1277129204
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277129203}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 150723912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 171.38297, y: -112.91745}
+  m_SizeDelta: {x: 379.9659, y: 126.8349}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1277129205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277129203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1277129206
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277129203}
+  m_CullTransparentMesh: 1
 --- !u!1 &1292378402
 GameObject:
   m_ObjectHideFlags: 0
@@ -9613,6 +9758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1292378411}
   buttonBright: {fileID: 1292378409}
   skillmax: 0
   needOxygen: 50
@@ -9630,6 +9776,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 31271888}
+  skillText: {fileID: 31271890}
+  skillType: 4
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1292378409}
 --- !u!1 &1305054884
 GameObject:
   m_ObjectHideFlags: 0
@@ -9759,7 +9909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6113963286458849700, guid: 7ff29b3d8dd42574296d4c2015d68e4d, type: 3}
+  m_Sprite: {fileID: 6113963286458849700, guid: 9b5392b01c440de42800465419b3f7a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9808,6 +9958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1305054893}
   buttonBright: {fileID: 1305054891}
   skillmax: 0
   needOxygen: 30
@@ -9825,6 +9976,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1632677840}
+  skillText: {fileID: 1632677842}
+  skillType: 10
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1305054891}
+--- !u!1 &1317741041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317741042}
+  - component: {fileID: 1317741044}
+  - component: {fileID: 1317741043}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1317741042
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317741041}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1933245074}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250.39996, y: -132.49998}
+  m_SizeDelta: {x: 175.2, y: 115.19}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1317741043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317741041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1317741044
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317741041}
+  m_CullTransparentMesh: 1
 --- !u!1 &1321319816
 GameObject:
   m_ObjectHideFlags: 0
@@ -9954,7 +10184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5483580374094839884, guid: 9ac248478994e44499384486d95cd7f6, type: 3}
+  m_Sprite: {fileID: -5483580374094839884, guid: 1ea4da6f80cefd04792076b25e9721f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10003,6 +10233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1321319825}
   buttonBright: {fileID: 1321319823}
   skillmax: 0
   needOxygen: 45
@@ -10020,6 +10251,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 2046268118}
+  skillText: {fileID: 2046268120}
+  skillType: 10
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1321319823}
 --- !u!1 &1328646476
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,6 +10433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1328646485}
   buttonBright: {fileID: 1328646483}
   skillmax: 0
   needOxygen: 15
@@ -10215,6 +10451,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1721681924}
+  skillText: {fileID: 1721681926}
+  skillType: 6
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1328646483}
 --- !u!1 &1331620276
 GameObject:
   m_ObjectHideFlags: 0
@@ -10472,6 +10712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1349220678}
   buttonBright: {fileID: 1349220676}
   skillmax: 0
   needOxygen: 20
@@ -10489,6 +10730,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1427342571}
+  skillText: {fileID: 1427342573}
+  skillType: 3
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1349220676}
 --- !u!1 &1361305577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10667,6 +10912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1361305586}
   buttonBright: {fileID: 1361305584}
   skillmax: 0
   needOxygen: 25
@@ -10684,6 +10930,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1771620335}
+  skillText: {fileID: 1771620337}
+  skillType: 4
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1361305584}
 --- !u!1 &1385493948
 GameObject:
   m_ObjectHideFlags: 0
@@ -11269,6 +11519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1510958426}
   buttonBright: {fileID: 1510958424}
   skillmax: 0
   needOxygen: 15
@@ -11286,6 +11537,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1331620276}
+  skillText: {fileID: 1331620278}
+  skillType: 7
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1510958424}
 --- !u!1 &1541189123
 GameObject:
   m_ObjectHideFlags: 0
@@ -11555,6 +11810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1541568522}
   buttonBright: {fileID: 1541568520}
   skillmax: 0
   needOxygen: 85
@@ -11572,6 +11828,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1677163983}
+  skillText: {fileID: 1677163985}
+  skillType: 2
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1541568520}
 --- !u!1 &1558364517
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,7 +12043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3384788273967893022, guid: 51a56422da704364f9a3879d771113c0, type: 3}
+  m_Sprite: {fileID: -3384788273967893022, guid: 7e4cd0512d55cc54a9875d10d694bbc5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11937,7 +12197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7391901198789243302, guid: 5991fe5e9c547a74bade2623dafa44da, type: 3}
+  m_Sprite: {fileID: -7391901198789243302, guid: d25938d3deaa0ff46a171f85acc34d8f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12589,7 +12849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7391901198789243302, guid: 5991fe5e9c547a74bade2623dafa44da, type: 3}
+  m_Sprite: {fileID: -7391901198789243302, guid: d25938d3deaa0ff46a171f85acc34d8f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12876,6 +13136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1836158768}
   buttonBright: {fileID: 1836158766}
   skillmax: 0
   needOxygen: 50
@@ -12893,6 +13154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1004865748}
+  skillText: {fileID: 1004865750}
+  skillType: 1
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1836158766}
 --- !u!1 &1859539686
 GameObject:
   m_ObjectHideFlags: 0
@@ -13150,6 +13415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 1878646877}
   buttonBright: {fileID: 1878646875}
   skillmax: 0
   needOxygen: 60
@@ -13167,6 +13433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1944287701}
+  skillText: {fileID: 1944287703}
+  skillType: 5
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 1878646875}
 --- !u!1 &1892247497
 GameObject:
   m_ObjectHideFlags: 0
@@ -13224,7 +13494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7391901198789243302, guid: 5991fe5e9c547a74bade2623dafa44da, type: 3}
+  m_Sprite: {fileID: -7391901198789243302, guid: d25938d3deaa0ff46a171f85acc34d8f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13299,7 +13569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3384788273967893022, guid: 51a56422da704364f9a3879d771113c0, type: 3}
+  m_Sprite: {fileID: -3384788273967893022, guid: 7e4cd0512d55cc54a9875d10d694bbc5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13490,6 +13760,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1317741042}
   - {fileID: 267132305}
   - {fileID: 1137970898}
   - {fileID: 196738133}
@@ -13757,6 +14028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 2037179967}
   buttonBright: {fileID: 2037179965}
   skillmax: 0
   needOxygen: 100
@@ -13774,6 +14046,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 773813527}
+  skillText: {fileID: 773813529}
+  skillType: 9
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 2037179965}
 --- !u!1 &2046268118
 GameObject:
   m_ObjectHideFlags: 0
@@ -14508,6 +14784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeDemo
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   timer: {fileID: 0}
+  skilldetail: {fileID: 2118459046}
   buttonBright: {fileID: 2118459044}
   skillmax: 0
   needOxygen: 10
@@ -14525,6 +14802,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1914788549}
+  skillText: {fileID: 1914788551}
+  skillType: 1
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  buttonbright: {fileID: 2118459044}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

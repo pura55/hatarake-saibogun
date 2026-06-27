@@ -7,7 +7,7 @@ public class CameraMove : MonoBehaviour
     private Vector3 lastMousePos;
 
     float minX = -13f;
-    float maxX = 10f;
+    float maxX = 15f;
     float minY = -7f;//И╩ТuТ▓Ро
     float maxY = 10f;
 
