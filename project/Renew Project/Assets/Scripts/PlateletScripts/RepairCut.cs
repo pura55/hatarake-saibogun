@@ -22,6 +22,10 @@ public class RepairCut : MonoBehaviour
     public StatusSkill status;
     public GameObject effectPrefab;　// 修復エフェクトのプレハブ
     private GameObject effectInstans;
+    [SerializeField] private AudioSource repairAudioSource; // 傷修復SE用のオーディオソース
+    [SerializeField] private AudioClip repairSE; // 傷修復SE
+    private bool canPlaySE = true;  // SEを再生できるかどうかのフラグ
+    private float playingTimeOfSE = 0.0f;  // SEの再生時間
     #endregion
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,7 +53,10 @@ public class RepairCut : MonoBehaviour
     void Update()
     {
         if (currentPlatelet >= maxPlatelet)
+        {
+            PlayRepairSE(); //修復用SEを再生
             AddCurrentTime(); //時間を加算
+        }
         
         if (currentTime >= maxRepairTime)
             CompleteRepair(); //修復完了後の処理
@@ -121,5 +128,30 @@ public class RepairCut : MonoBehaviour
         // ゴールの座標（transform.position）にエフェクトを生成
         effectInstans = Instantiate(effectPrefab, effectPosition, Quaternion.identity);
     }
-   
+
+    // 傷修復SEを再生する関数
+    private void PlayRepairSE()
+    {
+        if (canPlaySE)
+        {
+            // 再生する前に一度止める
+            if (repairAudioSource.isPlaying)
+            {
+                repairAudioSource.Stop();
+            }
+            repairAudioSource.PlayOneShot(repairSE);
+            canPlaySE = false;
+        }
+
+        // 再生時間を加算
+        playingTimeOfSE += Time.deltaTime;
+
+        // SEを再生しきったら再びcanPlaySEをtrue
+        if (playingTimeOfSE >= 1.3f)
+        {
+            canPlaySE = true;
+            playingTimeOfSE = 0.0f;
+        }
+    }
+
 }

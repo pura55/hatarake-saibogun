@@ -35,6 +35,8 @@ public class OxygenMove : MonoBehaviour
     private OxygenState state = OxygenState.idle;
     private float angleOffset; // 複数酸素用の角度ずらし
     public GameObject effectPrefab;
+    [SerializeField] private AudioSource getAudioSource; // 酸素獲得SE用のオーディオソース
+    [SerializeField] private AudioClip getOxygenSE;   // 酸素獲得SE
     #endregion
 
     void Start()
@@ -81,6 +83,9 @@ public class OxygenMove : MonoBehaviour
 
                     // RBCの所持酸素数を増やす
                     targetRbc.GetComponent<RbcStatus>().AddOxygen();
+
+                    // 酸素獲得のSEを再生
+                    PlayGetSE();
 
                     // 酸素獲得エフェクトを実行
                     PlayGetEffect(targetRbc);
@@ -204,7 +209,7 @@ public class OxygenMove : MonoBehaviour
         targetRbc.GetComponent<RbcStatus>().ReductionOxygenCount();
     }
 
-    // 傷を修復するエフェクトを実行する関数
+    // 酸素を獲得エフェクトを実行する関数
     private void PlayGetEffect(Transform rbc)
     {
         Vector3 effectPosition = rbc.position;
@@ -222,5 +227,11 @@ public class OxygenMove : MonoBehaviour
 
         // エフェクトの移動用スクリプトに赤血球の参照を渡す
         effectMove.SetRbcReference(rbc);
+    }
+
+    // 酸素を獲得SEを再生する関数
+    private void PlayGetSE()
+    {
+        getAudioSource.PlayOneShot(getOxygenSE);
     }
 }

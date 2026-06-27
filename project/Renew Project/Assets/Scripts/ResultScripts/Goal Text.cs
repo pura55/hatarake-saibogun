@@ -11,13 +11,21 @@ public class Goal : MonoBehaviour
 
     public Timer timer;
 
-    public GameObject effectPrefab;  // ゴールエフェクトのプレハブ
+    [SerializeField] private GameObject effectPrefab;  // ゴールエフェクトのプレハブ
+
+    [SerializeField] private AudioSource audioSource;  // オーディオソース
+
+    [SerializeField] private AudioClip goalJingle; // ゴールジングル
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
         // プレイヤーがゴールに触れたら
         if (collision.CompareTag("RBC"))
         {
+
+            // ゴールSEを再生
+            PlayGoalJingle();
+
             // エフェクトを再生
             PlayGoalEffect();
 
@@ -54,5 +62,10 @@ public class Goal : MonoBehaviour
 
         // ゴールの座標（transform.position）にエフェクトを生成
         Instantiate(effectPrefab, effectPosition, Quaternion.identity);
+    }
+
+    private void PlayGoalJingle()
+    {
+        audioSource.PlayOneShot(goalJingle);
     }
 }
