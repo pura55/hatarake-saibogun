@@ -15,7 +15,6 @@ public class WbcDetection : MonoBehaviour
     private bool isFreez = false;     //硬直のフラグ
     private bool isFound = false;     //敵を発見したかどうかのフラグ
     private float currentFreezTime = 0f; //硬直経過時間
-    public StatusSkill status;
     #endregion
 
     public void SetIsFreez(bool freez) { isFreez = freez; }
@@ -23,8 +22,7 @@ public class WbcDetection : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        CircleCollider2D circle = GetComponent<CircleCollider2D>();
-        circle.radius = status.wbcRange;
+
     }
 
     // Update is called once per frame

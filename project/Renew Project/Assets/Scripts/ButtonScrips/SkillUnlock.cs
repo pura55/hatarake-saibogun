@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class SkillUnlock : MonoBehaviour
 {
-    public static int skillButtonLevel = 0;
     public static int rbcSpeedLevel = 0;
     public static int rbcAmountLevel = 0;
     public static int rbcHaveLevel = 0;
