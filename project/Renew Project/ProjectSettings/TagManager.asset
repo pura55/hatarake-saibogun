@@ -8,6 +8,12 @@ TagManager:
   - Enemy
   - RBC
   - Oxygen
+  - Timer
+  - Platelet
+  - RelayPoint1
+  - RelayPoint2
+  - RelayPoint3
+  - Cut
   layers:
   - Default
   - TransparentFX
@@ -19,8 +25,8 @@ TagManager:
   - Ally
   - Oxygen
   - Wall
-  - 
-  - 
+  - Platelet
+  - RelayPoint
   - 
   - 
   - 

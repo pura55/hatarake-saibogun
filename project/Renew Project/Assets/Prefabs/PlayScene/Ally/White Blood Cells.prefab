@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 561115399516719824}
   - component: {fileID: -5706462904625606405}
   - component: {fileID: 5718505276637883963}
+  - component: {fileID: -4758198707566663628}
+  - component: {fileID: -8932757657927620087}
   m_Layer: 7
   m_Name: White Blood Cells
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.36, y: -1.32, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -3812564109604942302, guid: 5bfa8e870cc7ecb4d9ab433bd70394ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,11 +135,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c97443425ac5ef4bbbd69dd6f78e40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
-  target: {fileID: 0}
   moveForce: 20
   maxSpeed: 3
-  minDistance: 1
+  minDistance: 1.5
   dragAmount: 10
+  target: {fileID: 0}
+  wbcDetection: {fileID: -4758198707566663628}
 --- !u!58 &5718505276637883963
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -174,3 +177,31 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &-4758198707566663628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104101604759121645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea54ca116042084198149d8b4715c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WbcDetection
+  followSpeed: 3
+  detectRange: 3
+  wbcSkills: {fileID: -8932757657927620087}
+--- !u!114 &-8932757657927620087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104101604759121645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bd301b6f412b84ba9d24c575880c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WbcSkills
+  wbcDetection: {fileID: -4758198707566663628}
