@@ -26,7 +26,11 @@ public class RepairCut : MonoBehaviour
     [SerializeField] private AudioClip repairSE; // 傷修復SE
     private bool canPlaySE = true;  // SEを再生できるかどうかのフラグ
     private float playingTimeOfSE = 0.0f;  // SEの再生時間
+    private CutTextController cutTextController; // 血小板をの個数を表示するテキスト
     #endregion
+
+    public int GetMaxPlatelet() { return maxPlatelet; } // 血小板の最大値を返す関数
+    public int GetCurrentPlatelet() { return currentPlatelet; } // 血小板の現在値を返す関数
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +51,11 @@ public class RepairCut : MonoBehaviour
                 maxPlatelet = 25;
                 break;
         }
+
+        // 参照を取得
+        cutTextController = GetComponent<CutTextController>();
+        // 必要な血小板の個数を設定
+        cutTextController.SetPlateletNum(maxPlatelet);
     }
 
     // Update is called once per frame
@@ -68,6 +77,9 @@ public class RepairCut : MonoBehaviour
 
         //血小板の進入時の処理を実行
         HandlePlateletEnter(col.transform);
+
+        // テキストの計算処理を実行
+        cutTextController.CalculatePlateletNum();
 
         if (plateletStack.Count >= maxPlatelet)
             PlayRepairEffect();
