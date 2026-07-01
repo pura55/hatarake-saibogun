@@ -16,9 +16,9 @@ MonoBehaviour:
   rbcAmount: 1
   rbcHave: 1
   wbcTime: 2
-  wbcRange: 1
+  wbcRange: 0.5
   wbcAmount: 0
   pltCure: 1
   pltAmount: 0
-  stageTime: 11
+  stageTime: 10
   stageOx: 30
