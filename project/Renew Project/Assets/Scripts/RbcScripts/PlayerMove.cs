@@ -26,8 +26,11 @@ public class PlayerMove : MonoBehaviour
     public StatusSkill status;
     #endregion
 
+    // 敵からの効果を判定するフラグを設定する関数
     public void SetIsEffectedEnemy(bool isEffected) { isEffectedEnemy = isEffected; }
-    
+
+    // 敵からの効果を判定するフラグを返す関数
+    public bool GetIsEffectedEnemy() { return isEffectedEnemy; }
     // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
     #region Unity Lifecycle
     void Start()
@@ -72,7 +75,13 @@ public class PlayerMove : MonoBehaviour
         PlayerHitWall hitWall = GetComponent<PlayerHitWall>();
         if (hitWall.GetIsCollidingWithWall())
         {
+            // 速度が存在する場合ターゲットをfalseにする
+            if(speed > 0f)
+            {
+                hasTarget = false;
+            }
             speed = 0f; //壁に衝突している場合は移動速度を0に設定
+            return;
         }
         else
         {

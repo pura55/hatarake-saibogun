@@ -1,11 +1,17 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// リレーポイントの通過処理
+/// </summary>
+
 public class PassRP : MonoBehaviour
 {
     public RelayPointStatus relayPointStatus;
     private Transform targetPlatelet;
     PlateletMove plateletMove;
-    int count = 0;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

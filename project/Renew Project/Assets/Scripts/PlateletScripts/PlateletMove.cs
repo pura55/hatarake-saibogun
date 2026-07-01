@@ -1,6 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 血小板の移動
+/// </summary>
+
 public class PlateletMove : MonoBehaviour
 {
     //通過した目標のスタック
@@ -46,19 +52,23 @@ public class PlateletMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 待機リクエストがtrueになったら動きを止める
         if (requestWait) return;
 
         switch (relayCount)
         {
             case 0:
+                // １つ目のリレーフェーズ処理
                 HandleRelayPhase1();
                 break;
 
             case 1:
+                // ２つ目のリレーフェーズ処理
                 HandleRelayPhase2();
                 break;
 
             case 2:
+                // ３つ目のリレーフェーズ処理
                 HandleRelayPhase3();
                 break;
         }

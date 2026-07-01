@@ -10,6 +10,8 @@ public class EnemySkills : MonoBehaviour
     private bool isHitRbc = false;
     public EnemyDetection enemyDetection;
     private Transform targetRbc;
+    [SerializeField] private AudioSource damageAudioSource;
+    [SerializeField] private AudioClip oxygenDamagedSE;
     #endregion
     public bool GetUsedSkill() { return isUsedSkill; }
     public void SetUsedSkill(bool isUsed) { isUsedSkill = isUsed; }
@@ -45,11 +47,19 @@ public class EnemySkills : MonoBehaviour
             if (col.gameObject.CompareTag("RBC"))
             {
                 Debug.Log("赤血球に接触した！");
+                // 赤血球がダメージを受けるSEを再生
+                PlayDamageSE();
                 //赤血球の参照を取得
                 targetRbc = col.transform;
                 isHitRbc = true;
                 //Destroy(col.gameObject);
             }
         }
+    }
+
+    // 酸素がダメージを受けるSEを再生する関数
+    private void PlayDamageSE()
+    {
+        damageAudioSource.PlayOneShot(oxygenDamagedSE);
     }
 }
