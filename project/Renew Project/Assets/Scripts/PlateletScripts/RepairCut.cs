@@ -54,6 +54,8 @@ public class RepairCut : MonoBehaviour
 
         // QÆ‚ğæ“¾
         cutTextController = GetComponent<CutTextController>();
+        // •K—v‚ÈŒŒ¬”Â‚ÌŒÂ”‚ğİ’è
+        cutTextController.SetPlateletNum(maxPlatelet);
     }
 
     // Update is called once per frame

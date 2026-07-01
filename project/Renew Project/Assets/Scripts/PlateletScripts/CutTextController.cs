@@ -10,8 +10,7 @@ public class CutTextController : MonoBehaviour
     void Start()
     {
         repairCut = GetComponent<RepairCut>();
-        // 最大値を代入
-        needPlateletNum = repairCut.GetMaxPlatelet();
+
         // テキストを更新
         UpdateText();
     }
@@ -37,4 +36,6 @@ public class CutTextController : MonoBehaviour
     {
         needPlateletText.text = needPlateletNum.ToString();
     }
+
+    public void SetPlateletNum(int plateletNum) { needPlateletNum = plateletNum; }
 }
