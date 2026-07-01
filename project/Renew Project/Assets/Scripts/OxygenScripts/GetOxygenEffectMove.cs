@@ -4,7 +4,7 @@ using UnityEngine;
 public class GetOxygenEffectMove : MonoBehaviour
 {
     private Transform RBC; // ÔŒŒ‹…‚ÌQÆ
-    private Vector3 constantPosition = new Vector3(0f, 0f, 2f);
+    private Vector3 constantPosition = new Vector3(0f, 0f, -2f);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
