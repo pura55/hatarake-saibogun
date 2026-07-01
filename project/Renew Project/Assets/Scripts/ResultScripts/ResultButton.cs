@@ -5,6 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ResultButton : MonoBehaviour
 {
+    // ランダムで遷移するシーン一覧
+    private string[] stageScenes =
+    {
+        "map1",
+        "map2",
+        "map3",
+        "map4",
+        "map5",
+        "PlayScene"
+    };
+
+    private int lastIndex = -1;
+
     //SkillTreeボタンを押したらSkillSceneへ移行
     public void  OpenSkill()
     {
@@ -14,7 +27,17 @@ public class ResultButton : MonoBehaviour
     //Continueボタンを押すと、ゲームを最初から再開する
     public void ContinueGame()
     {
-        SceneManager.LoadScene("PlayScene");
+        int randomIndex;
+
+        do
+        {
+            randomIndex = Random.Range(0, stageScenes.Length);
+        }
+        while (randomIndex == lastIndex);
+
+        lastIndex = randomIndex;
+
+        SceneManager.LoadScene(stageScenes[randomIndex]);
     }
 
     //Continueボタンを押すと、ゲームを最初から再開する

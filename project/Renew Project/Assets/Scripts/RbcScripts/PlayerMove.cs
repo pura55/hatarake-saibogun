@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
 public class PlayerMove : MonoBehaviour
@@ -49,8 +50,17 @@ public class PlayerMove : MonoBehaviour
         //ÉSÅ[ÉãÇµÇΩÇÁ
         if (isGoal)
         {
-            //è„Ç…à⁄ìÆÇ∑ÇÈ
-            transform.position += Vector3.up * 5f * Time.deltaTime;
+            if (SceneManager.GetActiveScene().name == "PlayScene")
+            {
+                // PlaySceneÇÕè„Ç÷
+                transform.position += Vector3.up * 5f * Time.deltaTime;
+            }
+            else
+            {
+                // map1Å`map5ÇÕâEÇ÷
+                transform.position += Vector3.right * 5f * Time.deltaTime;
+            }
+
             return;
         }
 
