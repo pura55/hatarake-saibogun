@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 //担当者：石川天馬
 
@@ -13,6 +15,28 @@ public class slide : MonoBehaviour
     [SerializeField] private GameObject nextButton; // 次へボタン
     [SerializeField] private GameObject startButton; //スタートボタン
 
+    [Header("Button SE")]
+    [SerializeField] private AudioSource seAudioSource;
+    [SerializeField] private AudioClip buttonSE;
+
+    // ランダムで遷移するシーン一覧
+    private string[] stageScene =
+    {
+        "map1",
+        "map2",
+        "map3",
+        "map4",
+        "map5"
+    };
+
+    private IEnumerator LoadSceneAfterSE(string sceneName)
+    {
+        // ボタンSEが鳴り終わるまで待つ
+        yield return new WaitForSeconds(buttonSE.length);
+
+        SceneManager.LoadScene(sceneName);
+    }
+
     private enum SlideState 
     {
         first,     // 一枚目のスライド
@@ -23,6 +47,11 @@ public class slide : MonoBehaviour
         sixth,     // 六枚目のスライド
         seventh,   // 七枚目のスライド
         eighth     // 八枚目のスライド
+    }
+
+    private void PlayButtonSE()
+    {
+        seAudioSource.PlayOneShot(buttonSE);
     }
 
     // スライド用の列挙型変数
@@ -57,7 +86,11 @@ public class slide : MonoBehaviour
     //スタートボタンを押すとPlaySceneへ遷移する
     public void TStartGame()
     {
-        SceneManager.LoadScene("PlayScene");
+        PlayButtonSE();
+
+        int randomIndex = Random.Range(0, stageScene.Length);
+
+        StartCoroutine(LoadSceneAfterSE(stageScene[randomIndex]));
     }
 
     //画像更新処理
