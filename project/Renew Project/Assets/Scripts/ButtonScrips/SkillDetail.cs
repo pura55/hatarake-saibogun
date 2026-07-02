@@ -63,8 +63,8 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         bool LevelLock = currentLevel + 1 == buttonbright.myLevel || OxygenCounter.totalOxygen >= buttonbright.needOxygen;
         switch (skillType)
         {
-            //case SkillType.SkillButton:
-            //    return SkillUnlock.skillButtonLevel;
+            case SkillType.SkillButton:
+                return SkillUnlock.skillButtonLevel >= 1;
             case SkillType.RBCSpeed:
                 return LevelLock && SkillUnlock.rbcAmountLevel >= 1;
 
