@@ -18,4 +18,6 @@ public class StatusSkill : ScriptableObject
 
     public int stageTime = 10;
     public int stageOx = 30;
+
+    public bool isSkillMax = false;
 }

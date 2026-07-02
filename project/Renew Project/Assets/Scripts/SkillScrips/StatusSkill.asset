@@ -22,3 +22,4 @@ MonoBehaviour:
   pltAmount: 0
   stageTime: 10
   stageOx: 30
+  isSkillMax: 0

@@ -7,7 +7,7 @@ public class SkillTree : MonoBehaviour
     public Timer timer;
     public SkillDetail skilldetail;
     public Buttonbright buttonBright;
-    public int skillmax = 0;//10になったらスキル全開放済み
+    public int skillmax = 0;
     [SerializeField] private int needOxygen;
     public enum UpgradeType
     {
