@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5741869673719860847, guid: 240ce52e9458f814bb5520857f549186, type: 3}
+      propertyPath: relayPointStatus
+      value: 
+      objectReference: {fileID: 264852820}
     - target: {fileID: 5903249238997809360, guid: 240ce52e9458f814bb5520857f549186, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.78
@@ -245,6 +249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5741869673719860847, guid: 240ce52e9458f814bb5520857f549186, type: 3}
+      propertyPath: relayPointStatus
+      value: 
+      objectReference: {fileID: 1282467816}
     - target: {fileID: 5903249238997809360, guid: 240ce52e9458f814bb5520857f549186, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -298,6 +306,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 240ce52e9458f814bb5520857f549186, type: 3}
+--- !u!114 &264852820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8893161177787070041, guid: 240ce52e9458f814bb5520857f549186, type: 3}
+  m_PrefabInstance: {fileID: 1949100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfc2689539665f4fbb9905dd402811a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RelayPointStatus
 --- !u!1001 &648187789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -679,6 +698,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 539401236012561979, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
   m_PrefabInstance: {fileID: 1799287486}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1282467816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8893161177787070041, guid: 240ce52e9458f814bb5520857f549186, type: 3}
+  m_PrefabInstance: {fileID: 170223852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfc2689539665f4fbb9905dd402811a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RelayPointStatus
 --- !u!1001 &1490405415
 PrefabInstance:
   m_ObjectHideFlags: 0
