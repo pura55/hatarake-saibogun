@@ -42,7 +42,7 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             descriptionUI.SetActive(true);
 
             RectTransform rect = descriptionUI.GetComponent<RectTransform>();
-            rect.anchoredPosition = new Vector2(-135, -190);
+            rect.anchoredPosition = new Vector2(-125, -185);
 
             if (UnlockCheck())
             {
@@ -59,43 +59,45 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public bool UnlockCheck()
     {
         int currentLevel = GetCurrentLevel();
-        bool LvelLock = currentLevel + 1 == buttonbright.myLevel || OxygenCounter.totalOxygen >= buttonbright.needOxygen;
+        //bool LevelLock = currentLevel + 1 == buttonbright.myLevel && OxygenCounter.totalOxygen >= buttonbright.needOxygen;
+        bool LevelLock = currentLevel + 1 == buttonbright.myLevel || OxygenCounter.totalOxygen >= buttonbright.needOxygen;
         switch (skillType)
         {
-            //case SkillType.SkillButton:
-            //    return SkillUnlock.skillButtonLevel;
+            case SkillType.SkillButton:
+                return SkillUnlock.skillButtonLevel == 0;
+
             case SkillType.RBCSpeed:
-                return LvelLock && SkillUnlock.rbcAmountLevel >= 1;
+                return LevelLock && SkillUnlock.rbcAmountLevel >= 1;
 
             case SkillType.RBCHave:
-                return LvelLock && SkillUnlock.rbcAmountLevel >= 1;
+                return LevelLock && SkillUnlock.rbcAmountLevel >= 1;
 
             case SkillType.WBCTime:
-                return LvelLock && SkillUnlock.wbcAmountLevel >= 1;
+                return LevelLock && SkillUnlock.wbcAmountLevel >= 1;
 
             case SkillType.WBCRange:
-                return LvelLock && SkillUnlock.wbcAmountLevel >= 1;
+                return LevelLock && SkillUnlock.wbcAmountLevel >= 1;
 
             case SkillType.PLTCure:
-                return LvelLock && SkillUnlock.pltAmountLevel >= 1;
+                return LevelLock && SkillUnlock.pltAmountLevel >= 1;
 
             case SkillType.RBCAmount:
-                return LvelLock && SkillUnlock.skillButtonLevel >= 1;
+                return LevelLock && SkillUnlock.skillButtonLevel >= 1;
 
             case SkillType.PLTAmount:
-                return LvelLock && SkillUnlock.skillButtonLevel >= 1;
+                return LevelLock && SkillUnlock.skillButtonLevel >= 1;
 
             case SkillType.WBCAmount:
-                return LvelLock && SkillUnlock.skillButtonLevel >= 1;
+                return LevelLock && SkillUnlock.skillButtonLevel >= 1;
 
             case SkillType.StageOx:
-                return LvelLock && SkillUnlock.skillButtonLevel >= 1;
+                return LevelLock && SkillUnlock.skillButtonLevel >= 1;
 
             case SkillType.StageTime:
-                return LvelLock && SkillUnlock.skillButtonLevel >= 1;
+                return LevelLock && SkillUnlock.skillButtonLevel >= 1;
 
             default:
-                return LvelLock;
+                return LevelLock;
         }
     }
     int GetCurrentLevel()

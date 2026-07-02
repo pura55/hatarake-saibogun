@@ -77,7 +77,7 @@ public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHand
     bool CanUnlock()
     {
         int currentLevel = GetCurrentLevel();
-
+        
         switch (skillType)
         {
             case SkillType.RBCSpeed:
@@ -91,7 +91,21 @@ public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHand
 
             case SkillType.WBCRange:
                 return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.wbcAmountLevel >= 1;
+            
+            case SkillType.PLTCure:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.pltAmountLevel >= 1;
+           
+            case SkillType.PLTAmount:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.skillButtonLevel >= 1;
 
+            case SkillType.WBCAmount:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.skillButtonLevel >= 1;
+
+            case SkillType.StageOx:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.skillButtonLevel >= 1;
+
+            case SkillType.StageTime:
+                return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.skillButtonLevel >= 1;
             default:
                 return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen;
         }
