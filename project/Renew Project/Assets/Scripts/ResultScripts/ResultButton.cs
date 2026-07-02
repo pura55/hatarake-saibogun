@@ -12,8 +12,7 @@ public class ResultButton : MonoBehaviour
         "map2",
         "map3",
         "map4",
-        "map5",
-        "PlayScene"
+        "map5"
     };
 
     private int lastIndex = -1;
