@@ -15,15 +15,22 @@ public class PassRP : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // 同じオブジェクトから自動で持ってくる
+        relayPointStatus = GetComponent<RelayPointStatus>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(relayPointStatus.GetIsPass())
+        if (relayPointStatus == null) return;
+
+        if (relayPointStatus.GetIsPass())
         {
-            plateletMove.ResetRelayPoint();
+            // plateletMoveがnullの状態で実行されないようにチェック
+            if (plateletMove != null)
+            {
+                plateletMove.ResetRelayPoint();
+            }
             relayPointStatus.SetIsPass(false);
         }
     }
