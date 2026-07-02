@@ -64,7 +64,8 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         switch (skillType)
         {
             case SkillType.SkillButton:
-                return SkillUnlock.skillButtonLevel >= 1;
+                return SkillUnlock.skillButtonLevel == 0;
+
             case SkillType.RBCSpeed:
                 return LevelLock && SkillUnlock.rbcAmountLevel >= 1;
 
