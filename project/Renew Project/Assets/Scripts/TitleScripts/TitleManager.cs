@@ -15,10 +15,22 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] GameObject tutorialPnael;
 
+    // ランダムで遷移するシーン一覧
+    private string[] maps =
+    {
+        "map1",
+        "map2",
+        "map3",
+        "map4",
+        "map5"
+    };
+
     //スタートボタンを押したらプレイシーンへ移行
     public void StartGame()
     {
-        SceneManager.LoadScene("PlayScene");
+        int randomIndex = Random.Range(0, maps.Length);
+
+        SceneManager.LoadScene(maps[randomIndex]);
     }
 
     //チュートリアルボタンを押したらチュートリアル画像を表示

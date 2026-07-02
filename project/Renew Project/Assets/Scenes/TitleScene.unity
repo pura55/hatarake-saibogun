@@ -535,14 +535,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::slide
   tutorialImage: {fileID: 1022790087}
   slideSprites:
-  - {fileID: -2155970453367365409, guid: c1df8585ead02424097d7b09c2bd1adf, type: 3}
-  - {fileID: 6909384699231315216, guid: 59eb13451dd9a374ebc24ba54cbb7e4e, type: 3}
-  - {fileID: 2773053158195209922, guid: dbb9782e84df276468a710f23491b5c7, type: 3}
-  - {fileID: 6066597707018783154, guid: fde70c00d7d0ecd4ab3510d9ece8d18c, type: 3}
-  - {fileID: -755715562587833910, guid: 6c37b6ec83f5e774c8990db56a648813, type: 3}
-  - {fileID: 6641509761007561954, guid: 5f5fa53fb82c68d489cce7b9670867ad, type: 3}
-  - {fileID: 832670851158438690, guid: a94939b5360440449b3c18dbdf0d62f0, type: 3}
-  - {fileID: 2773053158195209922, guid: dbb9782e84df276468a710f23491b5c7, type: 3}
+  - {fileID: -6129663409078077678, guid: e05c84df264d18040aba884d965975ac, type: 3}
+  - {fileID: -4732077350227244063, guid: 41caba0cf7d861144b249c6b497edca9, type: 3}
+  - {fileID: -1533053127017119437, guid: e94081debf4626840b9a74e4ff460d94, type: 3}
+  - {fileID: 2612794632079753609, guid: f0b891893406a944eaf854d70e527e00, type: 3}
+  - {fileID: 5886984810435193464, guid: 6fc68c099879b4b46b2a6371afc0a2ed, type: 3}
+  - {fileID: 1148266195597047962, guid: c99f1ec711863164ca1d59ca8e5c93bc, type: 3}
+  - {fileID: 3745897974168694465, guid: 429906a6c9d63bd40b49b6316dcc3195, type: 3}
+  - {fileID: -449279135821165304, guid: e54f3ece34605784089419730b71d7a0, type: 3}
   prevButton: {fileID: 975140096}
   nextButton: {fileID: 397820279}
   startButton: {fileID: 2042317114}
@@ -1486,6 +1486,10 @@ PrefabInstance:
     - target: {fileID: 224364112104554514, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_Name
       value: CloseButton(S)
+      objectReference: {fileID: 0}
+    - target: {fileID: 257172090721504777, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00024414062
       objectReference: {fileID: 0}
     - target: {fileID: 263879744920185849, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_AnchorMax.x
