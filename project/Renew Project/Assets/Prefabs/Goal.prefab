@@ -153,12 +153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Goal
   goalText: {fileID: 0}
+  clearText: {fileID: 0}
   blackPanel: {fileID: 0}
   resultmanager: {fileID: 0}
   timer: {fileID: 0}
   effectPrefab: {fileID: 6799137954918481779, guid: 8a70f67d12c0b62428af49bf5734269b, type: 3}
   audioSource: {fileID: -1207177802687604514}
   goalJingle: {fileID: 8300000, guid: a55a798f48f69a3438ad4bfe142b11e1, type: 3}
+  statusSkill: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
 --- !u!82 &-1207177802687604514
 AudioSource:
   m_ObjectHideFlags: 0

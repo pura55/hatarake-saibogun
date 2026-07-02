@@ -483,6 +483,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1458389009}
     - target: {fileID: 5998763802513242375, guid: 02a4943c8aed3bb4bb38a611d644f6be, type: 3}
+      propertyPath: clearText
+      value: 
+      objectReference: {fileID: 1879464950}
+    - target: {fileID: 5998763802513242375, guid: 02a4943c8aed3bb4bb38a611d644f6be, type: 3}
       propertyPath: blackPanel
       value: 
       objectReference: {fileID: 1458389011}
@@ -769,6 +773,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1217740330317905024, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2008752154218173676, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -784,6 +792,10 @@ PrefabInstance:
     - target: {fileID: 2449950113660324892, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ContinueGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069714783476691762, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3643889997971094082, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
       propertyPath: m_Name
@@ -1221,6 +1233,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 845dbf9e40adc24418be1b1cd7c3742c, type: 3}
+--- !u!1 &1879464950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2365116429322389991, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
+  m_PrefabInstance: {fileID: 1458389008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1916237799
 GameObject:
   m_ObjectHideFlags: 0
