@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1183ddeb31cf9904f9b27347d1c48632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  currentSpawnIndex: 1
   enemyToSpawn: {fileID: 8842109261900865330, guid: fcc6e90bdc8e1c9438a9548077cdf62a, type: 3}
-  spawnRange: {x: 10, y: 6, z: 0}
+  spawnRange: {x: 2, y: 3, z: 0}
+  targetTagWall: Wall
+  targetTagCut: Cut
