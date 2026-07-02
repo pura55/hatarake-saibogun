@@ -120,6 +120,8 @@ public class PlayerMove : MonoBehaviour
     public void StartGoalMove()
     {
         isGoal = true;
+        hasTarget = false;
+        speed = 0f;
     }
 
     public void EffectedTimeCounter()

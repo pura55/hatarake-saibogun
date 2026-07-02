@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d964d05068f7542ad5f8998ca25cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResultButton
-  audioSource: {fileID: 7340602315759054240}
+  seAudioSource: {fileID: 7340602315759054240}
   buttonSE: {fileID: 8300000, guid: 8e5c535dd8e1a2c4eb9e4fab6cdbee77, type: 3}
 --- !u!82 &7340602315759054240
 AudioSource:

@@ -16,37 +16,50 @@ public class Goal : MonoBehaviour
     [SerializeField] private AudioSource audioSource;  // オーディオソース
 
     [SerializeField] private AudioClip goalJingle; // ゴールジングル
+
+    private bool isGoal = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
+        if (isGoal) return;
+
         // プレイヤーがゴールに触れたら
         if (collision.CompareTag("RBC"))
-        {
+            return;
 
-            // ゴールSEを再生
-            PlayGoalJingle();
+        isGoal = true;
 
-            // エフェクトを再生
-            PlayGoalEffect();
+        // ゴールSEを再生
+        PlayGoalJingle();
 
-            // タイマー停止
-            timer.isStop = true;
+        // エフェクトを再生
+        PlayGoalEffect();
 
-            // 黒幕表示
-            blackPanel.SetActive(true);
+        // タイマー停止
+        timer.isStop = true;
 
-            //テキストを表示
-            goalText.SetActive(true);
+        // 黒幕表示
+        blackPanel.SetActive(true);
 
-            // リザルト表示
-            resultmanager.ShowGoalResult();
-        }
+        //テキストを表示
+        goalText.SetActive(true);
+
+        // リザルト表示
+        resultmanager.ShowGoalResult();
 
         // プレイヤーを停止
-        PlayerMove playerMove = collision.GetComponent<PlayerMove>();
-        if (playerMove != null)
+        PlayerMove[] players = FindObjectsByType<PlayerMove>(FindObjectsSortMode.None);
+        foreach (PlayerMove player in players)
         {
-            playerMove.StartGoalMove();
+            player.StartGoalMove();
+        }
+
+        EnemyDetection[] enemies =
+    FindObjectsByType<EnemyDetection>(FindObjectsSortMode.None);
+
+        foreach (EnemyDetection enemy in enemies)
+        {
+            enemy.StopEnemy();
         }
     }
 

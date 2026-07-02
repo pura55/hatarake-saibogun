@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 //担当者；石川天馬
 
@@ -34,6 +35,14 @@ public class TitleManager : MonoBehaviour
         seAudioSource.PlayOneShot(buttonSE);
     }
 
+    private IEnumerator LoadSceneAfterSE(string sceneName)
+    {
+        // ボタンSEが鳴り終わるまで待つ
+        yield return new WaitForSeconds(buttonSE.length);
+
+        SceneManager.LoadScene(sceneName);
+    }
+
     //スタートボタンを押したらプレイシーンへ移行
     public void StartGame()
     {
@@ -41,7 +50,7 @@ public class TitleManager : MonoBehaviour
 
         int randomIndex = Random.Range(0, maps.Length);
 
-        SceneManager.LoadScene(maps[randomIndex]);
+        StartCoroutine(LoadSceneAfterSE(maps[randomIndex]));
     }
 
     //チュートリアルボタンを押したらチュートリアル画像を表示

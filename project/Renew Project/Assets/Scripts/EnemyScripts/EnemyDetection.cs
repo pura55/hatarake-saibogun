@@ -29,9 +29,21 @@ public class EnemyDetection : MonoBehaviour
         effectedTime = status.wbcTime;
     }
 
+    private bool isGoal = false;
+
+    public void StopEnemy()
+    {
+        isGoal = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (isGoal)
+        {
+            return;
+        }
+
         //–Ú•W‚Æ‚·‚é‘ÎÛ‚ª‘¶İ‚µ‚È‚¢‚Æ‚«’Tõ‚µ‚Äreturn
         if (targetRbc == null)
         {
