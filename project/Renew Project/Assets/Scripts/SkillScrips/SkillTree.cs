@@ -295,6 +295,7 @@ public class SkillTree : MonoBehaviour
             case UpgradeType.WBCTimeLv1://抑える時間
                 if (status.wbcTime == 2.0f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount == 3 && SkillUnlock.wbcAmountLevel >= 1)
                 {
+                    Debug.Log($"WBCTime : {status.wbcTime}");
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.wbcTime = 2.4f; 
                     SkillUnlock.wbcTimeLevel = 1;
@@ -352,8 +353,9 @@ public class SkillTree : MonoBehaviour
                 break;
                 
             case UpgradeType.WBCRangeLv1://ウイルス感知範囲
-                if (status.wbcRange == 0.5f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount == 3 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.wbcRange == 0.5f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount == 3 && SkillUnlock.wbcAmountLevel >= 1)
                 {
+                    Debug.Log($"WBCRange : {status.wbcRange}");
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.wbcRange = 0.6f;
                     SkillUnlock.wbcRangeLevel = 1;
@@ -510,6 +512,7 @@ public class SkillTree : MonoBehaviour
             case UpgradeType.PLTCureLv1://回復速度
                 if (status.pltCure == 1.0f && OxygenCounter.totalOxygen >= needOxygen && status.pltAmount ==10)
                 {
+                    Debug.Log($"PLTCure : {status.pltCure}");
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.pltCure = 1.2f;
                     SkillUnlock.pltCureLevel = 1;

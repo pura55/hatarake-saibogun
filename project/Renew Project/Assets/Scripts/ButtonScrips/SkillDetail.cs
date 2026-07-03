@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 using static Buttonbright;
 //íSìñÅ@êÁótåãâ¡
 
@@ -11,7 +12,7 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     //private Image image;
 
     [SerializeField] private GameObject descriptionUI;
-    public Text skillText;
+    public TextMeshProUGUI skillText;
     public SkillType skillType;
     public StatusSkill status;
     public Buttonbright buttonbright;
@@ -42,7 +43,7 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             descriptionUI.SetActive(true);
 
             RectTransform rect = descriptionUI.GetComponent<RectTransform>();
-            rect.anchoredPosition = new Vector2(-130, -170);
+            rect.anchoredPosition = new Vector2(-220, -130);
 
             if (UnlockCheck())
             {
