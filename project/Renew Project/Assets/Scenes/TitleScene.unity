@@ -639,7 +639,7 @@ MonoBehaviour:
   - {fileID: -6129663409078077678, guid: e05c84df264d18040aba884d965975ac, type: 3}
   - {fileID: -4732077350227244063, guid: 41caba0cf7d861144b249c6b497edca9, type: 3}
   - {fileID: -1533053127017119437, guid: e94081debf4626840b9a74e4ff460d94, type: 3}
-  - {fileID: 2612794632079753609, guid: f0b891893406a944eaf854d70e527e00, type: 3}
+  - {fileID: -7579582104305496261, guid: 255d6eb6ddb111244be50c92b39c350e, type: 3}
   - {fileID: 5886984810435193464, guid: 6fc68c099879b4b46b2a6371afc0a2ed, type: 3}
   - {fileID: 1148266195597047962, guid: c99f1ec711863164ca1d59ca8e5c93bc, type: 3}
   - {fileID: 3745897974168694465, guid: 429906a6c9d63bd40b49b6316dcc3195, type: 3}
@@ -1817,11 +1817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1264231765385784881, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1280
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 1264231765385784881, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 650
+      value: 651
       objectReference: {fileID: 0}
     - target: {fileID: 1264231765385784881, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2011,6 +2011,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3246546016457907152, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6146341581706034131, guid: 2bd2d6481479f0b4ab1d7a8ab790ea18, type: 3}
     - target: {fileID: 3249339106205971660, guid: a757946ccca32c1499f9f4bcc682ee4e, type: 3}
       propertyPath: m_fontSize
       value: 100
