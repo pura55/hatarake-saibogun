@@ -25,6 +25,9 @@ public class PlayerMove : MonoBehaviour
     private bool isGoal = false;         //ゴールしたかどうか
     private float currentEffectedTime = 0f; //現在の効果時間
     public StatusSkill status;
+    SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite idleSprite;
+    [SerializeField] private Sprite damagedSprite;
     #endregion
 
     // 敵からの効果を判定するフラグを設定する関数
@@ -37,6 +40,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         speed = status.rbcSpeed;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -129,10 +133,14 @@ public class PlayerMove : MonoBehaviour
         if (currentEffectedTime< effectedTime)
         {
             currentEffectedTime += Time.deltaTime;
+            // 画像をダメージを受けている画像に変更
+            spriteRenderer.sprite = damagedSprite;
         }
         else
         {
             currentEffectedTime = 0f;
+            // 画像をIdle画像に変更
+            spriteRenderer.sprite = idleSprite;
             SetIsEffectedEnemy(false);
         }
     }
