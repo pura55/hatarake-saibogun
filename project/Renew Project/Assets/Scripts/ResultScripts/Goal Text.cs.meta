@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: fe0b4f2c43cc9a349bd0582ae292ae16
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - goalText: {instanceID: 0}
+  - clearText: {instanceID: 0}
+  - blackPanel: {instanceID: 0}
+  - resultmanager: {instanceID: 0}
+  - statusSkill: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  - timer: {instanceID: 0}
+  - effectPrefab: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - goalJingle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

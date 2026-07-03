@@ -136,6 +136,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 363649143}
     - target: {fileID: 5998763802513242375, guid: 02a4943c8aed3bb4bb38a611d644f6be, type: 3}
+      propertyPath: clearText
+      value: 
+      objectReference: {fileID: 363649144}
+    - target: {fileID: 5998763802513242375, guid: 02a4943c8aed3bb4bb38a611d644f6be, type: 3}
       propertyPath: blackPanel
       value: 
       objectReference: {fileID: 1182510677}
@@ -424,6 +428,11 @@ MonoBehaviour:
 --- !u!1 &363649143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 160214300876405191, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
+  m_PrefabInstance: {fileID: 363649141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &363649144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9124169330365327500, guid: a99aa83373aca9a4b9e6525c25d73840, type: 3}
   m_PrefabInstance: {fileID: 363649141}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &489141540 stripped
