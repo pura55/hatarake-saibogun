@@ -42,7 +42,7 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             descriptionUI.SetActive(true);
 
             RectTransform rect = descriptionUI.GetComponent<RectTransform>();
-            rect.anchoredPosition = new Vector2(-100, -170);
+            rect.anchoredPosition = new Vector2(-130, -170);
 
             if (UnlockCheck())
             {
