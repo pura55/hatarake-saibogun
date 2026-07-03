@@ -3,9 +3,10 @@ using TMPro;
 
 public class CutTextController : MonoBehaviour
 {
-    [SerializeField] private TMP_Text needPlateletText;  // 必要な酸素数を表示するテキスト
+    [SerializeField] private TMP_Text needPlateletText;  // 必要な血小板数を表示するテキスト
     private RepairCut repairCut;
-    private int needPlateletNum = 0; // 必要な酸素
+    private int needPlateletNum = 0; // 必要な血小板(最大値）
+    private int currentPlateleteNum = 0; // 現在必要な血小板
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,18 +25,20 @@ public class CutTextController : MonoBehaviour
     public void CalculatePlateletNum()
     {
         // 血小板の計算
-        needPlateletNum = needPlateletNum - repairCut.GetCurrentPlatelet();
+        // 最大値　-  現在の数　＝　現在必要な数
+        currentPlateleteNum = needPlateletNum - repairCut.GetCurrentPlatelet();
+
         // 0未満になった場合0に固定
-        if(needPlateletNum < 0)
+        if(currentPlateleteNum < 0)
         {
-            needPlateletNum = 0;
+            currentPlateleteNum = 0;
         }
     }
     // テキストを更新する関数
     private void UpdateText()
     {
-        needPlateletText.text = needPlateletNum.ToString();
+        needPlateletText.text = currentPlateleteNum.ToString();
     }
 
-    public void SetPlateletNum(int plateletNum) { needPlateletNum = plateletNum; }
+    public void SetPlateletNum(int plateletNum) {   needPlateletNum = plateletNum; }
 }
