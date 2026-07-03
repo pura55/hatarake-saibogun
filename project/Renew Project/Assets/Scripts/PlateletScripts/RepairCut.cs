@@ -21,7 +21,8 @@ public class RepairCut : MonoBehaviour
     private Stack<Transform> plateletStack; // 血小板のスタック
     public StatusSkill status;
     public GameObject effectPrefab;　// 修復エフェクトのプレハブ
-    private GameObject effectInstans;
+    private GameObject effectInstans; // 修復エフェクトのインスタンス
+    private bool isSpawned = false;  // スポーンのフラグ（true:スポーンした　false:スポーンしてない)
     [SerializeField] private AudioSource repairAudioSource; // 傷修復SE用のオーディオソース
     [SerializeField] private AudioClip repairSE; // 傷修復SE
     private bool canPlaySE = true;  // SEを再生できるかどうかのフラグ
@@ -81,7 +82,7 @@ public class RepairCut : MonoBehaviour
         // テキストの計算処理を実行
         cutTextController.CalculatePlateletNum();
 
-        if (plateletStack.Count >= maxPlatelet)
+        if (plateletStack.Count >= maxPlatelet　&& !isSpawned)
             PlayRepairEffect();
     }
 
@@ -114,7 +115,10 @@ public class RepairCut : MonoBehaviour
             Destroy(plateletStack.Peek().gameObject);
             plateletStack.Pop();
         }
+        // SEを止める
+        repairAudioSource.Stop();
 
+        // エフェクトを削除
         Destroy(effectInstans);
     }
     //修復にかかる時間の加算を行う関数
@@ -139,6 +143,9 @@ public class RepairCut : MonoBehaviour
 
         // ゴールの座標（transform.position）にエフェクトを生成
         effectInstans = Instantiate(effectPrefab, effectPosition, Quaternion.identity);
+
+        // スポーン済みにする
+        isSpawned = true;
     }
 
     // 傷修復SEを再生する関数
