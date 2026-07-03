@@ -9,9 +9,7 @@ public class Goal : MonoBehaviour
     public GameObject blackPanel;
 
     public ResultManager resultmanager;
-
     public StatusSkill statusSkill;
-
     public Timer timer;
 
     [SerializeField] private GameObject effectPrefab;  // ゴールエフェクトのプレハブ
@@ -21,14 +19,29 @@ public class Goal : MonoBehaviour
     [SerializeField] private AudioClip goalJingle; // ゴールジングル
 
     private bool isGoal = false;
+
+    private float goalEnableDelay = 0.2f;
+    private float timerCount = 0f;
+
+    private void Start()
+    {
+        isGoal = false;
+        timerCount = 0f;
+    }
+
+    private void Update()
+    {
+        timerCount += Time.deltaTime;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (timerCount < goalEnableDelay) return;
 
         if (isGoal) return;
 
         // プレイヤーがゴールに触れたら
-        if (collision.CompareTag("RBC"))
-            return;
+        if (!collision.CompareTag("RBC")) return;
 
         isGoal = true;
 
