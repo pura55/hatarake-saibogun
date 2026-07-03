@@ -106,6 +106,7 @@ public class Buttonbright :MonoBehaviour//,IPointerEnterHandler,IPointerExitHand
 
             case SkillType.StageTime:
                 return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen && SkillUnlock.skillButtonLevel >= 1;
+       
             default:
                 return currentLevel + 1 == myLevel && OxygenCounter.totalOxygen >= needOxygen;
         }

@@ -58,11 +58,11 @@ public class SkillTree : MonoBehaviour
 
         switch (upgradeType)
         {
-            case UpgradeType.SkillButton://チュートリアル用RBCHave強化
-                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen)
+            case UpgradeType.SkillButton://チュートリアル用RBCAmount強化
+                if (status.rbcAmount == 1 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
-                    status.rbcHave = 2;
+                    status.rbcAmount = 2;
                     SkillUnlock.skillButtonLevel = 1;
                     Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
                     Debug.Log("SkillButton");
@@ -137,10 +137,10 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCAmountLv1://赤血球数
-                if (status.rbcAmount == 1 && OxygenCounter.totalOxygen >= needOxygen)
+                if (status.rbcAmount == 2 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
-                    status.rbcAmount = 2; 
+                    status.rbcAmount = 3; 
                     SkillUnlock.rbcAmountLevel = 1;
                     skilldetail.skillText.color = Color.black;
                     Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
@@ -156,10 +156,10 @@ public class SkillTree : MonoBehaviour
                 }
                     break;
             case UpgradeType.RBCAmountLv2:
-                if (status.rbcAmount == 2 && OxygenCounter.totalOxygen >= needOxygen)
+                if (status.rbcAmount == 3 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
-                    status.rbcAmount = 3;
+                    status.rbcAmount = 4;
                     SkillUnlock.rbcAmountLevel = 2;
                     skilldetail.skillText.color = Color.black;
                     Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
@@ -175,7 +175,7 @@ public class SkillTree : MonoBehaviour
                 }
                 break;
             case UpgradeType.RBCAmountLv3:
-                if (status.rbcAmount == 3 && OxygenCounter.totalOxygen >= needOxygen)
+                if (status.rbcAmount == 4 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.rbcAmount = 5;
@@ -234,10 +234,10 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCHaveLv1://持てる酸素数
-                if (status.rbcHave == 2 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount == 2 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount == 2 && SkillUnlock.rbcAmountLevel >= 1)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
-                    status.rbcHave = 3;
+                    status.rbcHave = 2;
                     SkillUnlock.rbcHaveLevel = 1;
                     skilldetail.skillText.color = Color.black;
                     Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
@@ -253,10 +253,10 @@ public class SkillTree : MonoBehaviour
                 }
                 break;
             case UpgradeType.RBCHaveLv2:
-                if (status.rbcHave == 3 && OxygenCounter.totalOxygen >= needOxygen)
+                if (status.rbcHave == 2 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
-                    status.rbcHave = 4;
+                    status.rbcHave = 3;
                     SkillUnlock.rbcHaveLevel = 2;
                     skilldetail.skillText.color = Color.black;
                     Buttonbright[] buttons = FindObjectsByType<Buttonbright>(FindObjectsSortMode.None);
@@ -272,7 +272,7 @@ public class SkillTree : MonoBehaviour
                 }
                 break;
             case UpgradeType.RBCHaveLv3:
-                if (status.rbcHave == 4 && OxygenCounter.totalOxygen >= needOxygen)
+                if (status.rbcHave == 3 && OxygenCounter.totalOxygen >= needOxygen)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.rbcHave = 5;
