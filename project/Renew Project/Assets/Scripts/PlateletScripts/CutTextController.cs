@@ -40,5 +40,9 @@ public class CutTextController : MonoBehaviour
         needPlateletText.text = currentPlateleteNum.ToString();
     }
 
-    public void SetPlateletNum(int plateletNum) {   needPlateletNum = plateletNum; }
+    public void SetPlateletNum(int plateletNum)
+    {   
+        needPlateletNum = plateletNum;
+        currentPlateleteNum = needPlateletNum;
+    }
 }
