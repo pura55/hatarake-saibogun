@@ -48,6 +48,10 @@ public class SkillDetail : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             {
                 skillText.color = Color.white;
             }
+            else if (skillText.color == Color.white)
+            {
+                skillText.color = Color.white;
+            }
             else
             {
                 skillText.color = Color.red;
