@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2869037309801479508, guid: ec877ef9ec34ae44794dd780511171eb, type: 3}
-  m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -190,6 +190,8 @@ MonoBehaviour:
   effectedTime: 2
   IsFreez: 1
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  idleSprite: {fileID: 2869037309801479508, guid: ec877ef9ec34ae44794dd780511171eb, type: 3}
+  damagedSprite: {fileID: 2950685247953335513, guid: ab16f68f0062cfb409bc234de2ea8640, type: 3}
 --- !u!114 &892698996435450375
 MonoBehaviour:
   m_ObjectHideFlags: 0
