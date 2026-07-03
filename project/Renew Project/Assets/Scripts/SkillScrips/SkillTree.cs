@@ -78,7 +78,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCSpeedLv1://ÔŒŒ‹…ƒXƒs[ƒh
-                if (status.rbcSpeed == 5f && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount==2 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.rbcSpeed == 5f && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount==3 && SkillUnlock.rbcAmountLevel >= 1)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;     //Ž_‘fÁ”ï
                     status.rbcSpeed = 5.2f;
@@ -234,7 +234,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCHaveLv1://Ž‚Ä‚éŽ_‘f”
-                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount == 2 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount == 3 && SkillUnlock.rbcAmountLevel >= 1)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.rbcHave = 2;
