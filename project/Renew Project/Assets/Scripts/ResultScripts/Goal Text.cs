@@ -5,9 +5,12 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public GameObject goalText;
+    public GameObject clearText;  //クリアーテキスト
     public GameObject blackPanel;
 
     public ResultManager resultmanager;
+
+    public StatusSkill statusSkill;
 
     public Timer timer;
 
@@ -42,7 +45,14 @@ public class Goal : MonoBehaviour
         blackPanel.SetActive(true);
 
         //テキストを表示
-        goalText.SetActive(true);
+        if (statusSkill.isSkillMax)
+        {
+            clearText.SetActive(true);
+        }
+        else
+        {
+            goalText.SetActive(true);
+        }
 
         // リザルト表示
         resultmanager.ShowGoalResult();
