@@ -1452,6 +1452,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map1
       objectReference: {fileID: 0}
+    - target: {fileID: 7496882532932544828, guid: 1aa9ffc73d541974ba2e3bb66832dfbe, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6198825
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496882532932544828, guid: 1aa9ffc73d541974ba2e3bb66832dfbe, type: 3}
+      propertyPath: m_Color.g
+      value: 0.70377636
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496882532932544828, guid: 1aa9ffc73d541974ba2e3bb66832dfbe, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9386792
+      objectReference: {fileID: 0}
     - target: {fileID: 8689000617133089020, guid: 1aa9ffc73d541974ba2e3bb66832dfbe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.64
