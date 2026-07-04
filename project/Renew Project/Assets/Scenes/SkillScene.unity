@@ -8478,7 +8478,7 @@ MonoBehaviour:
   skillText: {fileID: 1982656242}
   skillType: 10
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
-  buttonbright: {fileID: 1097145103}
+  buttonbright: {fileID: 889591780}
 --- !u!1 &922242552
 GameObject:
   m_ObjectHideFlags: 0
@@ -12029,7 +12029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillDetail
   descriptionUI: {fileID: 1755551193}
-  skillText: {fileID: 439269304}
+  skillText: {fileID: 1755551195}
   skillType: 10
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1321319823}
