@@ -23,8 +23,12 @@ public class WbcDetection : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        CircleCollider2D circle = GetComponent<CircleCollider2D>();
-        circle.radius = status.wbcRange;
+        /// コライダーにスキルをアタッチしていたが敵を感知する範囲はdetectRangeなので
+        /// detectRangeへ代入するように修正
+
+        //CircleCollider2D circle = GetComponent<CircleCollider2D>();
+        //circle.radius = status.wbcRange;
+        detectRange = status.wbcRange; 
     }
 
     // Update is called once per frame

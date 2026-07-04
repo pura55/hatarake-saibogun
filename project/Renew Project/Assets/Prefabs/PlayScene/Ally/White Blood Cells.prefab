@@ -193,7 +193,7 @@ MonoBehaviour:
   followSpeed: 3
   detectRange: 3
   wbcSkills: {fileID: -8932757657927620087}
-  status: {fileID: 0}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
 --- !u!114 &-8932757657927620087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,9 +207,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WbcSkills
   wbcDetection: {fileID: -4758198707566663628}
-  status: {fileID: 0}
-  restrainAudioSource: {fileID: 0}
-  restrainSE: {fileID: 0}
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  restrainAudioSource: {fileID: -5222674457288995665}
+  restrainSE: {fileID: 8300000, guid: c14c4298bdb51664195a5c06f5be975a, type: 3}
 --- !u!82 &-5222674457288995665
 AudioSource:
   m_ObjectHideFlags: 0
