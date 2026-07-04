@@ -78,7 +78,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCSpeedLv1://ÔŒŒ‹…ƒXƒs[ƒh
-                if (status.rbcSpeed == 5f && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount==3 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.rbcSpeed == 5f && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount>=3 && SkillUnlock.rbcAmountLevel >= 1)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;     //Ž_‘fÁ”ï
                     status.rbcSpeed = 5.2f;
@@ -234,7 +234,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.RBCHaveLv1://Ž‚Ä‚éŽ_‘f”
-                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount == 3 && SkillUnlock.rbcAmountLevel >= 1)
+                if (status.rbcHave == 1 && OxygenCounter.totalOxygen >= needOxygen && status.rbcAmount >= 3 && SkillUnlock.rbcAmountLevel >= 1)
                 {
                     OxygenCounter.totalOxygen -= needOxygen;
                     status.rbcHave = 2;
@@ -293,7 +293,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.WBCTimeLv1://—}‚¦‚éŽžŠÔ
-                if (status.wbcTime == 2.0f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount == 3 && SkillUnlock.wbcAmountLevel >= 1)
+                if (status.wbcTime == 2.0f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3 && SkillUnlock.wbcAmountLevel >= 1)
                 {
                     Debug.Log($"WBCTime : {status.wbcTime}");
                     OxygenCounter.totalOxygen -= needOxygen;
@@ -353,7 +353,7 @@ public class SkillTree : MonoBehaviour
                 break;
                 
             case UpgradeType.WBCRangeLv1://ƒEƒCƒ‹ƒXŠ´’m”ÍˆÍ
-                if (status.wbcRange == 0.5f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount == 3 && SkillUnlock.wbcAmountLevel >= 1)
+                if (status.wbcRange == 0.5f && OxygenCounter.totalOxygen >= needOxygen && status.wbcAmount >= 3 && SkillUnlock.wbcAmountLevel >= 1)
                 {
                     Debug.Log($"WBCRange : {status.wbcRange}");
                     OxygenCounter.totalOxygen -= needOxygen;
