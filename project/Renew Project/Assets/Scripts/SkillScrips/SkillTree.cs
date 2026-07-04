@@ -510,7 +510,7 @@ public class SkillTree : MonoBehaviour
                 break;
 
             case UpgradeType.PLTCureLv1://‰ñ•œ‘¬“x
-                if (status.pltCure == 1.0f && OxygenCounter.totalOxygen >= needOxygen && status.pltAmount ==10)
+                if (status.pltCure == 1.0f && OxygenCounter.totalOxygen >= needOxygen && status.pltAmount >=10)
                 {
                     Debug.Log($"PLTCure : {status.pltCure}");
                     OxygenCounter.totalOxygen -= needOxygen;

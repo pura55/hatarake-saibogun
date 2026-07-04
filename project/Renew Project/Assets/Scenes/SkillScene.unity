@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 9733948}
   - component: {fileID: 9733949}
   - component: {fileID: 9733950}
+  - component: {fileID: 9733951}
   m_Layer: 5
   m_Name: WBCTimeLv1
   m_TagString: Untagged
@@ -593,6 +594,20 @@ MonoBehaviour:
   skillType: 4
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 9733948}
+--- !u!114 &9733951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9733941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 9733949}
 --- !u!1 &10475020
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +743,7 @@ GameObject:
   - component: {fileID: 21797256}
   - component: {fileID: 21797257}
   - component: {fileID: 21797258}
+  - component: {fileID: 21797259}
   m_Layer: 5
   m_Name: RBCAmountLv1
   m_TagString: Untagged
@@ -913,6 +929,20 @@ MonoBehaviour:
   skillType: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 21797256}
+--- !u!114 &21797259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21797249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 21797257}
 --- !u!1 &45671907
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +958,7 @@ GameObject:
   - component: {fileID: 45671914}
   - component: {fileID: 45671915}
   - component: {fileID: 45671916}
+  - component: {fileID: 45671917}
   m_Layer: 5
   m_Name: RBCAmountLv2
   m_TagString: Untagged
@@ -1113,6 +1144,20 @@ MonoBehaviour:
   skillType: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 45671914}
+--- !u!114 &45671917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45671907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 45671915}
 --- !u!1 &71065528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1447,7 @@ GameObject:
   - component: {fileID: 108511410}
   - component: {fileID: 108511411}
   - component: {fileID: 108511412}
+  - component: {fileID: 108511413}
   m_Layer: 5
   m_Name: PLTAmountLv5
   m_TagString: Untagged
@@ -1587,6 +1633,20 @@ MonoBehaviour:
   skillType: 8
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 108511410}
+--- !u!114 &108511413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108511403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 108511411}
 --- !u!1 &138535599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,6 +3462,7 @@ GameObject:
   - component: {fileID: 334660698}
   - component: {fileID: 334660699}
   - component: {fileID: 334660700}
+  - component: {fileID: 334660701}
   m_Layer: 5
   m_Name: PLTCureLv3
   m_TagString: Untagged
@@ -3587,6 +3648,20 @@ MonoBehaviour:
   skillType: 7
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 334660698}
+--- !u!114 &334660701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334660691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 334660699}
 --- !u!1 &344151199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,6 +3819,7 @@ GameObject:
   - component: {fileID: 386813161}
   - component: {fileID: 386813162}
   - component: {fileID: 386813163}
+  - component: {fileID: 386813164}
   m_Layer: 5
   m_Name: RBCSpeedLv2
   m_TagString: Untagged
@@ -3929,6 +4005,20 @@ MonoBehaviour:
   skillType: 1
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 386813161}
+--- !u!114 &386813164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386813154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 386813162}
 --- !u!1001 &398082542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4088,6 +4178,7 @@ GameObject:
   - component: {fileID: 421978670}
   - component: {fileID: 421978671}
   - component: {fileID: 421978672}
+  - component: {fileID: 421978673}
   m_Layer: 5
   m_Name: RBCHaveLv3
   m_TagString: Untagged
@@ -4273,6 +4364,20 @@ MonoBehaviour:
   skillType: 3
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 421978670}
+--- !u!114 &421978673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421978663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 421978671}
 --- !u!1 &431227720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,6 +4987,7 @@ GameObject:
   - component: {fileID: 513008178}
   - component: {fileID: 513008179}
   - component: {fileID: 513008180}
+  - component: {fileID: 513008181}
   m_Layer: 5
   m_Name: WBCRangeLv2
   m_TagString: Untagged
@@ -5067,6 +5173,20 @@ MonoBehaviour:
   skillType: 5
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 513008178}
+--- !u!114 &513008181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513008171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 513008179}
 --- !u!1 &527965564
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,6 +5202,7 @@ GameObject:
   - component: {fileID: 527965571}
   - component: {fileID: 527965572}
   - component: {fileID: 527965573}
+  - component: {fileID: 527965574}
   m_Layer: 5
   m_Name: RBCAmountLv3
   m_TagString: Untagged
@@ -5267,6 +5388,20 @@ MonoBehaviour:
   skillType: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 527965571}
+--- !u!114 &527965574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527965564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 527965572}
 --- !u!1 &554375914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5709,6 +5844,7 @@ GameObject:
   - component: {fileID: 610481770}
   - component: {fileID: 610481771}
   - component: {fileID: 610481772}
+  - component: {fileID: 610481773}
   m_Layer: 5
   m_Name: WBCAmountLv5
   m_TagString: Untagged
@@ -5894,6 +6030,20 @@ MonoBehaviour:
   skillType: 6
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 610481770}
+--- !u!114 &610481773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610481763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 610481771}
 --- !u!1 &622049025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6046,6 +6196,7 @@ GameObject:
   - component: {fileID: 635741942}
   - component: {fileID: 635741943}
   - component: {fileID: 635741944}
+  - component: {fileID: 635741945}
   m_Layer: 5
   m_Name: RBCAmountLv5
   m_TagString: Untagged
@@ -6231,6 +6382,20 @@ MonoBehaviour:
   skillType: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 635741942}
+--- !u!114 &635741945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635741935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 635741943}
 --- !u!1 &664565263
 GameObject:
   m_ObjectHideFlags: 0
@@ -7134,6 +7299,7 @@ GameObject:
   - component: {fileID: 777302639}
   - component: {fileID: 777302640}
   - component: {fileID: 777302641}
+  - component: {fileID: 777302642}
   m_Layer: 5
   m_Name: RBCHaveLv1
   m_TagString: Untagged
@@ -7319,6 +7485,20 @@ MonoBehaviour:
   skillType: 3
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 777302639}
+--- !u!114 &777302642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777302632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 777302640}
 --- !u!1 &788274613
 GameObject:
   m_ObjectHideFlags: 0
@@ -8094,6 +8274,7 @@ GameObject:
   - component: {fileID: 875147589}
   - component: {fileID: 875147590}
   - component: {fileID: 875147591}
+  - component: {fileID: 875147592}
   m_Layer: 5
   m_Name: WBCRangeLv1
   m_TagString: Untagged
@@ -8279,6 +8460,20 @@ MonoBehaviour:
   skillType: 5
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 875147589}
+--- !u!114 &875147592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875147582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 875147590}
 --- !u!1 &889591773
 GameObject:
   m_ObjectHideFlags: 0
@@ -8294,6 +8489,7 @@ GameObject:
   - component: {fileID: 889591780}
   - component: {fileID: 889591781}
   - component: {fileID: 889591782}
+  - component: {fileID: 889591783}
   m_Layer: 5
   m_Name: StageOxLv5
   m_TagString: Untagged
@@ -8479,6 +8675,20 @@ MonoBehaviour:
   skillType: 10
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 889591780}
+--- !u!114 &889591783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889591773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 889591781}
 --- !u!1 &922242552
 GameObject:
   m_ObjectHideFlags: 0
@@ -10578,6 +10788,7 @@ GameObject:
   - component: {fileID: 1203728650}
   - component: {fileID: 1203728649}
   - component: {fileID: 1203728654}
+  - component: {fileID: 1203728655}
   m_Layer: 5
   m_Name: SkillButton
   m_TagString: Untagged
@@ -10763,6 +10974,20 @@ MonoBehaviour:
   skillType: 0
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1203728650}
+--- !u!114 &1203728655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203728646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1203728649}
 --- !u!1 &1204641933
 GameObject:
   m_ObjectHideFlags: 0
@@ -11373,6 +11598,7 @@ GameObject:
   - component: {fileID: 1292378409}
   - component: {fileID: 1292378410}
   - component: {fileID: 1292378411}
+  - component: {fileID: 1292378412}
   m_Layer: 5
   m_Name: WBCTimeLv3
   m_TagString: Untagged
@@ -11558,6 +11784,20 @@ MonoBehaviour:
   skillType: 4
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1292378409}
+--- !u!114 &1292378412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292378402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1292378410}
 --- !u!1 &1305054884
 GameObject:
   m_ObjectHideFlags: 0
@@ -12248,6 +12488,7 @@ GameObject:
   - component: {fileID: 1349220676}
   - component: {fileID: 1349220677}
   - component: {fileID: 1349220678}
+  - component: {fileID: 1349220679}
   m_Layer: 5
   m_Name: RBCHaveLv2
   m_TagString: Untagged
@@ -12433,6 +12674,20 @@ MonoBehaviour:
   skillType: 3
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1349220676}
+--- !u!114 &1349220679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349220669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1349220677}
 --- !u!1 &1361305577
 GameObject:
   m_ObjectHideFlags: 0
@@ -12448,6 +12703,7 @@ GameObject:
   - component: {fileID: 1361305584}
   - component: {fileID: 1361305585}
   - component: {fileID: 1361305586}
+  - component: {fileID: 1361305587}
   m_Layer: 5
   m_Name: WBCTimeLv2
   m_TagString: Untagged
@@ -12633,6 +12889,20 @@ MonoBehaviour:
   skillType: 4
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1361305584}
+--- !u!114 &1361305587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361305577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1361305585}
 --- !u!1 &1385493948
 GameObject:
   m_ObjectHideFlags: 0
@@ -13578,6 +13848,7 @@ GameObject:
   - component: {fileID: 1541568520}
   - component: {fileID: 1541568521}
   - component: {fileID: 1541568522}
+  - component: {fileID: 1541568523}
   m_Layer: 5
   m_Name: RBCAmountLv4
   m_TagString: Untagged
@@ -13763,6 +14034,20 @@ MonoBehaviour:
   skillType: 2
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1541568520}
+--- !u!114 &1541568523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541568513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1541568521}
 --- !u!1 &1558364517
 GameObject:
   m_ObjectHideFlags: 0
@@ -15522,6 +15807,7 @@ GameObject:
   - component: {fileID: 1836158766}
   - component: {fileID: 1836158767}
   - component: {fileID: 1836158768}
+  - component: {fileID: 1836158769}
   m_Layer: 5
   m_Name: RBCSpeedLv3
   m_TagString: Untagged
@@ -15707,6 +15993,20 @@ MonoBehaviour:
   skillType: 1
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1836158766}
+--- !u!114 &1836158769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836158759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1836158767}
 --- !u!1 &1878646868
 GameObject:
   m_ObjectHideFlags: 0
@@ -15722,6 +16022,7 @@ GameObject:
   - component: {fileID: 1878646875}
   - component: {fileID: 1878646876}
   - component: {fileID: 1878646877}
+  - component: {fileID: 1878646878}
   m_Layer: 5
   m_Name: WBCRangeLv3
   m_TagString: Untagged
@@ -15907,6 +16208,20 @@ MonoBehaviour:
   skillType: 5
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 1878646875}
+--- !u!114 &1878646878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878646868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 1878646876}
 --- !u!1 &1892247497
 GameObject:
   m_ObjectHideFlags: 0
@@ -16590,6 +16905,7 @@ GameObject:
   - component: {fileID: 2037179965}
   - component: {fileID: 2037179966}
   - component: {fileID: 2037179967}
+  - component: {fileID: 2037179968}
   m_Layer: 5
   m_Name: StageTimeLv5
   m_TagString: Untagged
@@ -16775,6 +17091,20 @@ MonoBehaviour:
   skillType: 9
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 2037179965}
+--- !u!114 &2037179968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037179958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 2037179966}
 --- !u!1 &2045322171
 GameObject:
   m_ObjectHideFlags: 0
@@ -17520,6 +17850,7 @@ GameObject:
   - component: {fileID: 2118459044}
   - component: {fileID: 2118459045}
   - component: {fileID: 2118459046}
+  - component: {fileID: 2118459047}
   m_Layer: 5
   m_Name: RBCSpeedLv1
   m_TagString: Untagged
@@ -17705,6 +18036,20 @@ MonoBehaviour:
   skillType: 1
   status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
   buttonbright: {fileID: 2118459044}
+--- !u!114 &2118459047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118459037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbafb44658ac7c44a5cc14f65d6f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillMax
+  status: {fileID: 11400000, guid: 3975d35fd98067d4eb65bb2acfc77940, type: 2}
+  skilltree: {fileID: 2118459045}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class SkillMax : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (skilltree.skillmax == 10)
+        if (skilltree.skillmax >= 10)
         {
             status.isSkillMax = true;
         }
