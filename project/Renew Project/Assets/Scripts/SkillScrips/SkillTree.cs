@@ -7,7 +7,6 @@ public class SkillTree : MonoBehaviour
     public Timer timer;
     public SkillDetail skilldetail;
     public Buttonbright buttonBright;
-    public int skillmax = 0;
     [SerializeField] private int needOxygen;
     public enum UpgradeType
     {
@@ -55,6 +54,7 @@ public class SkillTree : MonoBehaviour
     }
     public void Upgrade()
     {
+        status.isSkillMax = SkillMax.GetIsSkillMax();
 
         switch (upgradeType)
         {
@@ -128,7 +128,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -225,7 +226,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -284,7 +286,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -344,7 +347,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -404,7 +408,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -501,7 +506,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -561,7 +567,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -658,7 +665,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {
@@ -755,7 +763,7 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
                 }
                 else
                 {
@@ -857,7 +865,8 @@ public class SkillTree : MonoBehaviour
                     {
                         button.RefreshButton();
                     }
-                    ++skillmax;
+                    SkillMax.AddSkillMax();
+                    SkillMax.CheckSkillMax();
                 }
                 else
                 {

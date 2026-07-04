@@ -1,23 +1,25 @@
 using UnityEngine;
 //’S“–@ç—tŒ‹‰Á
 
-public class SkillMax : MonoBehaviour
+public static class SkillMax
 {
-    public StatusSkill status;
-    public SkillTree skilltree;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private static bool isSkillMax = false;
+    private static int skillMaxNum;
 
-    // Update is called once per frame
-    private void Update()
+    public static void CheckSkillMax()
     {
-        if (skilltree.skillmax >= 10)
+        if (skillMaxNum >= 10)
         {
-            status.isSkillMax = true;
+            isSkillMax = true;
+            Debug.Log(skillMaxNum);
         }
-
     }
+
+    public static void AddSkillMax()
+    {
+        skillMaxNum++;
+        Debug.Log(skillMaxNum);
+    }
+
+    public static bool GetIsSkillMax() { return isSkillMax; }
 }
