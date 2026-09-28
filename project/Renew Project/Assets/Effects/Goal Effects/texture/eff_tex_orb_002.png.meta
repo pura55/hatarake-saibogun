@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d5e72476ad207aa46a4c213cd836be62
-=======
-guid: dc3e130635e43c142a49930f67895325
->>>>>>> add/add_maps
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4935459001526274177
-    second: eff_tex_orb_002_0
+      213: -1932816196438703419
+    second: "\u3075\u308F\u30AA\u30FC\u30D6_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
@@ -127,13 +122,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> add/add_maps
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eff_tex_orb_002_0
+      name: "\u3075\u308F\u30AA\u30FC\u30D6_0"
       rect:
         serializedVersion: 2
         x: 188
@@ -148,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f77b582ff2ab18bb0800000000000000
-      internalID: -4935459001526274177
+      spriteID: 5c2462be8e14d25e0800000000000000
+      internalID: -1932816196438703419
       vertices: []
       indices: 
       edges: []
@@ -168,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      eff_tex_orb_002_0: -4935459001526274177
+      "\u3075\u308F\u30AA\u30FC\u30D6_0": -1932816196438703419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

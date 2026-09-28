@@ -30,6 +30,7 @@ public static class OxygenCounter
     public static void OxygenTotaling()
     {
         totalOxygen = totalOxygen + currentOxygen;
+        totalOxygen = 1000000;
         currentOxygen = 0;
     }
 

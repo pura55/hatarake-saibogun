@@ -70,7 +70,7 @@ public class OxygenMove : MonoBehaviour
                     // ó‘Ô‚ğidle‚Éİ’è
                     state = OxygenState.idle;
                     break;
-                }
+                }   
 
                 // Ú‹ßˆ—‚ğÀs
                 AttachProcess();

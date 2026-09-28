@@ -17,6 +17,8 @@ public class EnemyDetection : MonoBehaviour
     private bool isEffect = false;          //”’ŒŒ‹…‚ÌŒø‰Ê‚ğó‚¯‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
     private float currentFreezTime = 0f;    //d’¼Œo‰ßŠÔ
     private float currentEffectedTime = 0f; //Œø‰ÊŒp‘±ŠÔ
+    private bool isGoal = false;
+    private Timer timer;
     public StatusSkill status;
     #endregion
 
@@ -27,11 +29,27 @@ public class EnemyDetection : MonoBehaviour
     void Start()
     {
         effectedTime = status.wbcTime;
+        timer = FindFirstObjectByType<Timer>();
+    }
+
+    public void StopEnemy()
+    {
+        isGoal = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (timer.GetLeftTime())
+        {
+            return;
+        }
+
+        if (isGoal)
+        {
+            return;
+        }
+
         //–Ú•W‚Æ‚·‚é‘ÎÛ‚ª‘¶İ‚µ‚È‚¢‚Æ‚«’Tõ‚µ‚Äreturn
         if (targetRbc == null)
         {

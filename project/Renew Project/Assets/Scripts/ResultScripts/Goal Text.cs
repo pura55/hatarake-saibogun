@@ -5,10 +5,11 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public GameObject goalText;
+    public GameObject clearText;  //クリアーテキスト
     public GameObject blackPanel;
 
     public ResultManager resultmanager;
-
+    public StatusSkill statusSkill;
     public Timer timer;
 
     [SerializeField] private GameObject effectPrefab;  // ゴールエフェクトのプレハブ
@@ -16,37 +17,72 @@ public class Goal : MonoBehaviour
     [SerializeField] private AudioSource audioSource;  // オーディオソース
 
     [SerializeField] private AudioClip goalJingle; // ゴールジングル
+
+    private bool isGoal = false;
+
+    private float goalEnableDelay = 0.2f;
+    private float timerCount = 0f;
+
+    private void Start()
+    {
+        isGoal = false;
+        timerCount = 0f;
+    }
+
+    private void Update()
+    {
+        timerCount += Time.deltaTime;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (timerCount < goalEnableDelay) return;
+
+        if (isGoal) return;
+
         // プレイヤーがゴールに触れたら
-        if (collision.CompareTag("RBC"))
+        if (!collision.CompareTag("RBC")) return;
+
+        isGoal = true;
+
+        // ゴールSEを再生
+        PlayGoalJingle();
+
+        // エフェクトを再生
+        PlayGoalEffect();
+
+        // タイマー停止
+        timer.isStop = true;
+
+        // 黒幕表示
+        blackPanel.SetActive(true);
+
+        //テキストを表示
+        if (statusSkill.isSkillMax)
         {
-
-            // ゴールSEを再生
-            PlayGoalJingle();
-
-            // エフェクトを再生
-            PlayGoalEffect();
-
-            // タイマー停止
-            timer.isStop = true;
-
-            // 黒幕表示
-            blackPanel.SetActive(true);
-
-            //テキストを表示
+            clearText.SetActive(true);
+        }
+        else
+        {
             goalText.SetActive(true);
-
-            // リザルト表示
-            resultmanager.ShowGoalResult();
         }
 
+        // リザルト表示
+        resultmanager.ShowGoalResult();
+
         // プレイヤーを停止
-        PlayerMove playerMove = collision.GetComponent<PlayerMove>();
-        if (playerMove != null)
+        PlayerMove[] players = FindObjectsByType<PlayerMove>(FindObjectsSortMode.None);
+        foreach (PlayerMove player in players)
         {
-            playerMove.StartGoalMove();
+            player.StartGoalMove();
+        }
+
+        EnemyDetection[] enemies =
+    FindObjectsByType<EnemyDetection>(FindObjectsSortMode.None);
+
+        foreach (EnemyDetection enemy in enemies)
+        {
+            enemy.StopEnemy();
         }
     }
 

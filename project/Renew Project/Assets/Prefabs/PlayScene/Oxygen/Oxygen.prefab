@@ -174,7 +174,7 @@ MonoBehaviour:
   detectRange: 1
   orbitRadius: 0.25
   orbitSpeed: 180
-  effectPrefab: {fileID: 1594750498174008237, guid: 463b6791ec7c40c4d82c41205a4555f2, type: 3}
+  effectPrefab: {fileID: 2133442675474361035, guid: 463b6791ec7c40c4d82c41205a4555f2, type: 3}
   getAudioSource: {fileID: 987536976047960137}
   getOxygenSE: {fileID: 8300000, guid: d01805a7020523d41a9047e0fab140c0, type: 3}
 --- !u!82 &987536976047960137

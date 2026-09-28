@@ -58,24 +58,30 @@ public class PlateletMove : MonoBehaviour
         switch (relayCount)
         {
             case 0:
+                Debug.Log("１フェーズ");
                 // １つ目のリレーフェーズ処理
                 HandleRelayPhase1();
                 break;
 
             case 1:
+                Debug.Log("２フェーズ");
                 // ２つ目のリレーフェーズ処理
                 HandleRelayPhase2();
                 break;
 
             case 2:
+                Debug.Log("３フェーズ");
                 // ３つ目のリレーフェーズ処理
                 HandleRelayPhase3();
+                break;
+            case 3:
+                CheckArrivalAtCut();   //傷へ到着したか確認
                 break;
         }
 
         
         MoveTowardTarget();　　//ターゲットへ移動
-        CheckArrivalAtCut();   //傷へ到着したか確認
+        
         
     }
 
@@ -90,7 +96,8 @@ public class PlateletMove : MonoBehaviour
             if (targetCut != null)
             {
                 currentTarget = targetCut;
-                targetStack.Push(passTarget.cut);
+                relayCount = 3;
+                //targetStack.Push(passTarget.cut);
             }
             else
             {
@@ -98,6 +105,8 @@ public class PlateletMove : MonoBehaviour
             }
             return;
         }
+
+        CheckArrivalAtRP();
 
         if (isAttached)
         {
@@ -119,7 +128,8 @@ public class PlateletMove : MonoBehaviour
             if (targetCut != null)
             {
                 currentTarget = targetCut;
-                targetStack.Push(passTarget.cut);
+                relayCount = 3;
+                //targetStack.Push(passTarget.cut);
             }
             else
             {
@@ -127,6 +137,8 @@ public class PlateletMove : MonoBehaviour
             }
             return;
         }
+
+        CheckArrivalAtRP();
 
         if (isAttached)
         {
@@ -147,7 +159,8 @@ public class PlateletMove : MonoBehaviour
             if (targetCut != null)
             {
                 currentTarget = targetCut;
-                targetStack.Push(passTarget.cut);
+                relayCount = 3;
+                //targetStack.Push(passTarget.cut);
             }
             else
             {
@@ -155,6 +168,8 @@ public class PlateletMove : MonoBehaviour
             }
             return;
         }
+
+        CheckArrivalAtRP();
 
         if (isAttached)
         {
@@ -165,6 +180,7 @@ public class PlateletMove : MonoBehaviour
             relayCount++;
         }
     }
+
     private void ResetTargets()
     {
         Debug.Log("中継地点をリセット");
@@ -185,12 +201,19 @@ public class PlateletMove : MonoBehaviour
             followSpeed * Time.deltaTime
         );
     }
+
+    private  void CheckArrivalAtRP()
+    {
+        if (Vector2.Distance(transform.position, currentTarget.position) < 0.1f)
+        {
+            isAttached = true;
+        }
+    }
     private void CheckArrivalAtCut()
     {
-        if (currentTarget == null) return;
-
-        if (targetStack.Peek() == passTarget.cut && Vector2.Distance(transform.position, currentTarget.position) < 0.1f)
+        if (Vector2.Distance(transform.position, currentTarget.position) < 0.1f)
         {
+            Debug.Log("傷に到着");
             //RepairCutの参照を取得
             repairCut = currentTarget.GetComponent<RepairCut>();
             requestWait = true;
