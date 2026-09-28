@@ -24,7 +24,9 @@
 ## 📷  Screenshots / スクリーンショット
 | Screenshot 1 / 画像１ | Screenshot 2 / 画像２ |
 | :---: | :---: |
-| ![Screen1]() | ![Screen2]() |
+| ![Screen1](https://github.com/pura55/hatarake-saibogun/blob/main/Screenshots/image_1.png) | ![Screen2](https://github.com/pura55/hatarake-saibogun/blob/main/Screenshots/image_2.png) |
+| Screenshot 3 / 画像3 | Screenshot 4 / 画像4 |
+| ![Screen3](https://github.com/pura55/hatarake-saibogun/blob/main/Screenshots/image_3.png) | ![Screen4](https://github.com/pura55/hatarake-saibogun/blob/main/Screenshots/image_4.png) |
 
 ## 🎥 Gameplay Video / プレイ動画
 
