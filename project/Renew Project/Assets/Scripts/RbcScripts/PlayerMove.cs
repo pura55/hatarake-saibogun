@@ -74,7 +74,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // ˆÚ“®ˆ—
-        ControllMoving();
+        ControlMoving();
     }
     #endregion
 
@@ -84,7 +84,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     /// @brief ˆÚ“®‘€ì‚ğs‚¤ŠÖ”
-    private void ControllMoving()
+    private void ControlMoving()
     {
         if (isEffectedEnemy)
         {
