@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 酸素スポーン
+/// </summary>
 public class OxygenSpawner : MonoBehaviour
 {
     #region Config

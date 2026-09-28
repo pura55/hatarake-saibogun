@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 白血球が敵の検出を行うクラス
+/// </summary>
 public class WbcDetection : MonoBehaviour
 {
     #region Config
@@ -18,7 +23,10 @@ public class WbcDetection : MonoBehaviour
     public StatusSkill status;
     #endregion
 
+    /// @brief フリーズフラグを設定する関数
     public void SetIsFreez(bool freez) { isFreez = freez; }
+
+    /// @brief　発見フラグを返す関数
     public bool GetIsFound() { return isFound; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -69,6 +77,7 @@ public class WbcDetection : MonoBehaviour
         }
     }
 
+    /// @brief　敵を探索する関数（AI使用）
     Transform FindClosestEnemyWithinRange(float range)
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
@@ -100,7 +109,8 @@ public class WbcDetection : MonoBehaviour
         return closest;
     }
 
-    void isFreezing()
+    /// @brief フリーズ処理を行う関数
+    private void isFreezing()
     {
         if (currentFreezTime < freezingTime)
         {

@@ -1,9 +1,12 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 敵スポーン
+/// </summary>
 public class EnemySpawner : MonoBehaviour
-{
-    
-    
+{ 
     
     #region Config
     private int currentSpawnIndex = 1;   // 現在のスポーンする回数

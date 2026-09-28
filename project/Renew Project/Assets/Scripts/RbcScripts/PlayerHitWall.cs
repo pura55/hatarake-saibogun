@@ -1,13 +1,19 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// プレイヤーの壁の当たり判定クラス
+/// </summary>
 public class PlayerHitWall : MonoBehaviour
 {
 
     #region State
-    [SerializeField] private bool isCollidingWithWall = false;
+    [SerializeField] private bool isCollidingWithWall = false; // 当たり判定のフラグ
     #endregion
 
     #region Public Methods
+    /// @brief 当たり判定のフラグを返す関数
     public bool GetIsCollidingWithWall() { return isCollidingWithWall; }
     #endregion
     void Start()

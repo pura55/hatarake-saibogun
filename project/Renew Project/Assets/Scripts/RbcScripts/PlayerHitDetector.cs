@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// ’S“–FÎú±•Ÿl
+/// 
+/// 
+/// </summary>
 public class PlayerHitDetector : MonoBehaviour 
 {
     void OnCollisionEnter2D(Collision2D col)

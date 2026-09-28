@@ -11,8 +11,8 @@ public class RepairCut : MonoBehaviour
 {
     #region Config
     private int maxPlatelet = 10;   //血小板の最大値
-    public int cutLevel = 1;
-    public float maxRepairTime = 2.0f;   //修復されるまでの時間
+    [SerializeField]private int cutLevel = 1; // 傷のレベル
+    [SerializeField]private float maxRepairTime = 2.0f;   //修復されるまでの時間
     #endregion
 
     #region State
@@ -86,7 +86,7 @@ public class RepairCut : MonoBehaviour
             PlayRepairEffect();
     }
 
-    // 血小板が入った時の処理を行う関数
+    /// @brief 血小板が入った時の処理を行う関数
     private void HandlePlateletEnter(Transform platelet)
     {
         AddPlatelet();                //血小板の個数を加算する
@@ -95,19 +95,21 @@ public class RepairCut : MonoBehaviour
         Debug.Log($"現在の血小板の個数：{currentPlatelet}");
     }
 
-    //血小板を登録する関数
+    /// @brief 血小板を登録する関数
     public void RegisterPlatelet(Transform platelet)
     {
         plateletStack.Push(platelet);
     }
-    //傷の修復が完了した後の処理を行う関数
+
+    /// @brief 傷の修復が完了した後の処理を行う関数
     private void CompleteRepair()
     {
         //血小板と傷を削除
         DestroyPlatelets();
         Destroy(gameObject);
     }
-    //血小板の削除を行う関数
+
+    /// @brief 血小板の削除を行う関数
     private void DestroyPlatelets()
     {
         while (plateletStack.Count > 0)
@@ -121,17 +123,20 @@ public class RepairCut : MonoBehaviour
         // エフェクトを削除
         Destroy(effectInstans);
     }
-    //修復にかかる時間の加算を行う関数
+
+    /// @brief 修復にかかる時間の加算を行う関数
     private void AddCurrentTime()
     {
         currentTime += Time.deltaTime;
     }
-    //血小板の個数を加算する関数
+
+    /// @brief 血小板の個数を加算する関数
     private void AddPlatelet()
     {
         currentPlatelet++;
     }
-    // 傷を修復するエフェクトを実行する関数
+
+    /// @brief  傷を修復するエフェクトを実行する関数
     private void PlayRepairEffect()
     {
         Vector3 effectPosition = transform.position;
@@ -148,7 +153,7 @@ public class RepairCut : MonoBehaviour
         isSpawned = true;
     }
 
-    // 傷修復SEを再生する関数
+    /// @brief 傷修復SEを再生する関数
     private void PlayRepairSE()
     {
         if (canPlaySE)

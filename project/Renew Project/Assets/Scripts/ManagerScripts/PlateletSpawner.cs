@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 血小板スポーン
+/// </summary>
 public class PlateletSpawner : MonoBehaviour
 {
     #region Config

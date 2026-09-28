@@ -8,9 +8,8 @@ using UnityEngine;
 
 public class PassRP : MonoBehaviour
 {
-    public RelayPointStatus relayPointStatus;
-    private Transform targetPlatelet;
-    PlateletMove plateletMove;
+    private RelayPointStatus relayPointStatus;
+    private PlateletMove plateletMove;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,13 +23,16 @@ public class PassRP : MonoBehaviour
     {
         if (relayPointStatus == null) return;
 
+        // 通過した場合
         if (relayPointStatus.GetIsPass())
         {
             // plateletMoveがnullの状態で実行されないようにチェック
             if (plateletMove != null)
             {
+                // 中継地点をリセット
                 plateletMove.ResetRelayPoint();
             }
+            // 通過フラグを設定
             relayPointStatus.SetIsPass(false);
         }
     }

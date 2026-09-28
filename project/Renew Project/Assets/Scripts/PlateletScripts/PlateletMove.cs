@@ -85,6 +85,7 @@ public class PlateletMove : MonoBehaviour
         
     }
 
+    /// @brief 第一通過地点のまでの処理を行う関数
     private void HandleRelayPhase1()
     {
         //目標とする対象が存在しないとき探索してreturn
@@ -118,6 +119,7 @@ public class PlateletMove : MonoBehaviour
         }
     }
 
+    /// @brief 第二通過地点のまでの処理を行う関数
     private void HandleRelayPhase2()
     {
         if (currentTarget == null)
@@ -149,6 +151,8 @@ public class PlateletMove : MonoBehaviour
             relayCount++;
         }
     }
+
+    /// @brief 第三通過地点のまでの処理を行う関数
     private void HandleRelayPhase3()
     {
         if (currentTarget == null)
@@ -181,6 +185,7 @@ public class PlateletMove : MonoBehaviour
         }
     }
 
+    /// @brief 対象の通過地点をリセットする関数
     private void ResetTargets()
     {
         Debug.Log("中継地点をリセット");
@@ -191,6 +196,8 @@ public class PlateletMove : MonoBehaviour
         isAttached = false;
         detectRange = 100f;
     }
+
+    /// @brief 移動処理を行う関数
     private void MoveTowardTarget()
     {
         if (currentTarget == null || isAttached) return;
@@ -202,13 +209,16 @@ public class PlateletMove : MonoBehaviour
         );
     }
 
-    private  void CheckArrivalAtRP()
+    /// @brief 通過地点への到着を判定する関数
+    private void CheckArrivalAtRP()
     {
         if (Vector2.Distance(transform.position, currentTarget.position) < 0.1f)
         {
             isAttached = true;
         }
     }
+
+    /// @brief 傷への到着を判定する関数
     private void CheckArrivalAtCut()
     {
         if (Vector2.Distance(transform.position, currentTarget.position) < 0.1f)
@@ -219,6 +229,8 @@ public class PlateletMove : MonoBehaviour
             requestWait = true;
         }
     }
+
+    /// @brief 第一通過地点を探す関数（AI使用）
     Transform FindClosestRelayPoint1WithinRange(float range)
     {
         GameObject[] relayPoints = GameObject.FindGameObjectsWithTag("RelayPoint1");
@@ -251,6 +263,7 @@ public class PlateletMove : MonoBehaviour
         return closest;
     }
 
+    /// @brief 第二通過地点を探す関数（AI使用）
     Transform FindClosestRelayPoint2WithinRange(float range)
     {
         GameObject[] relayPoints = GameObject.FindGameObjectsWithTag("RelayPoint2");
@@ -284,6 +297,7 @@ public class PlateletMove : MonoBehaviour
         return closest;
     }
 
+    /// @brief 第三通過地点を探す関数（AI使用）
     Transform FindClosestRelayPoint3WithinRange(float range)
     {
         GameObject[] relayPoints = GameObject.FindGameObjectsWithTag("RelayPoint3");
@@ -317,6 +331,7 @@ public class PlateletMove : MonoBehaviour
         return closest;
     }
 
+    /// @brief 傷を探す関数（AI使用）
     Transform FindClosestCutWithinRange(float range)
     {
         GameObject[] relayPoints = GameObject.FindGameObjectsWithTag("Cut");
@@ -350,6 +365,7 @@ public class PlateletMove : MonoBehaviour
         return closest;
     }
 
+    /// @brief 通過地点をリセットする関数関数（AI使用）
     public void ResetRelayPoint()
     {
         if (relayCount == 0 && targetStack.Peek() != passTarget.relayPoint1)

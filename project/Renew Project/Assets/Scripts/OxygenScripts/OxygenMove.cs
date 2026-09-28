@@ -5,7 +5,6 @@ using UnityEngine;
 /// 
 /// _‘f‚ÌˆÚ“®
 /// </summary>
-
 public class OxygenMove : MonoBehaviour
 {
     // _‘f‚Ìó‘Ô
@@ -127,7 +126,7 @@ public class OxygenMove : MonoBehaviour
         }
     }
 
-    // ‹ß‚­‚É‘¶İ‚·‚éRbc‚ğŒŸõ‚·‚éŠÖ”
+    /// @brief ‹ß‚­‚É‘¶İ‚·‚éRbc‚ğŒŸõ‚·‚éŠÖ”
     Transform FindClosestRbcWithinRange(float range)
     {
         GameObject[] rbcs = GameObject.FindGameObjectsWithTag("RBC");
@@ -147,7 +146,7 @@ public class OxygenMove : MonoBehaviour
         return closest;
     }
 
-    // Ú‹ßˆ—‚ğÀs‚·‚éŠÖ”
+    /// @brief Ú‹ßˆ—‚ğÀs‚·‚éŠÖ”
     private void AttachProcess()
     {
         // RBC ‚Ì’†S‚É‹z’…
@@ -158,7 +157,7 @@ public class OxygenMove : MonoBehaviour
         );
     }
 
-    // ‰ñ“]ˆ—‚ğÀs‚·‚éŠÖ”
+    /// @brief ‰ñ“]ˆ—‚ğÀs‚·‚éŠÖ”
     private void RotateProcess()
     {
         angleOffset += orbitSpeed * Time.deltaTime;
@@ -174,7 +173,7 @@ public class OxygenMove : MonoBehaviour
         transform.position = targetRbc.position + offset;
     }
 
-    // Rbc‚©‚ç—£‚ê‚éÛ‚Ì€”õˆ—‚ğÀs‚·‚éŠÖ”
+    /// @brief Rbc‚©‚ç—£‚ê‚éÛ‚Ì€”õˆ—‚ğÀs‚·‚éŠÖ”
     private void PreparationForLeaving()
     {
         // x², y²‚Ìƒ‰ƒ“ƒ_ƒ€‚È•„†‚Ìw”‚ğŒˆ‚ß‚é
@@ -209,7 +208,7 @@ public class OxygenMove : MonoBehaviour
         targetRbc.GetComponent<RbcStatus>().ReductionOxygenCount();
     }
 
-    // _‘f‚ğŠl“¾ƒGƒtƒFƒNƒg‚ğÀs‚·‚éŠÖ”
+    /// @brief _‘f‚ğŠl“¾ƒGƒtƒFƒNƒg‚ğÀs‚·‚éŠÖ”
     private void PlayGetEffect(Transform rbc)
     {
         Vector3 effectPosition = rbc.position;
@@ -229,7 +228,7 @@ public class OxygenMove : MonoBehaviour
         effectMove.SetRbcReference(rbc);
     }
 
-    // _‘f‚ğŠl“¾SE‚ğÄ¶‚·‚éŠÖ”
+    /// @brief _‘f‚ğŠl“¾SE‚ğÄ¶‚·‚éŠÖ”
     private void PlayGetSE()
     {
         getAudioSource.PlayOneShot(getOxygenSE);

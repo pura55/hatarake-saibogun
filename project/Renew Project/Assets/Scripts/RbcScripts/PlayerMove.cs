@@ -3,6 +3,11 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// プレイヤー（赤血球）の移動クラス
+/// </summary>
 public class PlayerMove : MonoBehaviour
 {
     //レギオンを使用することで、コードを整理できる
@@ -30,10 +35,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Sprite damagedSprite;
     #endregion
 
-    // 敵からの効果を判定するフラグを設定する関数
+    /// @brief 敵からの効果を判定するフラグを設定する関数
     public void SetIsEffectedEnemy(bool isEffected) { isEffectedEnemy = isEffected; }
 
-    // 敵からの効果を判定するフラグを返す関数
+    /// @brief 敵からの効果を判定するフラグを返す関数
     public bool GetIsEffectedEnemy() { return isEffectedEnemy; }
     // Unity LifecycleはUnityの特定のイベント(例: Start, Updateなど)に関連するコードをまとめるためのセクション
     #region Unity Lifecycle
@@ -68,7 +73,20 @@ public class PlayerMove : MonoBehaviour
             return;
         }
 
-        if(isEffectedEnemy)
+        // 移動処理
+        ControllMoving();
+    }
+    #endregion
+
+    public void Init(Timer times)
+    {
+        timer = times;
+    }
+
+    /// @brief 移動操作を行う関数
+    private void ControllMoving()
+    {
+        if (isEffectedEnemy)
         {
             EffectedTimeCounter();
             return;
@@ -90,7 +108,7 @@ public class PlayerMove : MonoBehaviour
         if (hitWall.GetIsCollidingWithWall())
         {
             // 速度が存在する場合ターゲットをfalseにする
-            if(speed > 0f)
+            if (speed > 0f)
             {
                 hasTarget = false;
             }
@@ -114,13 +132,8 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
-    #endregion
 
-    public void Init(Timer times)
-    {
-        timer = times;
-    }
-    //ゴールしたら動く
+    /// @brief ゴール時の動作処理関数
     public void StartGoalMove()
     {
         isGoal = true;
@@ -128,6 +141,7 @@ public class PlayerMove : MonoBehaviour
         speed = 0f;
     }
 
+    /// @brief　エフェクトの時間を計算する関数
     public void EffectedTimeCounter()
     {
         if (currentEffectedTime< effectedTime)

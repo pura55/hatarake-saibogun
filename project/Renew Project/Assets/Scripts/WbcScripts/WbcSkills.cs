@@ -1,12 +1,17 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// 白血球のスキル処理を行うクラス
+/// </summary>
 public class WbcSkills : MonoBehaviour
 {
 #region State
     //スキルを使用したかどうかのフラッグ(true:使用済み, false:未使用)
-    private bool isUsedSkill = false;
+    private bool isUsedSkill = false; // スキルの使用フラグ
     //敵と接触しているかどうかのフラッグ(true:既接触, false:未接触)
-    private bool isHitEnemy = false;
+    private bool isHitEnemy = false; // 敵との接触フラグ
     public WbcDetection wbcDetection;
     private Transform targetEnemy;
     public StatusSkill status;
@@ -16,7 +21,11 @@ public class WbcSkills : MonoBehaviour
     private bool isApplyPlaySE = false; // SEプレイの許可があるかどうかのフラグ
     private float playingTimeOfSE = 0.0f;
     #endregion
+
+    /// @brief スキル使用フラグを返す関数
     public bool GetUsedSkill() { return isUsedSkill; }
+
+    /// @brief スキル使用フラグを設定する関数
     public void SetUsedSkill(bool isUsed) { isUsedSkill = isUsed; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -64,7 +73,7 @@ public class WbcSkills : MonoBehaviour
         }
     }
 
-    // 抑制SEを再生する関数
+    /// @brief 抑制SEを再生する関数
     private void PlayRestrainSE()
     {
         if (canPlaySE)

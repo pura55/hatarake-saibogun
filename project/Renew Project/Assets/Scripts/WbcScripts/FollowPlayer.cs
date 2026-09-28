@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// 担当：石﨑福人
+/// 
+/// プレイヤー（赤血球）を追従処理を行うクラス
+/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class FollowPlayer : MonoBehaviour
 {
