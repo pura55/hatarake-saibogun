@@ -30,7 +30,7 @@
 
 ## 🎥 Gameplay Video / プレイ動画
 
-* [Watch the Video / 動画リンクはこちら]()
+* [Watch the Video / 動画リンクはこちら](https://youtu.be/BmjRq0M0Fng)
 
 ## 📜 クレジット・使用素材 / Credits
 
